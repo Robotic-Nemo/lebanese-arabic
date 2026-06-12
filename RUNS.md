@@ -18697,3 +18697,6 @@ Made the app installable + offline-capable on iPhone:
 - **index.html** — manifest/apple-touch-icon links + sw.js registration.
 VERIFIED in preview (localhost): SW registered+activated, 1279 entries in leb-v1 after one load (1270 data files + shell), manifest/icons 200, no console errors, app boots (VOCAB 3693), clean mobile-viewport render. Probe untouched: 0 BAD / 8246.
 To install: host the folder on any static HTTPS host (GitHub Pages/Netlify), open in iOS Safari → Share → Add to Home Screen.
+
+## Deployed to GitHub Pages (2026-06-11)
+User stopped the autonomous loop to prioritize iPhone deployment. Repo: https://github.com/Robotic-Nemo/lebanese-arabic (public, user-approved incl. the YouTube-derived audio). Live: **https://robotic-nemo.github.io/lebanese-arabic/** — index/manifest/sw/icons/data/audio all verified 200. Gotchas hit: lebanese-audio was a SYMLINK to the legacy v1 dir (git would have shipped a dead link; materialized as a real 64MB copy), and GitHub Pages' default Jekyll build was slow + would drop _dev/_audit (underscore paths) — added .nojekyll. NOTE for future runs: the loop's append workflow now needs `git add -A && git commit && git push` for changes to reach the phone; bump sw.js CACHE_VERSION to force-refresh clients.
