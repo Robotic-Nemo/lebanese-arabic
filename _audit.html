@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>AUDIT</title></head><body>
+<pre id="result">loading...</pre>
+<iframe id="app" src="/" style="width:1200px;height:800px"></iframe>
+<script>
+const iframe = document.getElementById('app');
+iframe.onload = () => {
+  setTimeout(() => {
+    const w = iframe.contentWindow;
+    const d = iframe.contentDocument;
+    const out = [];
+
+    out.push('=== Render check per view ===');
+    const checks = [
+      ['study', '#flashcard-ar, #card-front, .card-body, #due-count'],
+      ['quiz', '#quiz-question, #quiz-content, .quiz-area, #quiz-area'],
+      ['browse', '#browse-list, .word-card'],
+      ['sounds', '#view-sounds .accordion, #view-sounds .grammar-section'],
+      ['grammar', '#grammar-list .grammar-section, #view-grammar .accordion'],
+      ['stats', '#stats-content, .heatmap, #weekly-chart'],
+      ['build', '#sentence-deck, #build-area, .sentence-card'],
+      ['convo', '#convo-list, .convo-card'],
+      ['read', '#read-list, .read-card'],
+      ['path', '#path-content, .path-stage'],
+      ['phrases', '#phrases-list, .phrase-card'],
+      ['listen', '#listen-story-list, .listen-card']
+    ];
+    checks.forEach(([view, selector]) => {
+      try {
+        w.showView(view);
+        const v = d.getElementById('view-' + view);
+        if (!v) { out.push('  ' + view + ': NO_VIEW'); return; }
+        const matches = v.querySelectorAll(selector);
+        const txtLen = v.textContent.trim().length;
+        out.push('  ' + view + ': elems=' + matches.length + ' textLen=' + txtLen + (matches.length === 0 && txtLen < 50 ? ' EMPTY!' : ''));
+      } catch(e) {
+        out.push('  ' + view + ': ERR ' + e.message);
+      }
+    });
+
+    out.push('');
+    out.push('=== Modals exist ===');
+    ['settings-modal', 'data-modal', 'add-word-modal', 'word-detail-modal', 'list-manager-modal'].forEach(id => {
+      const el = d.getElementById(id);
+      out.push('  ' + id + ': ' + (el ? 'YES' : 'NO'));
+    });
+
+    out.push('');
+    out.push('=== Try clicking a tab ===');
+    try {
+      const studyTab = d.querySelector('.tab-btn[onclick*="study"]');
+      if (studyTab) {
+        studyTab.click();
+        const studyView = d.getElementById('view-study');
+        out.push('  Study tab click: view active=' + (studyView ? studyView.classList.contains('active') : 'NO_VIEW'));
+        // Check if a card or "session done" message is showing
+        const cardArea = studyView?.querySelector('#card-front, #flashcard, #flashcard-ar, .card-body');
+        const sessionDone = studyView?.querySelector('#session-done');
+        out.push('  Card visible: ' + !!(cardArea && getComputedStyle(cardArea).display !== 'none'));
+        out.push('  Session done: ' + !!(sessionDone && getComputedStyle(sessionDone).display !== 'none'));
+        if (cardArea) out.push('  Card text: ' + (cardArea.textContent.trim().substring(0, 60) || 'EMPTY'));
+      }
+    } catch(e) { out.push('  ERR: ' + e.message); }
+
+    out.push('');
+    out.push('=== Console errors during init? ===');
+    const errs = w._captured_errors || [];
+    out.push('  Errors captured: ' + errs.length);
+    errs.slice(0, 5).forEach(e => out.push('  - ' + e));
+
+    document.getElementById('result').textContent = out.join('\n');
+  }, 3500);
+};
+</script>
+</body></html>

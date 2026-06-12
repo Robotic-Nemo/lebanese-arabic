@@ -1,0 +1,51 @@
+// R1710 — Lebanese Tannourine: Cedar Reserve, Baatara Gorge Waterfall, Apple Orchards (tnr)
+// North Lebanon, Batroun district, ~1300m. Two villages (Tahta + Faouqa). Horsh Tannourine
+// cedar reserve (~6000 trees), Baatara sinkhole 255m waterfall, famous apples, Mar Saba.
+// Distinct from: gib (Bcharre/Gibran R1668), chr (Mar Charbel R1686), qsh (Wadi Qadisha R1605).
+
+const TNR_WORDS = [
+  { w: "Tannourine",            t: "تنورين",          e: "Tannourine — north Lebanon mountain town in Batroun district at ~1300m elevation; cedar reserve + apple orchards + Baatara sinkhole; 'tannour' (clay oven) etymology refers to the gorge shape", ex: "Tannourine bil-shamel" },
+  { w: "Tannourine el-Ta7ta",   t: "تنورين التحتا",   e: "Lower Tannourine — main village downhill, where most homes + church + schools sit; warmer microclimate; closer to Batroun coast access road",                              ex: "saaken bi-Tannourine el-Ta7ta" },
+  { w: "Tannourine el-Faou2a",  t: "تنورين الفوقا",   e: "Upper Tannourine — village uphill toward cedar reserve; cooler; closer to Horsh Tannourine entrance + Baatara waterfall trailhead",                                       ex: "ra7 3a Tannourine el-Faou2a" },
+  { w: "Horsh Tannourine",      t: "حرش تنورين",      e: "Tannourine Cedar Forest — protected reserve since 1999, ~6000 ancient cedars over 600,000 sq m; hiking trails; visitor center; second-largest cedar grove after Bcharre", ex: "ze3na 3a Horsh Tannourine" },
+  { w: "Arz",                   t: "أرز",             e: "Cedar — Lebanese national tree on flag; Tannourine grove threatened in 1990s by sawfly (Cephalcia tannourinensis named after the town); recovery program ongoing",         ex: "el-arz mawjood bi-Tannourine" },
+  { w: "Baatara",               t: "بعاترا",          e: "Baatara Gorge — sinkhole + 255m waterfall through three natural limestone bridges + Jurassic caves; one of Lebanon's top natural wonders; called 'Three Bridges Chasm'",   ex: "Baatara mashhoura ktir" },
+  { w: "shellal",               t: "شلال",            e: "waterfall — Baatara seasonal waterfall flows strong in March-April when snowmelt peaks; dries up by late summer; trail descends to viewpoint platform",                   ex: "el-shellal qawi bil-rabee3" },
+  { w: "tof7",                  t: "تفاح",            e: "apple — Tannourine + Bekaa apples are Lebanon's pride; cool altitude makes crisp sweet fruit; harvested late September-October; export to Gulf states",                  ex: "tof7 Tannourine 7elo" },
+  { w: "bayyader",              t: "بيادر",           e: "apple orchards — terraced groves cover Tannourine slopes; family-owned for generations; 'tof7anjeh' = orchard worker; harvest season hires migrant labor",                ex: "el-bayyader 3al-jabal" },
+  { w: "minTaqa ma7miyeh",      t: "منطقة محمية",     e: "protected area — Horsh Tannourine declared by law 583/2004; rangers patrol; no logging or hunting; eco-tourism encouraged with marked trails + signage",                  ex: "Horsh Tannourine minTaqa ma7miyeh" },
+  { w: "shajra",                t: "شجرة",            e: "tree — oldest Tannourine cedars estimated 1500+ years; some 30m tall; 'arz al-Rabb' = cedar of the Lord; biblical references in Psalms + 1 Kings",                       ex: "el-shajra 3atee2a" },
+  { w: "ma3bad",                t: "معبد",            e: "shrine/sanctuary — small chapels + Mar Saba monastery within Tannourine; pilgrimage stops; oldest dating to Crusader era; mass on saint feast days",                     ex: "el-ma3bad 2adeem" },
+  { w: "wadi",                  t: "وادي",            e: "valley/gorge — Wadi Tannourine carves through limestone with hiking trails; refuge during Ottoman conscription drives; caves used as hideouts historically",              ex: "Wadi Tannourine 7elo" },
+  { w: "kahf",                  t: "كهف",             e: "cave — Baatara has Jurassic-era limestone caves visible from the platform; also Roueiss cave; speleology popular with Lebanese cave clubs",                              ex: "fi kahf bi-Baatara" },
+  { w: "thalej",                t: "ثلج",             e: "snow — Tannourine gets heavy winter snow; school closes; villagers stockpile mouneh; tourists drive up for snow play; ski-touring on cedar slopes",                       ex: "el-thalej naazel" },
+  { w: "rabee3",                t: "ربيع",            e: "spring — best Tannourine season; wildflowers bloom in cedar forest; waterfall at peak; orchards in pink-white blossom; mild 15-20°C days",                                ex: "el-rabee3 ajmal wa2et" },
+  { w: "Sayfiyeh",              t: "صيفية",           e: "summer escape — Beirutis rent Tannourine houses for July-August to escape coastal humidity; cooler 25°C; outdoor dining; cedar walks; family reunions",                   ex: "raye7 3a Sayfiyeh bi-Tannourine" },
+  { w: "Mar Saba",              t: "مار سابا",        e: "Saint Saba — Maronite monastery in Tannourine; named after 5th-c desert father; small monks community; feast December 5; pilgrims visit during summer",                  ex: "ne7na 3am nrou7 3a Mar Saba" },
+  { w: "deir",                  t: "دير",             e: "monastery — Tannourine has several Maronite monasteries (Mar Saba, Saydet el-Habsh); part of historic Maronite refuge network in Lebanese mountains",                    ex: "el-deir kbeer" },
+  { w: "douba",                 t: "ضبع",             e: "sawfly pest — Cephalcia tannourinensis insect named after Tannourine; defoliated cedars in 1990s; bio-control + insecticide programs saved the grove",                   ex: "el-douba akalet el-arz" },
+  { w: "marshad",               t: "مرشد",            e: "guide — local guides at Horsh visitor center; multilingual Arabic/French/English; explain cedar age, ecology, biblical references; tip 10000 LL customary",              ex: "el-marshad 7akeena 3al-arz" },
+  { w: "manTara",               t: "منظر",            e: "view — Baatara overlook gives view down 255m gorge through three rock bridges; vertigo warning; railing protects platform; sunset photos epic",                          ex: "el-manTara khe7ela" },
+  { w: "tarjoume",              t: "ترجمة",           e: "translation/interpretation — bilingual signage at Tannourine reserve in Arabic + English describes cedar lifecycle + threats + restoration; QR codes for app",            ex: "el-tarjoume mafhoumeh" }
+];
+
+const TNR_DRILLS = [
+  { q: "What is Horsh Tannourine?", opts: ['Lebanon\'s second-largest cedar grove (~6000 trees) protected since 1999', 'a downtown Beirut shopping mall', 'a Mediterranean fishing village'], a: 0 },
+  { q: "What unique natural feature gives Tannourine global fame?", opts: ['Roman temple complex', 'Baatara Gorge — 255m waterfall through three natural limestone bridges + Jurassic caves', 'an active volcano'], a: 1 },
+  { q: "What pest threatened Tannourine cedars in the 1990s?", opts: ['locusts', 'wild boar', 'Cephalcia tannourinensis sawfly — named after the town because it was discovered defoliating its cedars'], a: 2 },
+  { q: "What fruit is Tannourine famous for?", opts: ['mangoes', 'apples — cool altitude + terraced orchards produce Lebanon\'s prized crisp fruit, exported to Gulf', 'pineapples'], a: 1 },
+  { q: "What does Tannourine el-Faou2a vs el-Ta7ta mean?", opts: ['Lower vs Upper village — Faou2a (upper) closer to cedar reserve, Ta7ta (lower) is main settlement', 'two unrelated towns', 'east vs west halves'], a: 0 },
+  { q: "What are 'Three Bridges' at Baatara?", opts: ['three natural limestone arches stacked vertically that the waterfall drops through into the gorge', 'three Roman aqueducts', 'three Crusader bridges over a river'], a: 0 },
+  { q: "When does Baatara waterfall flow strongest?", opts: ['March-April during snowmelt — dries up by late summer', 'all year equally', 'only during civil-war anniversary'], a: 0 },
+  { q: "What is Mar Saba in Tannourine?", opts: ['a brand of bottled water', 'a Maronite monastery named after a 5th-century desert father; pilgrimage site with December 5 feast', 'a political party headquarters'], a: 1 },
+  { q: "Why do Beirutis go to Tannourine in summer?", opts: ['for Sayfiyeh — escape coastal humidity, cooler 25°C mountain air, outdoor dining, cedar walks', 'to fish for tuna', 'to ski'], a: 0 },
+  { q: "What protects Horsh Tannourine officially?", opts: ['UNESCO designation only', 'no protection — it\'s open for logging', 'Lebanese law 583/2004 declared it a protected nature reserve with rangers patrolling against logging + hunting'], a: 2 }
+];
+
+const TNR_TIPS = [
+  "Tannourine sits at ~1,300m in Batroun district, north Lebanon — about 90 minutes from Beirut by car (Mtein-Ras Osta-Tannourine road from coast). Cooler than Bcharre but easier access for day trips. Two main villages: el-Ta7ta (lower, main settlement) and el-Faou2a (upper, near cedar reserve entrance).",
+  "Horsh Tannourine cedar reserve has ~6,000 ancient cedars over a 600,000 sq m protected zone — second-largest in Lebanon after Bcharre's 'Cedars of God'. Visit the visitor center for trail maps. Best season: late spring (May-June) when wildflowers bloom, or autumn (October) when apple harvest is in full swing and air is crisp.",
+  "Baatara Gorge Waterfall (Baatara Pothole, Three Bridges Chasm) is one of Lebanon's most extraordinary natural sights — a 255m seasonal waterfall plunges through three stacked natural limestone bridges into Jurassic-era caves visible below. Peak flow: March-April snowmelt. Often dry by August. Easy 10-minute walk from parking to viewing platform.",
+  "Tannourine apples are a national pride — terraced orchards on the slopes produce 'tof7 Tannourine' that's crisp, sweet, and small. Harvest is late September through October. You can buy direct from farmers (3-5 USD per crate). Apples are exported to Gulf states. The 'tof7anjeh' (orchard workers) are often migrant laborers from Syria.",
+  "The Cephalcia tannourinensis sawfly was first identified here in the 1990s when it defoliated huge swaths of the cedar forest — the species is literally named after Tannourine. Bio-control programs (parasitic wasps + targeted insecticide) saved most of the grove. Locals say 'el-douba akalet el-arz' (the pest ate the cedar) when describing those years."
+];

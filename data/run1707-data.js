@@ -1,0 +1,56 @@
+// Run #1707 — NEW FEATURE: nkl — Nahr el-Kalb (Dog River) — coastal river 15km
+// north of Beirut, where the cliffs at the mouth form one of the world's
+// oldest open-air history archives: 22 commemorative stelae carved by
+// invading armies over 3,400 years. Ramses II (~1274 BC), Esarhaddon,
+// Nebuchadnezzar, Roman emperors, Mamluks, Napoleon III (1860), French
+// Gouraud (1920), British WWII, Lebanese independence (1946), Israeli
+// withdrawal (2000), Syrian withdrawal (2005). UNESCO Memory of the World
+// 2005. Distinct from R1581 jta (Jeita Grotto cave system upstream),
+// R1221 nhr (Lebanon rivers general), R1626 jne (Jounieh harbor adjacent).
+// Prefix: nkl.
+
+const NKL_WORDS = [
+  { w: 'nahr el-kalb', t: 'نهر الكلب', e: 'Nahr el-Kalb — Dog River, 15km north of Beirut', ex: 'nahr el-kalb shamel beirut.', exEn: 'Dog River is north of Beirut.' },
+  { w: 'nahr', t: 'نهر', e: 'nahr — river', ex: 'el-nahr byenSob bel-ba7r.', exEn: 'The river flows into the sea.' },
+  { w: 'kalb', t: 'كلب', e: 'kalb — dog (legend: stone sentry that howled)', ex: 'el-kalb el-7ajar 7adoutha 2dime.', exEn: 'The stone dog is an old legend.' },
+  { w: 'nuqoush', t: 'نقوش', e: 'nuqoush — inscriptions/carvings on rock', ex: 'el-nuqoush 3a-l-7ajar.', exEn: 'The inscriptions are on the rock.' },
+  { w: 'stila', t: 'لوحة', e: 'stila — stele (commemorative carved panel); 22 at Nahr el-Kalb', ex: '22 stila 3a-l-jabal.', exEn: '22 stelae on the cliff.' },
+  { w: '7ajar', t: 'حجر', e: '7ajar — rock/stone (the limestone cliff face)', ex: 'el-7ajar tweel.', exEn: 'The rock is tall.' },
+  { w: 'jaysh', t: 'جيش', e: 'jaysh — army; every invading army carved here', ex: 'el-jaysh fat hon.', exEn: 'The army passed through here.' },
+  { w: '2intiSar', t: 'انتصار', e: '2intiSar — victory; each stele commemorates one', ex: 'el-2intiSar 3a-l-7ajar.', exEn: 'The victory is on the rock.' },
+  { w: 'ramses', t: 'رمسيس', e: 'Ramses II — oldest stele, ~1274 BC, Egyptian pharaoh', ex: 'ramses 2adam wa7ed.', exEn: 'Ramses is the oldest one.' },
+  { w: 'nabukhath', t: 'نبوخذ نصر', e: 'Nebuchadnezzar — Babylonian, ~605 BC', ex: 'nabukhath men babel.', exEn: 'Nebuchadnezzar is from Babylon.' },
+  { w: 'ghazwa', t: 'غزوة', e: 'ghazwa — invasion/conquest; recorded here', ex: 'kel ghazwa khallet stila.', exEn: 'Each invasion left a stele.' },
+  { w: '7akem', t: 'حاكم', e: '7akem — ruler; pharaohs, kings, generals carved', ex: 'el-7akem byo2ti2 ismo.', exEn: 'The ruler carves his name.' },
+  { w: 'gouraud', t: 'غورو', e: 'Gouraud — French general, 1920 mandate stele', ex: 'gouraud katab stila.', exEn: 'Gouraud carved a stele.' },
+  { w: 'istiqlal', t: 'استقلال', e: 'istiqlal — independence; 1946 Lebanese stele added', ex: 'istiqlal lebnan 1943.', exEn: 'Lebanese independence in 1943.' },
+  { w: 'in7isab', t: 'انسحاب', e: 'in7isab — withdrawal; 2000 + 2005 stelae', ex: 'in7isab souri 2005.', exEn: 'Syrian withdrawal in 2005.' },
+  { w: 'tarikh', t: 'تاريخ', e: 'tarikh — history; Nahr el-Kalb = "river of memory"', ex: 'el-tarikh 3a-l-nahr.', exEn: 'History is on the river.' },
+  { w: 'jabal', t: 'جبل', e: 'jabal — cliff/mountain face here', ex: 'el-jabal 3ali.', exEn: 'The cliff is high.' },
+  { w: 'masila', t: 'مسلك', e: 'masila — passageway; the narrow strategic bottleneck', ex: 'masila Dayy2a.', exEn: 'A narrow passage.' },
+  { w: 'sharit ba7ar', t: 'شريط بحر', e: 'sharit ba7ar — coastal strip; the only N-S route', ex: 'sharit ba7ar Dayy2.', exEn: 'A narrow coastal strip.' },
+  { w: 'nafa2', t: 'نفق', e: 'nafa2 — tunnel; French cut one through 1942', ex: 'el-nafa2 men 1942.', exEn: 'The tunnel is from 1942.' },
+  { w: 'maameltein', t: 'المعاملتين', e: 'Maameltein — district where Nahr el-Kalb meets the sea', ex: 'maameltein janb el-nahr.', exEn: 'Maameltein is by the river.' },
+  { w: 'unesco', t: 'يونسكو', e: 'UNESCO — declared site Memory of the World 2005', ex: 'unesco sajalet el-mowqe3.', exEn: 'UNESCO registered the site.' }
+];
+
+const NKL_DRILLS = [
+  { q: 'What is Nahr el-Kalb famous for?', opts: ['22 stelae carved by invading armies over 3,400 years', 'ancient cedars', 'a beach resort'], a: 0, exp: 'Nahr el-Kalb (نهر الكلب, "Dog River") is the world\'s longest open-air archive of military history. The cliffs at the river mouth, 15km north of Beirut, hold 22 commemorative stelae carved by every conquering army that passed: Egyptian pharaohs, Assyrian and Babylonian kings, Roman emperors, Mamluks, French, British, and modern Lebanese leaders.' },
+  { q: 'Who carved the oldest stele at Nahr el-Kalb?', opts: ['Alexander the Great', 'Ramses II (Egyptian pharaoh, ~1274 BC)', 'Napoleon Bonaparte'], a: 1, exp: 'The oldest known stele was carved by Ramses II of Egypt around 1274 BC, commemorating his campaign against the Hittites. It set the precedent — every empire that came after felt compelled to carve their own at the same spot, creating a 3,400-year continuous record of conquest.' },
+  { q: 'Why is the river called "Dog River" (Nahr el-Kalb)?', opts: ['from a famous dog breeder', 'from a legendary stone sentry dog statue at the river mouth', 'because dogs lived there'], a: 1, exp: 'Local legend says a stone dog statue stood at the mouth of the river and would howl whenever enemies approached. The howling could supposedly be heard all the way to Cyprus. The statue was reportedly destroyed in 1860 when the road was widened — but the name "Nahr el-Kalb" stuck.' },
+  { q: 'When was Nahr el-Kalb declared a UNESCO Memory of the World site?', opts: ['1946', '2005', '1995'], a: 1, exp: 'Nahr el-Kalb was inscribed on UNESCO\'s Memory of the World Register in 2005, recognizing the stelae as a unique 3,400-year continuous documentation of major historical events affecting the Levant. It joined other documentary heritage like the Magna Carta and the Gutenberg Bible.' },
+  { q: 'Which modern Lebanese events have stelae at Nahr el-Kalb?', opts: ['only the civil war', 'independence 1946 + Israeli withdrawal 2000 + Syrian withdrawal 2005', 'only the 1975 war'], a: 1, exp: 'Three modern Lebanese stelae were added to continue the tradition: the 1946 stele celebrates full independence (after evacuation of French troops), the 2000 stele marks the Israeli withdrawal from south Lebanon, and the 2005 stele commemorates the Syrian withdrawal after the Cedar Revolution. Each follows the ancient pattern: the new ruler/era carves at the river mouth.' },
+  { q: 'Why was this exact spot chosen by every conquering army?', opts: ['it had a market', 'the narrow coastal pass made it the only way for armies to march north-south along the Levantine coast', 'it had fresh water'], a: 1, exp: 'Nahr el-Kalb is a strategic bottleneck — the cliffs of Mount Sannine drop steeply to the sea, and any army marching the Egypt-to-Mesopotamia coastal route had to squeeze through this narrow pass. Whoever controlled this gorge controlled the Levantine coast, so every conqueror commemorated their crossing here.' },
+  { q: 'What was Nebuchadnezzar II\'s stele commemorating?', opts: ['his palace construction', 'the Babylonian conquest of the Levant ~605 BC', 'a religious festival'], a: 1, exp: 'Nebuchadnezzar II of Babylon carved his stele around 605 BC after defeating the Egyptians at Carchemish and extending Babylonian power to the Mediterranean coast. This is the same Nebuchadnezzar who later destroyed Solomon\'s Temple in Jerusalem (586 BC).' },
+  { q: 'What modern infrastructure cuts through the Nahr el-Kalb gorge?', opts: ['a railway only', 'a road tunnel built by the French in 1942', 'a pedestrian bridge'], a: 1, exp: 'The French Mandate authorities cut a road tunnel through the cliff in 1942 to bypass the dangerous coastal pass. The tunnel itself became a stele — Allied forces (British and Australian troops who used it during WWII operations against Vichy French in Lebanon and Syria) added their own commemoration.' },
+  { q: 'Where is Nahr el-Kalb in relation to Beirut and Jounieh?', opts: ['inland in the Bekaa', 'between them on the coastal highway, ~15km north of Beirut', 'south of Beirut'], a: 1, exp: 'Nahr el-Kalb is on the coastal highway between Beirut and Jounieh — about 15km north of central Beirut, just south of Jounieh Bay (R1626 jne). The river flows from the Jeita Grotto underground source (R1581 jta) down through the limestone gorge to the Mediterranean.' },
+  { q: 'Why do the stelae matter to modern Lebanese identity?', opts: ['as tourist attractions only', 'they show Lebanon as a crossroads — every empire passed but Lebanon endured', 'as religious shrines'], a: 1, exp: 'For Lebanese, the wall of stelae embodies a national narrative: Lebanon is a crossroads small enough to be conquered repeatedly but resilient enough to outlast every empire. The continuous record from Ramses II to 2005 makes the cliff a literal physical timeline of Levantine survival — a monument that ironically commemorates conquerors but is owned by the conquered.' }
+];
+
+const NKL_TIPS = [
+  'Nahr el-Kalb is on the coastal highway 15km north of Beirut — easily visited en route to Jounieh, Jbeil/Byblos, or Jeita Grotto. The stelae are visible on the cliff face above the river mouth at Maameltein. There is a small heritage path with explanatory plaques and a viewing platform; expect ~30-45 minutes for a focused visit. The site is free and open-access, no ticket needed.',
+  'The 22 stelae break down roughly: 6 ancient (Ramses II, two Assyrian, Nebuchadnezzar, two Roman), 1 Mamluk (Sultan Barquq, 14th c.), 6 Ottoman/early modern (including the famous 1860 Napoleon III stele commemorating French intervention after Druze-Christian massacres), 4 WWI/WWII/Mandate (Gouraud 1920, British forces 1941-42), 5 modern Lebanese (1946 independence, 1990 civil war end, 2000, 2005, plus 2008 evacuation of Western forces). The continuous chain spans 3,250 years.',
+  'The "stone dog" legend: a sentry statue at the river mouth supposedly howled when enemies approached, audible across the sea to Cyprus. Versions vary — some say it was a Phoenician guardian, others say it was Egyptian or Roman. Whether real or invented, the legend predates the Arabic name "Nahr el-Kalb" (which simply means "Dog River") by centuries. The statue, if it existed, was reportedly destroyed in 1860 during the widening of the coastal road.',
+  'How to read the stelae chronologically: walk south to north along the cliff face (downstream side, sea-side). The oldest (Ramses II Egyptian) is at the southern end, then progressing through Assyrian, Babylonian, Roman in order, then a chronological gap until medieval Mamluk, then accelerating through 19th-20th century. Modern Lebanese stelae are at the northern end, closest to the road tunnel. Each stele has a small Arabic + French information plaque (added in the 2000s).',
+  'Compare with other Lebanese conqueror-monuments: Baalbek (R1590 bbk) shows Phoenician-Roman religious architecture; Tripoli (R1599 tpl) shows Mamluk urban dominance; the Nahr el-Kalb stelae are unique because they are not a city or temple — they are 22 individual ego-monuments, each a single ruler stamping his name on a passage. The result is the world\'s most concentrated 3-millennia portrait of Levantine geopolitics in stone.'
+];

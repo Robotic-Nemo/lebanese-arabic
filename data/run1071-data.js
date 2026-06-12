@@ -1,0 +1,61 @@
+// R1071 — NEW FEATURE: Lebanese Henné & Traditional Body Art (hna)
+const HNA_WORDS = [
+  { ar: 'حنة', tr: '7inna', eng: 'henna / henné', cat: 'materials' },
+  { ar: 'رسم الحنة', tr: 'rasim il-7inna', eng: 'henna drawing / design', cat: 'materials' },
+  { ar: 'ليلة الحنة', tr: 'leilit il-7inna', eng: 'henna night (pre-wedding celebration)', cat: 'ceremony' },
+  { ar: 'العروسة', tr: 'il-3aruse', eng: 'the bride', cat: 'ceremony' },
+  { ar: 'النقش', tr: 'in-na2sh', eng: 'the pattern / intricate design', cat: 'materials' },
+  { ar: 'الوردة', tr: 'il-wardi', eng: 'the rose (common henna motif)', cat: 'motifs' },
+  { ar: 'زخرفة', tr: 'zakhrufi', eng: 'decoration / ornamentation', cat: 'materials' },
+  { ar: 'الإصبع', tr: 'il-isba3', eng: 'the finger', cat: 'body' },
+  { ar: 'الكف', tr: 'il-kaff', eng: 'the palm (of the hand)', cat: 'body' },
+  { ar: 'القدم', tr: 'il-2adum', eng: 'the foot', cat: 'body' },
+  { ar: 'تطبيق الحنة', tr: 'tatbii2 il-7inna', eng: 'applying henna', cat: 'process' },
+  { ar: 'اللون البني', tr: 'il-lawn il-bunni', eng: 'the brown color (henna color)', cat: 'materials' },
+  { ar: 'اللون الأحمر', tr: 'il-lawn il-a7mar', eng: 'the red color', cat: 'materials' },
+  { ar: 'فنانة الحنة', tr: 'fannanit il-7inna', eng: 'henna artist (female)', cat: 'people' },
+  { ar: 'الأهل والأصحاب', tr: 'il-ahil wil-is7ab', eng: 'family and friends', cat: 'ceremony' },
+  { ar: 'الرقص', tr: 'ir-ra2s', eng: 'the dancing', cat: 'ceremony' },
+  { ar: 'الغناء', tr: 'il-ghina', eng: 'the singing', cat: 'ceremony' },
+  { ar: 'الدبكة', tr: 'id-dabki', eng: 'dabke (folk dance)', cat: 'ceremony' },
+  { ar: 'الشموع', tr: 'ish-shumo3', eng: 'the candles', cat: 'ceremony' },
+  { ar: 'الوشم', tr: 'il-wishim', eng: 'the tattoo', cat: 'tattoo' },
+  { ar: 'وشم تقليدي', tr: 'wishim ta2lidi', eng: 'traditional tattoo', cat: 'tattoo' },
+  { ar: 'وشم ديني', tr: 'wishim dini', eng: 'religious tattoo', cat: 'tattoo' },
+  { ar: 'الصليب', tr: 'is-salib', eng: 'the cross (common tattoo in Christian villages)', cat: 'tattoo' },
+  { ar: 'فنان الوشم', tr: 'fannan il-wishim', eng: 'tattoo artist', cat: 'people' },
+  { ar: 'التصميم', tr: 'it-tasmim', eng: 'the design', cat: 'materials' },
+  { ar: 'الإبرة', tr: 'il-ibri', eng: 'the needle', cat: 'materials' },
+  { ar: 'الألم', tr: 'il-alam', eng: 'the pain', cat: 'process' },
+  { ar: 'التئام الجرح', tr: 'ilti2am il-jur7', eng: 'wound healing', cat: 'process' },
+  { ar: 'ذكرى', tr: 'zikra', eng: 'a memory / commemoration', cat: 'tattoo' },
+  { ar: 'تعبير عن الهوية', tr: 'ta3bir 3an il-huwiyi', eng: 'expression of identity', cat: 'tattoo' },
+];
+
+const HNA_CATS = ['all', 'ceremony', 'materials', 'motifs', 'body', 'process', 'people', 'tattoo'];
+
+const HNA_DRILLS = [
+  { q: 'ليلة الحنة means:', opts: ['the henna paint', 'henna night (pre-wedding celebration)', 'night market', 'henna color'], ans: 1 },
+  { q: 'فنانة الحنة means:', opts: ['henna night', 'henna color', 'henna artist (female)', 'bride'], ans: 2 },
+  { q: 'الكف means:', opts: ['the finger', 'the palm of the hand', 'the foot', 'the arm'], ans: 1 },
+  { q: 'النقش means:', opts: ['the color', 'the needle', 'the intricate pattern/design', 'the candle'], ans: 2 },
+  { q: 'الدبكة is:', opts: ['a henna color', 'a tattoo style', 'Lebanese folk dance', 'a henna motif'], ans: 2 },
+  { q: 'الوشم means:', opts: ['henna', 'the tattoo', 'the pattern', 'the bride'], ans: 1 },
+  { q: 'وشم ديني means:', opts: ['religious tattoo', 'traditional henna', 'religious ceremony', 'sacred pattern'], ans: 0 },
+  { q: 'الصليب in tattoo context is:', opts: ['a henna motif', 'the cross (common in Christian village tattoos)', 'a floral design', 'the bride\'s symbol'], ans: 1 },
+  { q: 'تطبيق الحنة means:', opts: ['henna design', 'applying henna', 'henna night', 'henna market'], ans: 1 },
+  { q: 'ذكرى means:', opts: ['the needle', 'the pain', 'the design', 'a memory/commemoration'], ans: 3 },
+  { q: 'العروسة means:', opts: ['the henna', 'the dance', 'the bride', 'the pattern'], ans: 2 },
+  { q: 'زخرفة means:', opts: ['the ceremony', 'the artist', 'decoration/ornamentation', 'the color'], ans: 2 },
+  { q: 'الأهل والأصحاب means:', opts: ['the henna and design', 'family and friends', 'the dance and song', 'the needle and ink'], ans: 1 },
+  { q: 'تعبير عن الهوية means:', opts: ['tattoo needle', 'traditional design', 'expression of identity', 'religious marking'], ans: 2 },
+  { q: 'التئام الجرح means:', opts: ['tattoo design', 'wound healing', 'religious tattoo', 'henna application'], ans: 1 },
+];
+
+const HNA_TIPS = [
+  { title: 'Henna Night: The Lebanese Pre-Wedding Ritual', body: 'Leilit il-7inna (ليلة الحنة) is one of Lebanon\'s most vibrant pre-wedding celebrations. The night before the wedding, women gather at the bride\'s home — singing, dancing dabke, burning candles, and applying henna to the bride\'s hands and feet. The patterns are intricate and symbolic: roses for love, geometric shapes for protection. The celebration used to last until dawn; today it\'s often a stylized party, but the henna application remains central.' },
+  { title: 'Henna Across Lebanese Communities', body: 'Henna nights are practiced across Lebanese Muslim and Druze communities, and have cultural presence in some Christian communities too. The pre-wedding henna tradition is strongest in Lebanese villages and among diaspora communities who maintain traditions more consciously than urban dwellers. In Beirut, leilit il-7inna has been modernized — sometimes held in event spaces with professional henna artists — but the symbolism of the bride\'s adorned hands at the wedding remains.' },
+  { title: 'Religious Tattoos: The Coptic and Maronite Tradition', body: 'Traditional tattoos (wishim) in the Levant have deep Christian roots. Maronite Christians, Coptic Christians, and Eastern Orthodox communities practiced tattooing crosses (salib) and religious symbols on wrists, hands, or between the thumb and forefinger as marks of faith and pilgrimage. A tattoo from Jerusalem — the salib of a Jerusalem pilgrimage — was a badge of honor. This practice dates back centuries and continues in some communities today, particularly among older generations.' },
+  { title: 'Modern Tattoo Culture in Lebanon', body: 'Beirut has developed one of the Middle East\'s most vibrant tattoo scenes. Young Lebanese treat tattoos as identity expression — ta3bir 3an il-huwiyi — often incorporating Arabic calligraphy, cedar trees, maps of Lebanon, or references to the civil war and its aftermath. After the 2020 Beirut explosion, many survivors got memorial tattoos incorporating the port silos or dates. The tension between this modern tattoo culture and more conservative social norms plays out visibly in Lebanese society.' },
+  { title: 'Henna as Protective Magic', body: 'In Lebanese folk belief, henna has protective properties beyond beauty. Applying henna to a bride protects her from the evil eye (3ein) on her most vulnerable day. Red and brown henna stains are believed to ward off bad spirits. Certain patterns — particularly the hamsa (hand of Fatima/Miriam) and the eye motif — appear in henna designs specifically as protective charms. This blend of aesthetic beauty and superstitious protection is distinctly Levantine, merging Islamic, Christian, and pre-Islamic folk traditions.' },
+];

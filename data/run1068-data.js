@@ -1,0 +1,61 @@
+// R1068 — NEW FEATURE: Lebanese Wisdom & Life Proverbs (hkm)
+const HKM_WORDS = [
+  { ar: 'الدم بيدل على بعضو', tr: 'id-damm byidull 3a ba3do', eng: 'blood calls to blood (family recognizes itself)', cat: 'family' },
+  { ar: 'الأم مدرسة', tr: 'il-umm madrasi', eng: 'the mother is a school', cat: 'family' },
+  { ar: 'بيتك عيلتك', tr: 'beitak 3eiltak', eng: 'your home is your family', cat: 'family' },
+  { ar: 'اللي بتكبر معه بتحسو', tr: 'illi btikbar ma3o bt7isso', eng: 'who you grow up with, you feel them', cat: 'family' },
+  { ar: 'خبي قرشك الأبيض ليومك الأسود', tr: 'khbbi u2rushak il-abyad li-yomak il-aswad', eng: 'save your white penny for your black day (save for hard times)', cat: 'money' },
+  { ar: 'بالتدريج تملا المنادير', tr: 'bil-tadrij tmalll il-manadir', eng: 'gradually the saddlebags fill (slow and steady)', cat: 'work' },
+  { ar: 'الصبر مفتاح الفرج', tr: 'is-sabr mifta7 il-faraj', eng: 'patience is the key to relief', cat: 'fate' },
+  { ar: 'ما كل ما يتمنى المرء يدركه', tr: 'ma kull ma yitmanna l-mar2 yudrikho', eng: 'not everything one wishes for comes to pass', cat: 'fate' },
+  { ar: 'اللي بتزرعه بتحصده', tr: 'illi btizra3o bti7suddo', eng: 'what you plant you harvest', cat: 'fate' },
+  { ar: 'دراهم الحرام ما بتبني دار', tr: 'darahim il-7aram ma btibni dar', eng: 'ill-gotten money doesn\'t build a home', cat: 'money' },
+  { ar: 'العمل عبادة', tr: 'il-3amal 3ibade', eng: 'work is worship', cat: 'work' },
+  { ar: 'اللي بيبكر بيطير', tr: 'illi byibkur byitir', eng: 'the early bird flies (early riser succeeds)', cat: 'work' },
+  { ar: 'اللسان بلا عظم', tr: 'il-lisan bla 3azm', eng: 'the tongue has no bone (words are cheap)', cat: 'relations' },
+  { ar: 'قرب الجار قبل الدار', tr: 'urb ij-jar u2bl id-dar', eng: 'the neighbor before the house (choose neighbors carefully)', cat: 'relations' },
+  { ar: 'الكذبة مهما طالت بتنكشف', tr: 'il-kidbe mahma talt btinkashif', eng: 'a lie however long it goes gets exposed', cat: 'relations' },
+  { ar: 'حط راسك بين الروس وقول يا قطاع الراس', tr: '7utt rasak bein ir-rous u2ul ya u2tta3 ir-rous', eng: 'put your head among heads and say "off with their heads" (blend in)', cat: 'relations' },
+  { ar: 'العقل السليم بالجسم السليم', tr: 'il-3a2l is-salim bil-jism is-salim', eng: 'a sound mind in a sound body', cat: 'fate' },
+  { ar: 'بقلة الكلام كتير من الاحترام', tr: 'bi-ullat il-kalam ktir min il-i7tiram', eng: 'few words carry much respect', cat: 'relations' },
+  { ar: 'اللي بيدك بيدي', tr: 'illi byidk byidi', eng: 'what hurts you hurts me (solidarity)', cat: 'family' },
+  { ar: 'الفرصة الذهبية بتمر مرة', tr: 'il-furSa iz-zahabe btimurr marra', eng: 'the golden opportunity passes once', cat: 'fate' },
+  { ar: 'كل شي وإلو أوانو', tr: 'kull shi w ilo awano', eng: 'everything has its time / season', cat: 'fate' },
+  { ar: 'الصاحب الصدوق خير من الدهب والفضة', tr: 'is-sa7ib is-sadou2 kheyr min id-dahab wil-fidda', eng: 'a true friend is better than gold and silver', cat: 'relations' },
+  { ar: 'من قل صدق', tr: 'man u2all sada2', eng: 'who speaks little speaks truly', cat: 'relations' },
+  { ar: 'المرا للبيت', tr: 'il-mara lal-beit', eng: 'the woman is the home (the heart of the household)', cat: 'family' },
+  { ar: 'قولو عالشيطان يجي', tr: 'ulo 3a-shaytan yiji', eng: 'speak of the devil (say "the devil comes")', cat: 'relations' },
+  { ar: 'كل طير بيطير مع جنسو', tr: 'kull tair byitir ma3 jinso', eng: 'birds of a feather flock together', cat: 'relations' },
+  { ar: 'الحق مر', tr: 'il-7a2 murr', eng: 'the truth is bitter', cat: 'fate' },
+  { ar: 'إبن الوز عوام', tr: 'ibn il-wazz 3awwam', eng: 'the son of a goose is a swimmer (like father like son)', cat: 'family' },
+  { ar: 'من تعب أكل', tr: 'man ti3ib akal', eng: 'who labored, ate (you reap what you work)', cat: 'work' },
+  { ar: 'الجار قبل الدار', tr: 'ij-jar u2bl id-dar', eng: 'the neighbor before the house (neighbors matter more than the house)', cat: 'relations' },
+];
+
+const HKM_CATS = ['all', 'family', 'fate', 'money', 'work', 'relations'];
+
+const HKM_DRILLS = [
+  { q: 'الصبر مفتاح الفرج means:', opts: ['patience is the key to relief', 'anger leads to sorrow', 'money opens doors', 'time heals all wounds'], ans: 0 },
+  { q: 'اللي بتزرعه بتحصده means:', opts: ['what you eat you grow', 'what you plant you harvest', 'who plants trees rests', 'seeds need water'], ans: 1 },
+  { q: 'الأم مدرسة literally means:', opts: ['the school needs a mother', 'children teach mothers', 'the mother is a school', 'school is important'], ans: 2 },
+  { q: 'العمل عبادة means:', opts: ['work is tiring', 'worship requires work', 'work is worship', 'rest is blessed'], ans: 2 },
+  { q: 'اللي بيبكر بيطير means:', opts: ['fly early or be late', 'the early bird flies / succeeds', 'morning birds sing', 'wake up slowly'], ans: 1 },
+  { q: 'الحق مر means:', opts: ['the road is long', 'the truth is bitter', 'life is hard', 'patience is sweet'], ans: 1 },
+  { q: 'كل طير بيطير مع جنسو means:', opts: ['birds fly at dawn', 'birds of a feather flock together', 'every bird has a song', 'birds choose the sky'], ans: 1 },
+  { q: 'خبي قرشك الأبيض ليومك الأسود means:', opts: ['spend freely today', 'save for hard times', 'money is power', 'white is lucky'], ans: 1 },
+  { q: 'الجار قبل الدار means:', opts: ['build a big house first', 'neighbors matter more than the house', 'doors need strong locks', 'home is safety'], ans: 1 },
+  { q: 'الكذبة مهما طالت بتنكشف means:', opts: ['lies are common', 'a lie however long gets exposed', 'truth is hidden', 'lies protect us'], ans: 1 },
+  { q: 'من تعب أكل means:', opts: ['food makes you tired', 'who labored, ate (earned by work)', 'eat before you work', 'tired people eat more'], ans: 1 },
+  { q: 'ابن الوز عوام means:', opts: ['the son swims alone', 'like father like son', 'the goose flies south', 'children play in water'], ans: 1 },
+  { q: 'الصاحب الصدوق خير من الدهب means:', opts: ['sell gold buy friends', 'a true friend is better than gold', 'gold friends are rare', 'friends share gold'], ans: 1 },
+  { q: 'بقلة الكلام كتير من الاحترام means:', opts: ['talk more to show respect', 'silence is disrespect', 'few words carry much respect', 'words are expensive'], ans: 2 },
+  { q: 'كل شي وإلو أوانو means:', opts: ['everything has a price', 'everything has its time / season', 'nothing lasts forever', 'seasons change always'], ans: 1 },
+];
+
+const HKM_TIPS = [
+  { title: 'Lebanese Proverbs: Living Philosophy', body: 'Lebanese proverbs (amthal — أمثال) are living philosophy, not dusty literature. They appear daily in conversation, advice, and argument. A Lebanese grandmother settling a family dispute will quote a proverb with the force of law. "il-damm byidull 3a ba3do" (blood calls blood) ends arguments about family loyalty. Proverbs are social currency — knowing them marks you as truly fluent.' },
+  { title: 'Work Ethic and Patience', body: 'Lebanese culture prizes hard work and patience above luck. "il-3amal 3ibade" (work is worship) reflects the Levantine work ethic — especially among Lebanese diaspora who built businesses worldwide. "is-sabr mifta7 il-faraj" (patience is the key to relief) is quoted constantly in difficult times — economic crises, displacement, loss. These aren\'t clichés; they\'re survival strategies from a people who have rebuilt many times.' },
+  { title: 'Family as Foundation', body: 'Family proverbs dominate Lebanese wisdom. "il-umm madrasi" (the mother is a school) reflects the central role of mothers as educators and moral anchors. "ibn il-wazz 3awwam" (son of a goose swims — like father like son) is invoked for both pride and warning. Family loyalty is not optional in Lebanese culture — it is the social contract that predates the state.' },
+  { title: 'The Weight of Words', body: '"il-lisan bla 3azm" (the tongue has no bone) warns that people speak carelessly. Lebanese culture values eloquence but distrusts empty promises. "man u2all sada2" (who speaks little speaks truly) — the quiet person is trusted. This tension between Lebanese talkativeness (known regionally) and distrust of empty words creates rich social dynamics that proverbs navigate.' },
+  { title: 'Money and Fate in Lebanese Thought', body: '"darahim il-7aram ma btibni dar" (ill-gotten money doesn\'t build a home) reflects a deep moral awareness around wealth — particularly relevant in a country with notorious corruption and inequality. "il-furSa iz-zahabe btimurr marra" (the golden opportunity passes once) reflects the Lebanese entrepreneurial spirit — always watching for openings. These proverbs encode both idealism and pragmatism simultaneously.' },
+];

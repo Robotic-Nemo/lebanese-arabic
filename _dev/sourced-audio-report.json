@@ -1,0 +1,37 @@
+{
+ "processed": 184,
+ "hits": 3,
+ "levantine": 0,
+ "msa": 3,
+ "missBreakdown": {
+  "no-exact": 127,
+  "no-audio": 47,
+  "no-tagged": 7
+ },
+ "samples": [
+  {
+   "ar": "أمام",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/LL-Q13955_%28ara%29-Zinou2go-%D8%A3%D9%85%D8%A7%D9%85.wav",
+   "dialect": "📚 MSA",
+   "iso": "ara",
+   "score": 28,
+   "title": "File:LL-Q13955 (ara)-Zinou2go-أمام.wav"
+  },
+  {
+   "ar": "عام",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/LL-Q13955_%28ara%29-Zinou2go-%D8%B9%D8%A7%D9%85.wav",
+   "dialect": "📚 MSA",
+   "iso": "ara",
+   "score": 28,
+   "title": "File:LL-Q13955 (ara)-Zinou2go-عام.wav"
+  },
+  {
+   "ar": "نتائج",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/LL-Q13955_%28ara%29-Zinou2go-%D9%86%D9%8E%D8%AA%D9%8E%D8%A7%D8%A6%D9%90%D8%AC.wav",
+   "dialect": "📚 MSA",
+   "iso": "ara",
+   "score": 28,
+   "title": "File:LL-Q13955 (ara)-Zinou2go-نَتَائِج.wav"
+  }
+ ]
+}

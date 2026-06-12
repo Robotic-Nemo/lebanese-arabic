@@ -1,0 +1,61 @@
+// R1023 — NEW FEATURE: Lebanese Food Delivery & Takeout Culture (dlv)
+const DLV_WORDS = [
+  { ar: 'طلبية', tr: 'Talabiyye', en: 'order', cat: 'ordering' },
+  { ar: 'طلب', tr: 'Talab', en: 'to order / request', cat: 'ordering' },
+  { ar: 'قايمة', tr: 'qaayme', en: 'menu', cat: 'ordering' },
+  { ar: 'عرض', tr: '3arD', en: 'deal / offer', cat: 'ordering' },
+  { ar: 'مضاف', tr: 'mDaaf', en: 'add-on / extra', cat: 'ordering' },
+  { ar: 'ملاحظة', tr: 'mula7aza', en: 'note / special instruction', cat: 'ordering' },
+  { ar: 'توصيل', tr: 'twsiil', en: 'delivery', cat: 'delivery' },
+  { ar: 'سائق', tr: 'sa2iq', en: 'driver', cat: 'delivery' },
+  { ar: 'وصل', tr: 'waSal', en: 'arrived / delivered', cat: 'delivery' },
+  { ar: 'تأخير', tr: 'ta2khiir', en: 'delay', cat: 'delivery' },
+  { ar: 'على باب البيت', tr: '3ala baab il-beit', en: 'at the door', cat: 'delivery' },
+  { ar: 'كم بدو يوصل؟', tr: 'kam bado ywaSSil?', en: 'how long till delivery?', cat: 'delivery' },
+  { ar: 'كاش', tr: 'kaash', en: 'cash', cat: 'payment' },
+  { ar: 'دفع', tr: 'dafa3', en: 'paid / to pay', cat: 'payment' },
+  { ar: 'فاتورة', tr: 'faatuurah', en: 'bill / invoice', cat: 'payment' },
+  { ar: 'معه سيتة؟', tr: "ma3o siteh?", en: 'does he have change?', cat: 'payment' },
+  { ar: 'بالفيزا', tr: 'bil-viiza', en: 'by card / Visa', cat: 'payment' },
+  { ar: 'ما وصل', tr: 'maa waSal', en: 'didn\'t arrive', cat: 'problems' },
+  { ar: 'غلط', tr: 'ghalet', en: 'wrong (wrong order)', cat: 'problems' },
+  { ar: 'مشكلة', tr: 'mushkle', en: 'problem', cat: 'problems' },
+  { ar: 'بارد', tr: 'baarid', en: 'cold (food arrived cold)', cat: 'problems' },
+  { ar: 'ناقص', tr: 'naa2iS', en: 'missing (item missing)', cat: 'problems' },
+  { ar: 'بيكاب', tr: 'biikab', en: 'pickup (self-collect)', cat: 'expressions' },
+  { ar: 'راتينغ', tr: 'raatiing', en: 'rating / review', cat: 'expressions' },
+  { ar: 'بطل الأكل', tr: 'baTTal il-akl', en: 'food got ruined / spoiled', cat: 'expressions' },
+  { ar: 'طلبتو منين؟', tr: 'Talabto mneen?', en: 'where did you order from?', cat: 'expressions' },
+  { ar: 'توتيرز', tr: 'Tootirz', en: 'Toters (Lebanese delivery app)', cat: 'expressions' },
+  { ar: 'حامي حامي', tr: '7aami 7aami', en: 'hot hot (eat while it\'s hot)', cat: 'expressions' },
+  { ar: 'ما في موقع', tr: 'maa fii maw2i3', en: 'no coverage / outside delivery zone', cat: 'problems' },
+  { ar: 'كيس', tr: 'kiis', en: 'bag (delivery bag)', cat: 'delivery' },
+];
+
+const DLV_CATS = ['ordering', 'delivery', 'payment', 'problems', 'expressions'];
+
+const DLV_DRILLS = [
+  { q: 'What is "Talabiyye"?', opts: ['delivery driver', 'order', 'menu', 'bill'], ans: 1 },
+  { q: 'How do you say "delivery" in Lebanese?', opts: ['ta2khiir', 'twsiil', 'Talab', 'waSal'], ans: 1 },
+  { q: 'What does "waSal" mean?', opts: ['late', 'paid', 'arrived', 'missing'], ans: 2 },
+  { q: 'What is "ta2khiir"?', opts: ['tip', 'delay', 'driver', 'zone'], ans: 1 },
+  { q: 'What does "maa waSal" mean?', opts: ['already delivered', 'didn\'t arrive', 'wrong address', 'paid late'], ans: 1 },
+  { q: 'What does "ghalet" mean in context of an order?', opts: ['late order', 'wrong order', 'extra order', 'canceled order'], ans: 1 },
+  { q: 'What is "kaash"?', opts: ['card payment', 'cash', 'receipt', 'wallet'], ans: 1 },
+  { q: 'What does "baarid" describe when said about delivered food?', opts: ['food was wrong', 'food was missing', 'food arrived cold', 'food was spicy'], ans: 2 },
+  { q: 'What is "biikab"?', opts: ['home delivery', 'pickup (self-collect)', 'express delivery', 'free shipping'], ans: 1 },
+  { q: 'What does "naa2iS" mean?', opts: ['wrong', 'missing', 'cold', 'late'], ans: 1 },
+  { q: 'What does "3arD" mean?', opts: ['menu', 'note', 'deal / offer', 'tax'], ans: 2 },
+  { q: 'What does "ma3o siteh?" mean?', opts: ['is he here yet?', 'does he have change?', 'does he know the address?', 'how long till he arrives?'], ans: 1 },
+  { q: 'What is "Tootirz"?', opts: ['Lebanese slang for traffic', 'a Lebanese delivery app', 'a type of wrap', 'a payment method'], ans: 1 },
+  { q: 'What does "7aami 7aami" urge you to do?', opts: ['order more food', 'eat while it\'s hot', 'pay in cash', 'rate the driver'], ans: 1 },
+  { q: 'What does "maa fii maw2i3" mean for delivery?', opts: ['no delivery at night', 'outside delivery zone', 'no menu available', 'no drivers available'], ans: 1 },
+];
+
+const DLV_TIPS = [
+  'Toters is Lebanon\'s dominant food delivery app, but WhatsApp ordering directly to restaurants is still extremely common. Many places share their menu on Instagram and take orders via DM — old school but totally normal.',
+  '"Twsiil" (delivery) culture exploded during Lebanon\'s economic crisis. Prices jumped, so many Lebanese switched to "biikab" (pickup) to save on delivery fees. Comparing "biikab vs twsiil" prices is a common conversation.',
+  'Lebanese delivery drivers navigate around power cuts, broken roads, and constantly changing street conditions. "Ta2khiir" (delay) is expected and tolerated — screaming at the driver is considered rude. He\'s doing his best.',
+  'Cash is king for delivery in Lebanon due to the financial crisis and dollar/lira confusion. "Kaash aw visa?" is always the first question. Some restaurants only take fresh USD, others only take lira at the day\'s rate.',
+  '"7aami 7aami" (hot hot!) is the classic Lebanese command when food arrives. Lebanese people feel strongly about eating hot food immediately. Letting delivery food cool before eating is practically a social crime.',
+];

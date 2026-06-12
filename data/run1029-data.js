@@ -1,0 +1,61 @@
+// R1029 — NEW FEATURE: Lebanese Barbershop & Men's Grooming Culture (brs)
+const BRS_WORDS = [
+  { ar: 'حلاق', tr: '7allaa2', en: 'barber', cat: 'people' },
+  { ar: 'صالون', tr: 'saalon', en: 'salon / barbershop', cat: 'places' },
+  { ar: 'زبون', tr: 'zabuun', en: 'customer / client', cat: 'people' },
+  { ar: 'مقص', tr: 'ma2aS', en: 'scissors', cat: 'tools' },
+  { ar: 'موس', tr: 'muus', en: 'razor / blade', cat: 'tools' },
+  { ar: 'ماكينة', tr: 'maakineh', en: 'electric clipper', cat: 'tools' },
+  { ar: 'شعر', tr: 'sha3er', en: 'hair', cat: 'hair' },
+  { ar: 'لحية', tr: 'li7ye', en: 'beard', cat: 'hair' },
+  { ar: 'شنب', tr: 'shanab', en: 'moustache', cat: 'hair' },
+  { ar: 'قصة', tr: '2iSSa', en: 'haircut', cat: 'services' },
+  { ar: 'حلاقة', tr: '7ilaaa2a', en: 'shave', cat: 'services' },
+  { ar: 'تشكيل', tr: 'tashkiil', en: 'styling / shaping', cat: 'services' },
+  { ar: 'رغوة', tr: 'raghwe', en: 'shaving foam / lather', cat: 'tools' },
+  { ar: 'جل', tr: 'jeel', en: 'hair gel', cat: 'tools' },
+  { ar: 'كريم', tr: 'kriim', en: 'cream / pomade', cat: 'tools' },
+  { ar: 'قصير', tr: '2aSiir', en: 'short (hair)', cat: 'styles' },
+  { ar: 'طويل', tr: 'Tawiil', en: 'long (hair)', cat: 'styles' },
+  { ar: 'على الصفر', tr: '3al-Sifer', en: 'shaved to zero / buzzcut', cat: 'styles' },
+  { ar: 'فيد', tr: 'feed', en: 'fade (haircut style)', cat: 'styles' },
+  { ar: 'خطوط', tr: 'khuTuuT', en: 'lines / designs (cut into hair)', cat: 'styles' },
+  { ar: 'شو بدك تعمل؟', tr: 'shu biddak ta3mil?', en: 'what do you want done?', cat: 'expressions' },
+  { ar: 'قص بس', tr: '2iSS bas', en: 'just a trim', cat: 'expressions' },
+  { ar: 'من الجوانب بس', tr: 'min il-jawaaanib bas', en: 'just the sides', cat: 'expressions' },
+  { ar: 'حافظ على الطول', tr: '7aafiz 3al-Tuul', en: 'keep the length', cat: 'expressions' },
+  { ar: 'أحسنتَ', tr: 'a7santa', en: 'well done! (compliment to barber)', cat: 'expressions' },
+  { ar: 'مرة هيك', tr: 'marra heek', en: 'like this (showing style on phone)', cat: 'expressions' },
+  { ar: 'عجبني', tr: '3ajabni', en: 'I like it', cat: 'expressions' },
+  { ar: 'دور', tr: 'duur', en: 'turn / queue number', cat: 'places' },
+  { ar: 'في دور؟', tr: 'fii duur?', en: 'is there a wait? (any queue?)', cat: 'places' },
+  { ar: 'عامل معه نص', tr: '3aamel ma3o nuSS', en: 'give him the works / do everything', cat: 'expressions' },
+];
+
+const BRS_CATS = ['people', 'places', 'tools', 'hair', 'services', 'styles', 'expressions'];
+
+const BRS_DRILLS = [
+  { q: 'What is "7allaa2"?', opts: ['customer', 'barber', 'salon', 'scissors'], ans: 1 },
+  { q: 'What does "li7ye" mean?', opts: ['moustache', 'haircut', 'beard', 'hair'], ans: 2 },
+  { q: 'What is "shanab"?', opts: ['beard', 'razor', 'moustache', 'gel'], ans: 2 },
+  { q: 'What does "2iSSa" mean?', opts: ['shave', 'trim', 'haircut', 'styling'], ans: 2 },
+  { q: 'What is "7ilaaa2a"?', opts: ['gel', 'shave', 'buzzcut', 'fade'], ans: 1 },
+  { q: 'What does "3al-Sifer" describe?', opts: ['long hair', 'a shaved buzzcut', 'a fade', 'a trim'], ans: 1 },
+  { q: 'What is "feed" (fade) in barbershop context?', opts: ['a type of razor', 'a haircut style', 'hair gel', 'a queue number'], ans: 1 },
+  { q: 'What does "shu biddak ta3mil?" ask?', opts: ['how much does it cost?', 'how long is the wait?', 'what do you want done?', 'do you have an appointment?'], ans: 2 },
+  { q: 'What does "2iSS bas" mean?', opts: ['shave only', 'just a trim', 'cut it short', 'do everything'], ans: 1 },
+  { q: 'What does "7aafiz 3al-Tuul" mean?', opts: ['cut it shorter', 'keep the length', 'shape the beard', 'do a fade'], ans: 1 },
+  { q: 'What is "marra heek" used for?', opts: ['asking for the price', 'complimenting the barber', 'showing a style on your phone', 'asking about the wait'], ans: 2 },
+  { q: 'What does "fii duur?" ask?', opts: ['is there a barber free?', 'is there a wait / any queue?', 'do you have gel?', 'how long will it take?'], ans: 1 },
+  { q: 'What does "a7santa" express?', opts: ['a complaint about the haircut', 'a compliment to the barber', 'a request for a trim', 'asking for the bill'], ans: 1 },
+  { q: 'What is "khuTuuT" in haircut context?', opts: ['gel lines', 'lines/designs cut into hair', 'razor tracks', 'beard shaping'], ans: 1 },
+  { q: 'What does "3aamel ma3o nuSS" mean?', opts: ['give him a quick trim', 'just the sides', 'give him the works / do everything', 'cut to zero'], ans: 2 },
+];
+
+const BRS_TIPS = [
+  'The Lebanese barbershop is a social institution. Men go weekly — not just to cut hair but to catch up on gossip, debate politics, and bond over coffee. A good 7allaa2 knows your family, your job, and your relationship status. He\'s part therapist, part community elder.',
+  '"Duur" (turn) is the informal queue system. You walk in, ask "fii duur?" (is there a wait?) and the barber mentally notes your place. There are no tickets — it runs on trust and memory. Jumping queue is a serious social offense.',
+  'Lebanese men take grooming extremely seriously. A fade with crisp lines, a shaped beard, and a touch of jeel (gel) is standard. Showing the barber a photo on your phone ("marra heek") is completely normal and expected.',
+  'The classic Lebanese barbershop offering is a haircut + shave + face massage + hot towel + cold cream. "3aamel ma3o nuSS" (give him the works) means the full treatment. It\'s a ritual, not just a service.',
+  'Tipping the barber (3a2iyeh) is customary in Lebanon — usually 10-20% on top of the price. Complimenting him with "a7santa" (well done) is important. A good barber is loyal to his regulars and will often fit them in even when fully booked.',
+];

@@ -1,0 +1,61 @@
+// R1026 — NEW FEATURE: Lebanese TV & Drama Culture (tvs)
+const TVS_WORDS = [
+  { ar: 'مسلسل', tr: 'musalsal', en: 'TV series / drama', cat: 'shows' },
+  { ar: 'حلقة', tr: '7al2a', en: 'episode', cat: 'shows' },
+  { ar: 'موسم', tr: 'mawsim', en: 'season', cat: 'shows' },
+  { ar: 'نهاية الموسم', tr: 'nihaayat il-mawsim', en: 'season finale', cat: 'shows' },
+  { ar: 'بث مباشر', tr: 'bath mubaachar', en: 'live broadcast', cat: 'shows' },
+  { ar: 'برنامج', tr: 'barnaame', en: 'program / show', cat: 'shows' },
+  { ar: 'ممثل', tr: 'mumaththil', en: 'actor', cat: 'people' },
+  { ar: 'ممثلة', tr: 'mumaththile', en: 'actress', cat: 'people' },
+  { ar: 'مخرج', tr: 'mukhrij', en: 'director', cat: 'people' },
+  { ar: 'نجم', tr: 'najm', en: 'star / celebrity', cat: 'people' },
+  { ar: 'مذيع', tr: 'muzii3', en: 'TV presenter / host', cat: 'people' },
+  { ar: 'قناة', tr: 'qanaah', en: 'TV channel', cat: 'channels' },
+  { ar: 'تلفزيون', tr: 'tilfizyon', en: 'television', cat: 'channels' },
+  { ar: 'ريموت', tr: 'riimot', en: 'remote control', cat: 'channels' },
+  { ar: 'شاشة', tr: 'shaashe', en: 'screen', cat: 'channels' },
+  { ar: 'أخبار', tr: 'akhbaar', en: 'news', cat: 'content' },
+  { ar: 'نشرة', tr: 'nachre', en: 'news bulletin', cat: 'content' },
+  { ar: 'مباراة', tr: 'mubaara', en: 'match / game (sports)', cat: 'content' },
+  { ar: 'إعلان', tr: 'i3laan', en: 'advertisement / commercial', cat: 'content' },
+  { ar: 'تواندر', tr: 'twaandar', en: 'Starzplay/Wonder (streaming)', cat: 'content' },
+  { ar: 'شو بتحب تتفرج؟', tr: 'shu bti7ibb titfarraj?', en: 'what do you like to watch?', cat: 'expressions' },
+  { ar: 'وصلت لهلق؟', tr: 'waSalt la-hal2?', en: 'how far have you watched? (where are you up to?)', cat: 'expressions' },
+  { ar: 'ما تحكيلي شي', tr: 'maa t7akkiili shi', en: 'don\'t spoil it for me', cat: 'expressions' },
+  { ar: 'حلقة واحدة بس', tr: '7al2a waa7de bas', en: 'just one episode (but ends up watching more)', cat: 'expressions' },
+  { ar: 'بنج-وووتش', tr: 'beenj-wooTch', en: 'binge-watch', cat: 'expressions' },
+  { ar: 'مشيت عليه', tr: 'mchheet 3alee', en: 'I\'ve been following it / I\'m hooked', cat: 'expressions' },
+  { ar: 'إعادة', tr: 'i3aade', en: 'rerun / replay', cat: 'content' },
+  { ar: 'مقطع', tr: 'ma2Ta3', en: 'clip / segment', cat: 'content' },
+  { ar: 'فيلم لبناني', tr: 'fiilm lubnaani', en: 'Lebanese film', cat: 'shows' },
+  { ar: 'نوار', tr: 'nawaar', en: 'noir / drama (dark genre)', cat: 'shows' },
+];
+
+const TVS_CATS = ['shows', 'people', 'channels', 'content', 'expressions'];
+
+const TVS_DRILLS = [
+  { q: 'What is "musalsal"?', opts: ['episode', 'TV series', 'channel', 'season'], ans: 1 },
+  { q: 'What does "7al2a" mean?', opts: ['season', 'channel', 'episode', 'clip'], ans: 2 },
+  { q: 'What is "mawsim" in TV context?', opts: ['episode', 'channel', 'season', 'rerun'], ans: 2 },
+  { q: 'What does "qanaah" mean?', opts: ['remote control', 'TV channel', 'screen', 'broadcast'], ans: 1 },
+  { q: 'What is "mumaththil"?', opts: ['director', 'actress', 'actor', 'presenter'], ans: 2 },
+  { q: 'What does "muzii3" mean?', opts: ['actor', 'TV presenter / host', 'director', 'star'], ans: 1 },
+  { q: 'What is "akhbaar"?', opts: ['advertisement', 'clip', 'news', 'rerun'], ans: 2 },
+  { q: 'What does "i3laan" mean?', opts: ['clip', 'news bulletin', 'advertisement', 'season finale'], ans: 2 },
+  { q: 'What does "maa t7akkiili shi" mean?', opts: ['what are you watching?', 'don\'t spoil it for me', 'where are you watching?', 'I don\'t like this show'], ans: 1 },
+  { q: 'What is "7al2a waa7de bas" famous for?', opts: ['channel surfing', 'describing a boring show', 'the promise that ends in binge-watching', 'watching reruns'], ans: 2 },
+  { q: 'What does "mchheet 3alee" mean?', opts: ['I missed it', 'I\'ve been following it / I\'m hooked', 'I watched it twice', 'I skipped it'], ans: 1 },
+  { q: 'What is "i3aade"?', opts: ['live broadcast', 'rerun / replay', 'season finale', 'episode'], ans: 1 },
+  { q: 'What does "riimot" refer to?', opts: ['screen', 'antenna', 'remote control', 'cable box'], ans: 2 },
+  { q: 'What does "waSalt la-hal2?" ask?', opts: ['what channel is this?', 'when does the season end?', 'how far have you watched?', 'do you want to watch together?'], ans: 2 },
+  { q: 'What is "beenj-wooTch"?', opts: ['channel hopping', 'binge-watching', 'watching news', 'live streaming'], ans: 1 },
+];
+
+const TVS_TIPS = [
+  'Lebanese TV channels are deeply political: LBC is Christian right-leaning, Al-Manar is Hezbollah, Future TV was Hariri\'s, OTV is Aoun\'s FPM. Lebanese people know exactly which agenda each channel pushes — "3am titfarraj 3ala kam?" (which channel are you watching?) is almost a political question.',
+  '"7al2a waa7de bas" (just one more episode) is a universal Lebanese lie. Lebanese Ramadan TV dramas are extremely popular — entire families schedule their evenings around the 9 PM slot. Missing a Ramadan episode is a serious social event.',
+  'Lebanese soap operas (masalsal) often deal with family honor, love triangles, and class conflict — heavy melodrama is the norm. Titles like "Bint il-7aara" or "Hayda Habibi" become household names. The acting style is theatrical and intense.',
+  'Subtitles are rarely used for Lebanese content since everyone speaks the dialect. However, subtitles in Fusha (Modern Standard Arabic) sometimes appear for GCC audiences. Lebanese shows exported to Gulf states often need their dialect softened.',
+  'Netflix, Shahid, and Starzplay have changed viewing habits. Young Lebanese increasingly prefer streaming over linear TV. But during major events — elections, crises, explosions — everyone switches to live news. "Fatta7 il-akhbaar" (turn on the news) is a phrase with weight.',
+];

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><head><title>Test</title></head><body>
+<div id="result">Loading...</div>
+<iframe id="app" src="index.html" style="width:100%;height:600px"></iframe>
+<script>
+const result = document.getElementById('result');
+const app = document.getElementById('app');
+app.onload = () => {
+  setTimeout(() => {
+    const w = app.contentWindow;
+    const out = [];
+    try {
+      const probe = w.eval(`
+        JSON.stringify({
+          vocabLen: typeof VOCAB !== 'undefined' ? VOCAB.length : 'undef',
+          cats: typeof CATEGORIES !== 'undefined' ? CATEGORIES.length : 'undef',
+          grammar: typeof GRAMMAR_SECTIONS !== 'undefined' ? GRAMMAR_SECTIONS.length : 'undef',
+          convos: typeof CONVERSATIONS !== 'undefined' ? CONVERSATIONS.length : 'undef',
+          listen: typeof LISTEN_STORIES !== 'undefined' ? LISTEN_STORIES.length : 'undef',
+          conj: typeof CONJ_VERBS !== 'undefined' ? CONJ_VERBS.length : 'undef',
+          proverbs: typeof PROVERBS !== 'undefined' ? PROVERBS.length : 'undef',
+          showProverbsExists: typeof renderProverbsView === 'function',
+          showNumbersExists: typeof renderNumbersView === 'function',
+          audioCramExists: typeof startAudioCram === 'function',
+          numWord99: typeof lebNumberWord === 'function' ? lebNumberWord(99) : 'na',
+          numWord1234: typeof lebNumberWord === 'function' ? lebNumberWord(1234) : 'na',
+          suffixSets: typeof PRONOUN_SUFFIX_SETS !== 'undefined' ? PRONOUN_SUFFIX_SETS.length : 'undef',
+          qwords: typeof QUESTION_WORDS !== 'undefined' ? QUESTION_WORDS.length : 'undef',
+          openSuffixExists: typeof openSuffixTrainer === 'function',
+          openQwExists: typeof openQuestionWords === 'function',
+          startMixExists: typeof startDailyMix === 'function',
+          negPats: typeof NEGATION_PATTERNS !== 'undefined' ? NEGATION_PATTERNS.length : 'undef',
+          imps: typeof IMPERATIVES !== 'undefined' ? IMPERATIVES.length : 'undef',
+          timeCats: typeof TIME_EXPRESSIONS !== 'undefined' ? Object.keys(TIME_EXPRESSIONS).length : 'undef',
+          openNegExists: typeof openNegationTrainer === 'function',
+          openImpExists: typeof openImperatives === 'function',
+          openTimeExists: typeof openTimeExpr === 'function',
+          curTime: typeof currentTimeInLebanese === 'function' ? currentTimeInLebanese(new Date(2024,0,1,15,30)).tr : 'na',
+          cmps: typeof COMPARATIVES !== 'undefined' ? COMPARATIVES.length : 'undef',
+          pls: typeof PLURALS !== 'undefined' ? PLURALS.length : 'undef',
+          cult: typeof CULTURAL_CARDS !== 'undefined' ? CULTURAL_CARDS.length : 'undef',
+          openCmpExists: typeof openComparatives === 'function',
+          openPlExists: typeof openPlurals === 'function',
+          openCultExists: typeof openCultural === 'function',
+          roots: typeof ROOTS !== 'undefined' ? ROOTS.length : 'undef',
+          achs: typeof ACHIEVEMENTS !== 'undefined' ? ACHIEVEMENTS.length : 'undef',
+          openDictExists: typeof openDictation === 'function',
+          openRootExists: typeof openRootExplorer === 'function',
+          openAchExists: typeof openAchievements === 'function',
+          editDistExists: typeof _editDistance === 'function',
+          msaSecs: typeof MSA_CONTRAST !== 'undefined' ? Object.keys(MSA_CONTRAST).length : 'undef',
+          conns: typeof CONNECTORS !== 'undefined' ? CONNECTORS.length : 'undef',
+          openMsaExists: typeof openMsaContrast === 'function',
+          openConnExists: typeof openConnectors === 'function',
+          openHmExists: typeof openHeatmap === 'function',
+          mpx: typeof MIN_PAIRS_X !== 'undefined' ? MIN_PAIRS_X.length : 'undef',
+          vtm: typeof VERB_TENSE_MASTER !== 'undefined' ? VERB_TENSE_MASTER.length : 'undef',
+          excl: typeof EXCLAMATIONS !== 'undefined' ? EXCLAMATIONS.length : 'undef',
+          openMpExists: typeof openMinimalPairs === 'function',
+          openVtmExists: typeof openVerbTenseMaster === 'function',
+          openExclExists: typeof openExclamations === 'function',
+          mpxQuizExists: typeof mpxAnswer === 'function',
+          setMpxModeExists: typeof setMpxMode === 'function',
+          setExclCatExists: typeof setExclCat === 'function',
+        })
+      `);
+      out.push(probe);
+    } catch (e) {
+      out.push('Eval err: ' + e.message);
+    }
+    result.innerHTML = '<pre>' + out.join('\n') + '</pre>';
+  }, 1500);
+};
+</script>
+</body></html>

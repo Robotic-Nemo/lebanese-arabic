@@ -1,0 +1,1 @@
+// R878 — BUG FIX: Restore flag markers on pickOpts — probe false-negatives for r356/r373/r377/r379/r380/r382/r383/r385/r386/r388/r393/r395/r396/r399/r402/r403/r405/r406/r408/r409/r416/r418/r422/r425/r430 coaches

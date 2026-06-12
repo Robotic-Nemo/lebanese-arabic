@@ -1,0 +1,61 @@
+// R1065 — NEW FEATURE: Lebanese Language Mixing & Code-Switching (cmx)
+const CMX_WORDS = [
+  { ar: 'مرحبا comment ça va', tr: 'mar7aba comment ça va', eng: 'hello how are you (mixed)', cat: 'greet' },
+  { ar: 'شو صار؟', tr: 'shu Sar', eng: 'what happened? (pure Arabic)', cat: 'daily' },
+  { ar: 'بس واظب', tr: 'bas waazib', eng: 'just keep going (Arabic)', cat: 'daily' },
+  { ar: 'بدي coffee', tr: 'biddi coffee', eng: 'I want coffee (code-switch)', cat: 'daily' },
+  { ar: 'عم بتكلم seriously؟', tr: '3am btkallem seriously', eng: 'are you talking seriously?', cat: 'daily' },
+  { ar: 'مريول', tr: 'maryoul', eng: 'apron (from French tablier)', cat: 'french' },
+  { ar: 'سيارة', tr: 'sayyara', eng: 'car (pure Arabic)', cat: 'arabic' },
+  { ar: 'كرافات', tr: 'kraavat', eng: 'tie/necktie (from French cravate)', cat: 'french' },
+  { ar: 'تكسي', tr: 'taksi', eng: 'taxi (from French)', cat: 'french' },
+  { ar: 'مرسي', tr: 'mersi', eng: 'thank you (from French merci)', cat: 'french' },
+  { ar: 'بونجور', tr: 'bonjour', eng: 'good morning (French used in Arabic)', cat: 'french' },
+  { ar: 'سالو', tr: 'salut', eng: 'hi (French casual, used in Lebanese)', cat: 'french' },
+  { ar: 'OK كمان', tr: 'ok kamen', eng: 'ok too/also (English+Arabic mix)', cat: 'english' },
+  { ar: 'باي باي', tr: 'bye bye', eng: 'bye bye (English in Lebanese)', cat: 'english' },
+  { ar: 'هاي', tr: 'hai', eng: 'hi (English in Lebanese)', cat: 'english' },
+  { ar: 'برافو', tr: 'bravo', eng: 'bravo (Italian/French, widely used)', cat: 'french' },
+  { ar: 'بالنسبة لي', tr: 'bil-nisbe ili', eng: 'as for me / in my opinion', cat: 'arabic' },
+  { ar: 'مشكلة', tr: 'mishkle', eng: 'problem (Arabic, very common)', cat: 'arabic' },
+  { ar: 'يلا يلا', tr: 'yalla yalla', eng: 'come on come on / hurry up', cat: 'arabic' },
+  { ar: 'بالعكس', tr: 'bil-3aks', eng: 'on the contrary', cat: 'arabic' },
+  { ar: 'تشكرات', tr: 'tishkraat', eng: 'thank yous / appreciation (formal plural)', cat: 'arabic' },
+  { ar: 'بالزبط', tr: 'biz-zabt', eng: 'exactly / precisely', cat: 'arabic' },
+  { ar: 'مزبوط', tr: 'mazbout', eng: 'correct / right', cat: 'arabic' },
+  { ar: 'عن جد؟', tr: '3an jadd', eng: 'for real? / seriously?', cat: 'arabic' },
+  { ar: 'حياتي', tr: '7ayaati', eng: 'my life (term of endearment)', cat: 'arabic' },
+  { ar: 'بتعرف', tr: 'bta3rif', eng: 'you know (discourse marker)', cat: 'arabic' },
+  { ar: 'لحظة', tr: 'la7za', eng: 'one moment / wait', cat: 'arabic' },
+  { ar: 'وين رحت؟', tr: 'wein ru7t', eng: 'where did you go?', cat: 'daily' },
+  { ar: 'خلص', tr: 'khalaS', eng: 'done / finished / enough', cat: 'arabic' },
+  { ar: 'هيدا هيك', tr: 'hayda hayk', eng: 'that\'s how it is / such is life', cat: 'arabic' },
+];
+
+const CMX_CATS = ['all', 'greet', 'daily', 'arabic', 'french', 'english'];
+
+const CMX_DRILLS = [
+  { q: 'مرسي comes from:', opts: ['Arabic', 'French merci', 'English', 'Italian'], ans: 1 },
+  { q: 'يلا means:', opts: ['stop', 'come on / hurry', 'wait', 'go away'], ans: 1 },
+  { q: 'خلص means:', opts: ['start', 'done/finished/enough', 'problem', 'question'], ans: 1 },
+  { q: 'بالزبط means:', opts: ['maybe', 'never', 'exactly/precisely', 'sometimes'], ans: 2 },
+  { q: 'بونجور comes from:', opts: ['Arabic', 'English', 'Italian', 'French'], ans: 3 },
+  { q: 'حياتي literally means:', opts: ['my heart', 'my love', 'my life', 'my friend'], ans: 2 },
+  { q: 'مزبوط means:', opts: ['wrong', 'correct/right', 'confused', 'late'], ans: 1 },
+  { q: 'هيدا هيك means:', opts: ['this or that', 'that\'s how it is', 'here and there', 'now and then'], ans: 1 },
+  { q: 'لحظة means:', opts: ['hurry', 'one moment/wait', 'come', 'go'], ans: 1 },
+  { q: 'شو صار means:', opts: ['what happened', 'who came', 'where did you go', 'why not'], ans: 0 },
+  { q: 'بالعكس means:', opts: ['exactly', 'on the contrary', 'of course', 'maybe'], ans: 1 },
+  { q: 'سالو (salut) is from:', opts: ['Arabic', 'English', 'French casual greeting', 'Italian'], ans: 2 },
+  { q: 'عن جد means:', opts: ['let\'s go', 'for real / seriously', 'thank you', 'goodbye'], ans: 1 },
+  { q: 'كرافات comes from French:', opts: ['chapeau', 'manteau', 'cravate', 'tablier'], ans: 2 },
+  { q: 'بتعرف is used as:', opts: ['a question only', 'an insult', 'a discourse marker (you know)', 'a command'], ans: 2 },
+];
+
+const CMX_TIPS = [
+  { title: 'Lebanese Language Is Officially Trilingual', body: 'Lebanese Arabic naturally mixes Arabic, French, and English — often in one sentence. A typical café conversation: "Biddi un café, merci, w khalliha to-go." This isn\'t broken language; it\'s a sophisticated urban register. Lebanese educated classes switch codes fluidly as a sign of cultural belonging, not confusion.' },
+  { title: 'French Legacy in Daily Vocabulary', body: 'Lebanon was a French Mandate (1920–1943), leaving thousands of French loanwords. Everyday Lebanese uses: mersi (merci), bonjour, maryoul (tablier), dekkaan (magasin?), serviette, coussin. Food terms: soufflé, crème, glace. Even "3indak manteau?" (do you have a coat?) uses the French word manteau.' },
+  { title: 'English Rising, French Declining', body: 'Among younger Lebanese (born post-1990), English has overtaken French as the prestige second language. WhatsApp messages mix Arabic script with English: "Habibi I\'m coming bas ta2akhkhert." TikTok, Instagram, and gaming accelerated English usage. French still survives in formal greetings, bureaucracy, and elite social circles.' },
+  { title: 'The Art of Mixing Languages Mid-Sentence', body: 'Lebanese code-switching has grammatical rules. Common patterns: Arabic base + French noun ("ra7 3al supermarché"), English filler phrase + Arabic continuation ("anyway khalasna"), Arabic sentence + English emphasis ("hayk hiye l-7aye, literally"). Using the wrong language register marks you as outsider.' },
+  { title: 'يلا and خلص — The Most Lebanese Words', body: '"Yalla" (يلا) is Lebanese verbal punctuation — used for "let\'s go," "hurry up," "yes, OK," "goodbye," and "come on." "Khalas" (خلص) means "done," "enough," "finished," "forget it." Together they form half of Lebanese daily conversation. A whole disagreement can be resolved with: "Khalas yalla, bala nkad." (Enough, let\'s go, stop fighting.)' },
+];

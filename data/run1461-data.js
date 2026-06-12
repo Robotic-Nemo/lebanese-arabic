@@ -1,0 +1,41 @@
+// R1461 — NEW FEATURE: Lebanese Muqam & Tarab Singing Culture (mqm)
+const MQM_WORDS = [
+  {w:'maqam',        t:'مقام',         tr:'musical mode / scale',               ex:'kull maqam 3ando ta3mo w 7isso l-khass',           et:'Every maqam has its own taste and special feeling'},
+  {w:'tarab',        t:'طرب',          tr:'musical ecstasy / deep emotion',      ex:'l-tarab sar nadre — ma kell man bi3ref yitrob',    et:'Tarab has become rare — not everyone knows how to feel it'},
+  {w:'3ataba',       t:'عتابا',        tr:'improvised folk poetry form',          ex:'l-3ataba w l-mejane min 2abla l-ktabeh',           et:'Ataba and mejana predate writing'},
+  {w:'mejane',       t:'ميجانا',       tr:'folk singing style (refrain form)',    ex:'mejane mejane — ha l-layle ghannina mejane',       et:'Mejana mejana — tonight we sang mejana'},
+  {w:'zajal',        t:'زجل',          tr:'competitive oral folk poetry',         ex:'l-zajal l-lebnaani byetfahham ktir bi-l-3arabi',   et:'Lebanese zajal requires a strong command of Arabic'},
+  {w:'sha3er',       t:'شاعر',         tr:'poet / improvising folk singer',       ex:'sha3er l-kura byenzel 3al-manbar w 3alam yetsamma3',et:'The Koura poet takes the stage and people listen'},
+  {w:'mawwal',       t:'موال',         tr:'mawwal — long improvised vocal line',  ex:'ghanna mawwal 3al-3oud w damma3 l-jamahir',       et:'He sang a mawwal on the oud and brought tears to the crowd'},
+  {w:'dal3ouna',     t:'دلعونا',       tr:'dal\'ouna — Lebanese folk song/dance', ex:'dal3ouna 3al-dabke — sar l-jow 7elu',              et:'Dal\'ouna with dabke — the atmosphere became beautiful'},
+  {w:'mijwiz',       t:'مجوز',         tr:'mijwiz — Lebanese double-pipe',        ex:'sawt l-mijwiz bi-wake3 min l-jbal la l-ba7er',     et:'The sound of the mijwiz travels from mountains to sea'},
+  {w:'rababa',       t:'ربابة',        tr:'rababa — one-string bowed fiddle',     ex:'l-rababa sawtha marrour w 7azin zayy l-3atiqa',    et:'The rababa has a passing, sad sound like old times'},
+  {w:'7afle',        t:'حفلة',         tr:'concert / celebration performance',    ex:'7aflit Fairouz — ma fi shi mitleha bi-l-3alam',    et:'A Fairouz concert — there is nothing like it in the world'},
+  {w:'ghanne',       t:'غنى',          tr:'to sing',                              ex:'ghanne min 2albou w ma kaan bi7taje maikrofon',    et:'He sang from his heart and didn\'t need a microphone'},
+  {w:'watar',        t:'وتر',          tr:'string / heartstring (music)',          ex:'la3ab 3al-awtar — bila sawa2 w bila 7aya2',       et:'He played the strings — without fear and without shame'},
+  {w:'7anjar',       t:'حنجرة',        tr:'throat / voice (singing)',             ex:'7anjartu min dahab — 7atta l-a3da bilkamsha 3leha', et:'His throat is golden — even enemies are captivated by it'},
+  {w:'layliyye',     t:'ليليّة',        tr:'night gathering for music/poetry',     ex:'3amilna layliyye 3al-jar — ghanne w zajal la l-fajr',et:'We held a layliyye at the neighbour\'s — singing and zajal till dawn'},
+  {w:'tartil',       t:'ترتيل',        tr:'chanting / religious vocal recitation',ex:'tartil l-mazmour bi-l-kanise — biddo sawt ndie',   et:'Chanting the psalm in church — needs a clear voice'},
+  {w:'3oud',         t:'عود',          tr:'oud (lute) — essential Arabic instrument',ex:'l-3oud w l-qanoun — qalb l-musiqa l-3arabiyye',  et:'The oud and qanun — the heart of Arabic music'},
+  {w:'jayye min l-jaw',t:'جايي من الجو', tr:'coming from the soul (performing)',  ex:'ghanniyetha jayye min l-jaw — mish min l-ktab',    et:'Her singing comes from the soul — not from the book'},
+  {w:'nas',          t:'ناس',          tr:'people / audience (at performance)',    ex:'l-nas tarabit w n-nsas b-nafs l-wa2t',             et:'The audience fell into tarab and forgot themselves'},
+  {w:'waj3',         t:'وجع',          tr:'pain / ache (expressed in song)',       ex:'fi waj3 bi-sawto — ma bi3raf yexbbiyo',            et:'There is pain in his voice — he cannot hide it'},
+];
+
+const MQM_DRILLS = [
+  {q:'What is "tarab" in Lebanese music culture?',                    opts:['musical ecstasy/deep emotion','musical mode','folk poetry','concert'],             ans:'musical ecstasy/deep emotion', correct:0},
+  {q:'What is the "mijwiz"?',                                         opts:['Lebanese double-pipe','one-string fiddle','oud','drum'],                           ans:'Lebanese double-pipe',         correct:0},
+  {q:'What does "3ataba" mean?',                                      opts:['improvised folk poetry form','maqam scale','concert night','singing style'],       ans:'improvised folk poetry form',  correct:0},
+  {q:'What is "zajal" in Lebanese culture?',                          opts:['competitive oral folk poetry','musical mode','lute','throat'],                     ans:'competitive oral folk poetry', correct:0},
+  {q:'What is a "mawwal"?',                                           opts:['long improvised vocal line','night gathering','double-pipe','audience'],           ans:'long improvised vocal line',   correct:0},
+  {q:'What does "7afle" mean?',                                       opts:['concert/celebration','musical scale','folk singer','string'],                     ans:'concert/celebration',          correct:0},
+  {q:'What is "dal3ouna"?',                                           opts:['Lebanese folk song/dance','oud music','chanting','pain in voice'],                 ans:'Lebanese folk song/dance',     correct:0},
+  {q:'What does "waj3" express in song?',                             opts:['pain/ache expressed through voice','musical joy','rhythm','audience feeling'],     ans:'pain/ache expressed through voice', correct:0},
+];
+
+const MQM_TIPS = [
+  {title:'Tarab — When Music Moves the Soul',  body:'Tarab (طرب) is not a genre — it is a state. It describes the condition of emotional transport that overcomes both singer and audience when a performance reaches its peak. A true tarab moment silences a room, triggers involuntary tears, and may cause the sha3er (شاعر singer-poet) to repeat a phrase fifteen times as the crowd responds with ululations. Fairouz, Sabah, Wadi3 Safi, and Marcel Khalife have all produced legendary tarab moments in Lebanese musical history. Tarab requires a 7anjar (حنجرة throat) of extraordinary control and emotional depth.'},
+  {title:'3ataba, Mejana & Zajal — The Living Oral Tradition',  body:'Lebanon\'s most distinct musical contribution to the Arab world is its living oral poetry tradition. 3ataba (عتابا) is a four-line improvised poem where the first three lines end in words that sound identical but have different meanings — a linguistic puzzle sung live. Mejana (ميجانا) is the melodic refrain that follows, sung antiphonally. Zajal (زجل) is competitive improvisation — two sha3ers (شاعر poets) on stage trading couplets on any theme, judged by the audience\'s response. These traditions predate writing and survive in the Lebanese mountains to this day.'},
+  {title:'The Instruments — Mijwiz, Rababa & Oud',  body:'Lebanese traditional music relies on three instruments above all others. The mijwiz (مجوز) is a double-pipe reed instrument unique to the Levant, producing a buzzing, hypnotic drone heard at every outdoor dabke or mountain festival. The rababa (ربابة) is a one-string bowed fiddle — its sound is described as having waj3 (وجع pain) built into every note. The 3oud (عود oud/lute) is the king of Arabic classical music — played at 7aflat (حفلات concerts) from Beirut\'s Casino to village layliyyat (ليليات night gatherings). Together they form the sonic landscape of Lebanese identity.'},
+  {title:'Maqam — The Architecture of Feeling',  body:'Maqam (مقام) is the modal system underlying all Arabic classical and folk music. Unlike Western scales, each maqam carries an emotional character — Rast evokes nostalgia, Hijaz evokes longing, Bayati evokes sorrow. A Lebanese musician does not choose a maqam; the maqam chooses the mood of the night. A skilled sha3er improvising in 3ataba or mawwal (موال) navigates between maqamat (مقامات modes) instinctively. The phrase "jayye min l-jaw" (جايي من الجو it comes from the soul) describes a singer so deeply inside the maqam that technique disappears entirely.'},
+];

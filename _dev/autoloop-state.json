@@ -1,0 +1,98 @@
+{
+  "mode": "STOPPED-by-user",
+  "instruction": "LOOP STOPPED 2026-06-11 by user: focus on iPhone deployment. Do NOT relaunch sweeps. Round-11 status at stop: content COMPLETE (52 fixes + 56-occurrence digit-5 sweep applied), bughunt wf_873ae545-d7d task vanished without result (presumed died) — round 11 bughunt NEVER COMPLETED. If the user later resumes the loop: relaunch the bughunt scriptPath (batched verify now permanent, guard floor __r1791), and note rounds 9/10/11 all had findings so consecutiveEmpty=0.",
+  "scriptPaths": {
+    "bughunt": "/Users/felipe/.claude/projects/-Users-felipe-claude-lebanese-arabic-v2/46dd7000-614f-4605-a23f-83171f1b70a4/workflows/scripts/app-bug-hunt-sweep-wf_33a86efc-8c0.js",
+    "content": "/Users/felipe/.claude/projects/-Users-felipe-claude-lebanese-arabic-v2/46dd7000-614f-4605-a23f-83171f1b70a4/workflows/scripts/leb-content-audit-sweep-wf_f68731ac-0b5.js"
+  },
+  "round": 11,
+  "consecutiveEmpty": 0,
+  "nextRunNumber": 1791,
+  "pending": {
+    "bughunt": null,
+    "content": null
+  },
+  "pendingTaskIds": {
+    "bughunt": null,
+    "content": null
+  },
+  "results": {
+    "bughunt": null,
+    "content": 108
+  },
+  "history": [
+    {
+      "round": 6,
+      "status": "INVALID-harness-outage",
+      "bughunt": "all-5-agents-failed",
+      "content": "4of5-failed",
+      "note": "retrying; conj btashrabo item deferred to native bucket"
+    },
+    {
+      "round": 6,
+      "status": "COMPLETE-with-findings",
+      "bughunt": 3,
+      "content": 36,
+      "applied": "R1761-R1763 + 36 content",
+      "consecutiveEmptyAfter": 0
+    },
+    {
+      "round": 7,
+      "status": "COMPLETE-with-findings",
+      "bughunt": 2,
+      "content": 20,
+      "applied": "R1764-R1765 + 18 content",
+      "note": "removed stray rejected-shadowing append that grabbed __r1764Guard"
+    },
+    {
+      "round": 8,
+      "status": "COMPLETE-with-findings",
+      "bughunt": 2,
+      "content": 32,
+      "applied": "R1766 (drill double-submit total++) + R1767 (strict-Lebanese speak Commons-miss clobber) + 32 content",
+      "consecutiveEmptyAfter": 0,
+      "note": "R1767 is in-place (2nd justified exception after nextQuiz/R1736); probe r1767_fix relaxed to guard+presence (speak re-wrapped 3x downstream). Also applied 3 user-reported fixes: grammar-exercises dup keys merged, vocab dagt->daght, run831 saa5in->saakhin."
+    },
+    {
+      "round": 9,
+      "status": "COMPLETE-with-findings",
+      "bughunt": 11,
+      "content": 5,
+      "applied": "R1768-R1778 (run30+FRW drill shapes, cs/tt/pr double-submit, 600ms live-button window, abort __none__-poison, passage-audio cancellation, keysOf over-match, SLE/ZTR/HKW frozen drills, immersion label) + 5 content (sawweita/ahwe-script/fakker/fer7u/wled)",
+      "consecutiveEmptyAfter": 0,
+      "note": "bughunt 1st attempt total stall -> retried OK. Removed 2 verifier strays (R1769 VERIFY-TEST + dup R1768 audio fix) that had grabbed guards. Both sweep scripts now carry explicit NEVER-append-test-code instruction. Content auditors vocab-translit+coaches stalled -> slices re-covered in round 10."
+    },
+    {
+      "round": 10,
+      "status": "COMPLETE-with-findings",
+      "bughunt": 13,
+      "content": 215,
+      "applied": "R1779-R1790 + WORD_EXAMPLES source merge + ~210 content fixes",
+      "consecutiveEmptyAfter": 0,
+      "note": "Round ran in FRUGAL shape after session-limit burn: batch-verify (9 agents for 218 flags; 4-bugs-per-verifier), journal recovery of dead runs, hard caps added to both sweep scripts (12 flags/auditor, 6 bugs/finder, ~30 tool calls), workflows SEQUENCED one at a time. Zero verifier strays. 4 coaches had 100%-dead drills (JSON.stringify-in-onclick class)."
+    }
+  ],
+  "retryCount": 0,
+  "audioSourcing": {
+    "status": "done",
+    "processed": 184,
+    "hits": 3,
+    "levantine": 0,
+    "msa": 3,
+    "note": "Wikimedia rate-limited my IP hard; pipeline reusable from fresh IP later. R1760 auto-seeds the 3 entries."
+  },
+  "deferredThisRound": [
+    "run1371+run1356 ar-field-holds-translit whole-file remap (needs authored Arabic script)",
+    "conversations airport desc contradiction (uncertain)"
+  ],
+  "sequencing": "ONE workflow at a time: content sweep wf_d7746a33-705 running; launch bughunt (refreshed ground, floor __r1791) only after content completes + fixes applied.",
+  "contentRound11": {
+    "flags": 54,
+    "verifiedBeforeLimit": 12,
+    "applied": "12 (vocab translit/hamza-apostrophe batch + 6 word-data root-family corrections)",
+    "reVerify": "wf_c14410ab-701 batch-verifying the 42 limit-killed flags (2 batch files /tmp/r11_batch_*)",
+    "status": "COMPLETE: 12+40 verified fixes applied + 56-occurrence bonus digit-5 sweep; 2 deferred (run1371/run1356 whole-file ar-field convention)"
+  },
+  "scriptsPatched": "BOTH saved sweep scripts now use BATCHED verify phases (20 flags/agent content, 4 bugs/agent bughunt) — per-item fan-out removed after exhausting the session limit twice.",
+  "userSideQuest": "iPhone packaging question asked 2026-06-11 — recommended PWA (manifest+SW+host); awaiting user choice PWA vs Capacitor. Do NOT start until user picks."
+}

@@ -1,0 +1,9961 @@
+{
+ "generated": "run `node _dev/audio-coverage.js`",
+ "totals": {
+  "distinctVocabWords": 2887,
+  "youtube": 897,
+  "precached": 310,
+  "missing": 1680,
+  "coveragePctAnySource": 41.8,
+  "coveragePctLebaneseOnly": 31.1,
+  "singleWordMissing": 1084,
+  "multiWordMissing": 596
+ },
+ "missingSingleWords": [
+  {
+   "ar": "ناعس",
+   "en": "Sleepy",
+   "cat": "Adjectives",
+   "level": 1,
+   "ids": [
+    "adj38"
+   ]
+  },
+  {
+   "ar": "حجم",
+   "en": "Size",
+   "cat": "Adjectives",
+   "level": 1,
+   "ids": [
+    "x18"
+   ]
+  },
+  {
+   "ar": "سويتر",
+   "en": "Sweater / Jumper",
+   "cat": "Clothing",
+   "level": 1,
+   "ids": [
+    "fas3"
+   ]
+  },
+  {
+   "ar": "تيشيرت",
+   "en": "T-shirt",
+   "cat": "Clothing",
+   "level": 1,
+   "ids": [
+    "cl25"
+   ]
+  },
+  {
+   "ar": "جوارب",
+   "en": "Socks",
+   "cat": "Clothing",
+   "level": 1,
+   "ids": [
+    "cl30"
+   ]
+  },
+  {
+   "ar": "قبّعة",
+   "en": "Hat / cap",
+   "cat": "Clothing",
+   "level": 1,
+   "ids": [
+    "cl36"
+   ]
+  },
+  {
+   "ar": "ميزة",
+   "en": "Meze (assorted small dishes)",
+   "cat": "Cooking",
+   "level": 1,
+   "ids": [
+    "ck13"
+   ]
+  },
+  {
+   "ar": "مشوي",
+   "en": "Grilled / barbecue",
+   "cat": "Cooking",
+   "level": 1,
+   "ids": [
+    "ck46"
+   ]
+  },
+  {
+   "ar": "كفتة",
+   "en": "Kafta (spiced ground meat)",
+   "cat": "Cooking",
+   "level": 1,
+   "ids": [
+    "ck47"
+   ]
+  },
+  {
+   "ar": "الصبح",
+   "en": "Morning / early",
+   "cat": "Days",
+   "level": 1,
+   "ids": [
+    "day10"
+   ]
+  },
+  {
+   "ar": "الضهر",
+   "en": "Noon / midday",
+   "cat": "Days",
+   "level": 1,
+   "ids": [
+    "day11"
+   ]
+  },
+  {
+   "ar": "العصر",
+   "en": "Afternoon",
+   "cat": "Days",
+   "level": 1,
+   "ids": [
+    "day12"
+   ]
+  },
+  {
+   "ar": "المسا",
+   "en": "Evening",
+   "cat": "Days",
+   "level": 1,
+   "ids": [
+    "day13"
+   ]
+  },
+  {
+   "ar": "مباشرة",
+   "en": "Straight ahead / directly",
+   "cat": "Directions",
+   "level": 1,
+   "ids": [
+    "dir11"
+   ]
+  },
+  {
+   "ar": "أمام",
+   "en": "In front of",
+   "cat": "Directions",
+   "level": 1,
+   "ids": [
+    "dir17"
+   ]
+  },
+  {
+   "ar": "GPS",
+   "en": "GPS / navigation",
+   "cat": "Directions",
+   "level": 1,
+   "ids": [
+    "dir28"
+   ]
+  },
+  {
+   "ar": "وصلت",
+   "en": "I arrived",
+   "cat": "Directions",
+   "level": 1,
+   "ids": [
+    "dir35"
+   ]
+  },
+  {
+   "ar": "ضوء",
+   "en": "Light",
+   "cat": "Education",
+   "level": 1,
+   "ids": [
+    "sci10",
+    "nat19"
+   ]
+  },
+  {
+   "ar": "مساعدة!",
+   "en": "Help!",
+   "cat": "Emergency",
+   "level": 1,
+   "ids": [
+    "em21"
+   ]
+  },
+  {
+   "ar": "حريق!",
+   "en": "Fire!",
+   "cat": "Emergency",
+   "level": 1,
+   "ids": [
+    "em22"
+   ]
+  },
+  {
+   "ar": "لص!",
+   "en": "Thief!",
+   "cat": "Emergency",
+   "level": 1,
+   "ids": [
+    "em23"
+   ]
+  },
+  {
+   "ar": "ساعدني",
+   "en": "Help me!",
+   "cat": "Emergency",
+   "level": 1,
+   "ids": [
+    "em55"
+   ]
+  },
+  {
+   "ar": "انتبه",
+   "en": "Watch out! / Careful!",
+   "cat": "Emergency",
+   "level": 1,
+   "ids": [
+    "em56"
+   ]
+  },
+  {
+   "ar": "ضائع",
+   "en": "Lost",
+   "cat": "Emergency",
+   "level": 1,
+   "ids": [
+    "em60"
+   ]
+  },
+  {
+   "ar": "بيجنّن",
+   "en": "Drives crazy / amazing / maddening",
+   "cat": "Emotions",
+   "level": 1,
+   "ids": [
+    "em75"
+   ]
+  },
+  {
+   "ar": "ضايع",
+   "en": "Lost / confused (emotionally)",
+   "cat": "Emotions",
+   "level": 1,
+   "ids": [
+    "em81"
+   ]
+  },
+  {
+   "ar": "جدّو",
+   "en": "Grandpa (affectionate)",
+   "cat": "Family",
+   "level": 1,
+   "ids": [
+    "famx24"
+   ]
+  },
+  {
+   "ar": "حساء",
+   "en": "Soup",
+   "cat": "Food",
+   "level": 1,
+   "ids": [
+    "fd36"
+   ]
+  },
+  {
+   "ar": "ليموناضة",
+   "en": "Lemonade",
+   "cat": "Food",
+   "level": 1,
+   "ids": [
+    "fd49"
+   ]
+  },
+  {
+   "ar": "تبّولة",
+   "en": "Tabbouleh",
+   "cat": "Food",
+   "level": 1,
+   "ids": [
+    "fd62"
+   ]
+  },
+  {
+   "ar": "غداء",
+   "en": "Lunch",
+   "cat": "Food",
+   "level": 1,
+   "ids": [
+    "fc2"
+   ]
+  },
+  {
+   "ar": "صلصة",
+   "en": "Sauce",
+   "cat": "Food",
+   "level": 1,
+   "ids": [
+    "fp78"
+   ]
+  },
+  {
+   "ar": "دش",
+   "en": "Shower",
+   "cat": "Home",
+   "level": 1,
+   "ids": [
+    "obj20"
+   ]
+  },
+  {
+   "ar": "موتور",
+   "en": "Generator",
+   "cat": "Home",
+   "level": 1,
+   "ids": [
+    "home15"
+   ]
+  },
+  {
+   "ar": "أسانسير",
+   "en": "Elevator (from French ascenseur)",
+   "cat": "Home",
+   "level": 1,
+   "ids": [
+    "fr2"
+   ]
+  },
+  {
+   "ar": "هواء",
+   "en": "Air",
+   "cat": "Nature",
+   "level": 1,
+   "ids": [
+    "env19",
+    "nat20"
+   ]
+  },
+  {
+   "ar": "عشب",
+   "en": "Grass",
+   "cat": "Nature",
+   "level": 1,
+   "ids": [
+    "plt9"
+   ]
+  },
+  {
+   "ar": "سماء",
+   "en": "Sky",
+   "cat": "Nature",
+   "level": 1,
+   "ids": [
+    "x5"
+   ]
+  },
+  {
+   "ar": "شابة",
+   "en": "Young woman",
+   "cat": "People",
+   "level": 1,
+   "ids": [
+    "ppl13"
+   ]
+  },
+  {
+   "ar": "شابّة",
+   "en": "Young woman",
+   "cat": "People",
+   "level": 1,
+   "ids": [
+    "ppl30"
+   ]
+  },
+  {
+   "ar": "ابنة",
+   "en": "Daughter",
+   "cat": "People",
+   "level": 1,
+   "ids": [
+    "ax7"
+   ]
+  },
+  {
+   "ar": "مشكور",
+   "en": "Thank you",
+   "cat": "Phrases",
+   "level": 1,
+   "ids": [
+    "conv7"
+   ]
+  },
+  {
+   "ar": "اسمعني",
+   "en": "Listen to me",
+   "cat": "Phrases",
+   "level": 1,
+   "ids": [
+    "eld9"
+   ]
+  },
+  {
+   "ar": "شوفني",
+   "en": "Look at me",
+   "cat": "Phrases",
+   "level": 1,
+   "ids": [
+    "eld10"
+   ]
+  },
+  {
+   "ar": "كلّن",
+   "en": "All of them",
+   "cat": "Phrases",
+   "level": 1,
+   "ids": [
+    "fp21"
+   ]
+  },
+  {
+   "ar": "كافيه",
+   "en": "Café",
+   "cat": "Places",
+   "level": 1,
+   "ids": [
+    "plc42"
+   ]
+  },
+  {
+   "ar": "الكورنيش",
+   "en": "The Corniche (Beirut seafront promenade)",
+   "cat": "Places",
+   "level": 1,
+   "ids": [
+    "geo19"
+   ]
+  },
+  {
+   "ar": "نادل",
+   "en": "Waiter",
+   "cat": "Professions",
+   "level": 1,
+   "ids": [
+    "occ18"
+   ]
+  },
+  {
+   "ar": "بقّالة",
+   "en": "Grocery store",
+   "cat": "Shopping",
+   "level": 1,
+   "ids": [
+    "sh21"
+   ]
+  },
+  {
+   "ar": "مخبزة",
+   "en": "Bakery",
+   "cat": "Shopping",
+   "level": 1,
+   "ids": [
+    "sh23"
+   ]
+  },
+  {
+   "ar": "بجرّبو؟",
+   "en": "Can I try it on?",
+   "cat": "Shopping",
+   "level": 1,
+   "ids": [
+    "sh36"
+   ]
+  },
+  {
+   "ar": "سوبرماركت",
+   "en": "Supermarket",
+   "cat": "Shopping",
+   "level": 1,
+   "ids": [
+    "shop1"
+   ]
+  },
+  {
+   "ar": "هيلا",
+   "en": "Let's go / cool / alright",
+   "cat": "Slang",
+   "level": 1,
+   "ids": [
+    "sl43"
+   ]
+  },
+  {
+   "ar": "فولو",
+   "en": "Follow (social)",
+   "cat": "Slang",
+   "level": 1,
+   "ids": [
+    "mod11"
+   ]
+  },
+  {
+   "ar": "عالفاضي",
+   "en": "For no reason / for free",
+   "cat": "Slang",
+   "level": 1,
+   "ids": [
+    "sl79"
+   ]
+  },
+  {
+   "ar": "لعبة",
+   "en": "Game / sport",
+   "cat": "Sports",
+   "level": 1,
+   "ids": [
+    "sp13"
+   ]
+  },
+  {
+   "ar": "تنس",
+   "en": "Tennis",
+   "cat": "Sports",
+   "level": 1,
+   "ids": [
+    "sp23"
+   ]
+  },
+  {
+   "ar": "واليبول",
+   "en": "Volleyball",
+   "cat": "Sports",
+   "level": 1,
+   "ids": [
+    "sp25"
+   ]
+  },
+  {
+   "ar": "لاعب",
+   "en": "Player",
+   "cat": "Sports",
+   "level": 1,
+   "ids": [
+    "sp29"
+   ]
+  },
+  {
+   "ar": "تمرين",
+   "en": "Exercise / workout",
+   "cat": "Sports",
+   "level": 1,
+   "ids": [
+    "sp40"
+   ]
+  },
+  {
+   "ar": "واتساب",
+   "en": "WhatsApp",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "med19",
+    "tel5",
+    "tech31"
+   ]
+  },
+  {
+   "ar": "انستغرام",
+   "en": "Instagram",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "med20"
+   ]
+  },
+  {
+   "ar": "باترية",
+   "en": "Battery",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "med25"
+   ]
+  },
+  {
+   "ar": "شاشة",
+   "en": "Screen",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "med26",
+    "tch14",
+    "tech23",
+    "tech2"
+   ]
+  },
+  {
+   "ar": "إنستغرام",
+   "en": "Instagram",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tel6"
+   ]
+  },
+  {
+   "ar": "سيلفي",
+   "en": "Selfie",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "mod5"
+   ]
+  },
+  {
+   "ar": "أونلاين",
+   "en": "Online",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "mod14",
+    "tech36"
+   ]
+  },
+  {
+   "ar": "هاشتاق",
+   "en": "Hashtag",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech11"
+   ]
+  },
+  {
+   "ar": "بوست",
+   "en": "Post (social media)",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech12"
+   ]
+  },
+  {
+   "ar": "بروفايل",
+   "en": "Profile",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech16"
+   ]
+  },
+  {
+   "ar": "نوتيفيكيشن",
+   "en": "Notification",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech18"
+   ]
+  },
+  {
+   "ar": "داونلود",
+   "en": "Download",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech19"
+   ]
+  },
+  {
+   "ar": "أبليكيشن",
+   "en": "Application / app",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech20"
+   ]
+  },
+  {
+   "ar": "لينك",
+   "en": "Link",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech27"
+   ]
+  },
+  {
+   "ar": "إنستاغرام",
+   "en": "Instagram",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech30"
+   ]
+  },
+  {
+   "ar": "غوغل",
+   "en": "Google",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech34"
+   ]
+  },
+  {
+   "ar": "سيرش",
+   "en": "Search",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech35"
+   ]
+  },
+  {
+   "ar": "تابلت",
+   "en": "Tablet",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech40"
+   ]
+  },
+  {
+   "ar": "لابتوب",
+   "en": "Laptop",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech41"
+   ]
+  },
+  {
+   "ar": "USB",
+   "en": "USB drive",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech43"
+   ]
+  },
+  {
+   "ar": "بلوك",
+   "en": "Block (someone)",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech44"
+   ]
+  },
+  {
+   "ar": "أنفولو",
+   "en": "Unfollow",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech45"
+   ]
+  },
+  {
+   "ar": "باسوورد",
+   "en": "Password",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "tech4"
+   ]
+  },
+  {
+   "ar": "كومبيوتر",
+   "en": "Computer",
+   "cat": "Tech",
+   "level": 1,
+   "ids": [
+    "fr10"
+   ]
+  },
+  {
+   "ar": "هلّق",
+   "en": "Now",
+   "cat": "Time",
+   "level": 1,
+   "ids": [
+    "dp3"
+   ]
+  },
+  {
+   "ar": "منيت",
+   "en": "Minute (from French minute)",
+   "cat": "Time",
+   "level": 1,
+   "ids": [
+    "fr9"
+   ]
+  },
+  {
+   "ar": "سرفيس",
+   "en": "Service taxi (shared cab)",
+   "cat": "Transport",
+   "level": 1,
+   "ids": [
+    "tr15"
+   ]
+  },
+  {
+   "ar": "بنزين",
+   "en": "Petrol / gasoline",
+   "cat": "Transport",
+   "level": 1,
+   "ids": [
+    "tr31"
+   ]
+  },
+  {
+   "ar": "ازدحام",
+   "en": "Traffic jam",
+   "cat": "Transport",
+   "level": 1,
+   "ids": [
+    "tr38"
+   ]
+  },
+  {
+   "ar": "السائق",
+   "en": "The driver",
+   "cat": "Transport",
+   "level": 1,
+   "ids": [
+    "tr42"
+   ]
+  },
+  {
+   "ar": "حقيبة",
+   "en": "Bag / suitcase",
+   "cat": "Travel",
+   "level": 1,
+   "ids": [
+    "trv25"
+   ]
+  },
+  {
+   "ar": "نظّف",
+   "en": "To clean",
+   "cat": "Verbs",
+   "level": 1,
+   "ids": [
+    "vb15"
+   ]
+  },
+  {
+   "ar": "لقي",
+   "en": "To find",
+   "cat": "Verbs",
+   "level": 1,
+   "ids": [
+    "vb56"
+   ]
+  },
+  {
+   "ar": "صحا",
+   "en": "To wake up",
+   "cat": "Verbs",
+   "level": 1,
+   "ids": [
+    "cv5"
+   ]
+  },
+  {
+   "ar": "أقفل",
+   "en": "To close / lock",
+   "cat": "Verbs",
+   "level": 1,
+   "ids": [
+    "cv14"
+   ]
+  },
+  {
+   "ar": "صريح",
+   "en": "Frank / Straightforward",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj43",
+    "adj136"
+   ]
+  },
+  {
+   "ar": "كذّاب",
+   "en": "Liar (adj) / Dishonest",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj44"
+   ]
+  },
+  {
+   "ar": "شجاع",
+   "en": "Brave",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj47"
+   ]
+  },
+  {
+   "ar": "متكبّر",
+   "en": "Arrogant",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj50",
+    "adj133"
+   ]
+  },
+  {
+   "ar": "ناعم",
+   "en": "Soft / Gentle / Smooth",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj53",
+    "qual9"
+   ]
+  },
+  {
+   "ar": "خشن",
+   "en": "Rough / Rude",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj54",
+    "qual10"
+   ]
+  },
+  {
+   "ar": "حاد",
+   "en": "Sharp",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj57"
+   ]
+  },
+  {
+   "ar": "مدلّع",
+   "en": "Spoiled (person)",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj58",
+    "em80"
+   ]
+  },
+  {
+   "ar": "محظوظ",
+   "en": "Lucky",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj59"
+   ]
+  },
+  {
+   "ar": "منحوس",
+   "en": "Unlucky / Cursed",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj60"
+   ]
+  },
+  {
+   "ar": "مثير",
+   "en": "Exciting / Interesting",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj73",
+    "adj116"
+   ]
+  },
+  {
+   "ar": "ممتلئ",
+   "en": "Full / Packed",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj88"
+   ]
+  },
+  {
+   "ar": "مؤلم",
+   "en": "Painful",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj92",
+    "adj113"
+   ]
+  },
+  {
+   "ar": "مدهش",
+   "en": "Amazing / Astonishing",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj94"
+   ]
+  },
+  {
+   "ar": "محرج",
+   "en": "Embarrassing",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj95",
+    "emo3",
+    "em46"
+   ]
+  },
+  {
+   "ar": "مفيد",
+   "en": "Useful / beneficial",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj99"
+   ]
+  },
+  {
+   "ar": "عام",
+   "en": "Public / general / common",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj107"
+   ]
+  },
+  {
+   "ar": "حديث",
+   "en": "Modern / contemporary",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj111"
+   ]
+  },
+  {
+   "ar": "رائع",
+   "en": "Wonderful / fantastic",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj119"
+   ]
+  },
+  {
+   "ar": "فظيع",
+   "en": "Terrible / awful",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj120"
+   ]
+  },
+  {
+   "ar": "مبتدئ",
+   "en": "Beginner / novice",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj126"
+   ]
+  },
+  {
+   "ar": "مهتم",
+   "en": "Interested / caring",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj127"
+   ]
+  },
+  {
+   "ar": "إيجابي",
+   "en": "Positive",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj142"
+   ]
+  },
+  {
+   "ar": "مبعثر",
+   "en": "Messy / scattered",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "qual4"
+   ]
+  },
+  {
+   "ar": "أسوأ",
+   "en": "Worse",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj155"
+   ]
+  },
+  {
+   "ar": "مشابه",
+   "en": "Similar",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj156"
+   ]
+  },
+  {
+   "ar": "مبكّر",
+   "en": "Early",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj169"
+   ]
+  },
+  {
+   "ar": "طازج",
+   "en": "Fresh",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj171"
+   ]
+  },
+  {
+   "ar": "مُكلف",
+   "en": "Expensive",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj173"
+   ]
+  },
+  {
+   "ar": "متوفّر",
+   "en": "Available",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj176"
+   ]
+  },
+  {
+   "ar": "سليم",
+   "en": "Intact / healthy / safe",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "adj179"
+   ]
+  },
+  {
+   "ar": "مضبوط",
+   "en": "Just right / correct / proper",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "sens18"
+   ]
+  },
+  {
+   "ar": "مقبول",
+   "en": "Acceptable",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "sens19"
+   ]
+  },
+  {
+   "ar": "مستعجل",
+   "en": "In a hurry",
+   "cat": "Adjectives",
+   "level": 2,
+   "ids": [
+    "fp32"
+   ]
+  },
+  {
+   "ar": "تماماً",
+   "en": "Exactly / completely",
+   "cat": "Adverbs",
+   "level": 2,
+   "ids": [
+    "adw22"
+   ]
+  },
+  {
+   "ar": "ببطء",
+   "en": "Slowly",
+   "cat": "Adverbs",
+   "level": 2,
+   "ids": [
+    "adw24"
+   ]
+  },
+  {
+   "ar": "ثعلب",
+   "en": "Fox",
+   "cat": "Animals",
+   "level": 2,
+   "ids": [
+    "an22"
+   ]
+  },
+  {
+   "ar": "بوم",
+   "en": "Owl",
+   "cat": "Animals",
+   "level": 2,
+   "ids": [
+    "an35"
+   ]
+  },
+  {
+   "ar": "دودة",
+   "en": "Worm",
+   "cat": "Animals",
+   "level": 2,
+   "ids": [
+    "an39",
+    "an46"
+   ]
+  },
+  {
+   "ar": "فوائد",
+   "en": "Interest (financial)",
+   "cat": "Banking",
+   "level": 2,
+   "ids": [
+    "bnk17"
+   ]
+  },
+  {
+   "ar": "ضرايب",
+   "en": "Taxes",
+   "cat": "Banking",
+   "level": 2,
+   "ids": [
+    "bnk22"
+   ]
+  },
+  {
+   "ar": "خزنة",
+   "en": "Safe / vault",
+   "cat": "Banking",
+   "level": 2,
+   "ids": [
+    "bnk24"
+   ]
+  },
+  {
+   "ar": "رصيد",
+   "en": "Balance (account)",
+   "cat": "Banking",
+   "level": 2,
+   "ids": [
+    "bnk26"
+   ]
+  },
+  {
+   "ar": "إيداع",
+   "en": "Deposit",
+   "cat": "Banking",
+   "level": 2,
+   "ids": [
+    "bnk27"
+   ]
+  },
+  {
+   "ar": "عظمة",
+   "en": "Bone",
+   "cat": "Body",
+   "level": 2,
+   "ids": [
+    "bd2"
+   ]
+  },
+  {
+   "ar": "عنق",
+   "en": "Neck",
+   "cat": "Body",
+   "level": 2,
+   "ids": [
+    "bd11"
+   ]
+  },
+  {
+   "ar": "مرفق",
+   "en": "Elbow",
+   "cat": "Body",
+   "level": 2,
+   "ids": [
+    "bd33"
+   ]
+  },
+  {
+   "ar": "معصم",
+   "en": "Wrist",
+   "cat": "Body",
+   "level": 2,
+   "ids": [
+    "bd34"
+   ]
+  },
+  {
+   "ar": "كعب",
+   "en": "Heel / ankle area",
+   "cat": "Body",
+   "level": 2,
+   "ids": [
+    "bd37"
+   ]
+  },
+  {
+   "ar": "صرّاف",
+   "en": "Cashier / money changer",
+   "cat": "Business",
+   "level": 2,
+   "ids": [
+    "fin12",
+    "bnk11"
+   ]
+  },
+  {
+   "ar": "زيادة",
+   "en": "Increase / extra",
+   "cat": "Business",
+   "level": 2,
+   "ids": [
+    "fp1"
+   ]
+  },
+  {
+   "ar": "إيصال",
+   "en": "Receipt",
+   "cat": "Business",
+   "level": 2,
+   "ids": [
+    "biz33",
+    "bnk20"
+   ]
+  },
+  {
+   "ar": "بونوس",
+   "en": "Bonus",
+   "cat": "Business",
+   "level": 2,
+   "ids": [
+    "biz35"
+   ]
+  },
+  {
+   "ar": "تسليم",
+   "en": "Delivery / handover",
+   "cat": "Business",
+   "level": 2,
+   "ids": [
+    "biz41"
+   ]
+  },
+  {
+   "ar": "نتائج",
+   "en": "Results / outcomes",
+   "cat": "Business",
+   "level": 2,
+   "ids": [
+    "biz44"
+   ]
+  },
+  {
+   "ar": "موضة",
+   "en": "Fashion / Trend",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "fas1",
+    "fash1"
+   ]
+  },
+  {
+   "ar": "ماركة",
+   "en": "Brand",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "fas2",
+    "sh12"
+   ]
+  },
+  {
+   "ar": "كنزة",
+   "en": "Knitted sweater (Lebanese term)",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "fas4"
+   ]
+  },
+  {
+   "ar": "خاتم",
+   "en": "Ring",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "fas6"
+   ]
+  },
+  {
+   "ar": "قرط",
+   "en": "Earring",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "fas7"
+   ]
+  },
+  {
+   "ar": "قلادة",
+   "en": "Necklace",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "fas8"
+   ]
+  },
+  {
+   "ar": "سوار",
+   "en": "Bracelet",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "fas9",
+    "fash9"
+   ]
+  },
+  {
+   "ar": "مقاس",
+   "en": "Size",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "fas11",
+    "cl40",
+    "shop4"
+   ]
+  },
+  {
+   "ar": "بيجاما",
+   "en": "Pyjamas",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "fas19",
+    "cl33"
+   ]
+  },
+  {
+   "ar": "معطف",
+   "en": "Coat / overcoat",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "cl27"
+   ]
+  },
+  {
+   "ar": "سترة",
+   "en": "Vest / jacket (inner)",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "cl28"
+   ]
+  },
+  {
+   "ar": "وشاح",
+   "en": "Scarf",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "cl37"
+   ]
+  },
+  {
+   "ar": "كفّوف",
+   "en": "Gloves",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "cl38"
+   ]
+  },
+  {
+   "ar": "مظلّة",
+   "en": "Umbrella",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "cl39"
+   ]
+  },
+  {
+   "ar": "اكسسوارات",
+   "en": "Accessories",
+   "cat": "Clothing",
+   "level": 2,
+   "ids": [
+    "fash7"
+   ]
+  },
+  {
+   "ar": "تركواز",
+   "en": "Turquoise",
+   "cat": "Colors",
+   "level": 2,
+   "ids": [
+    "cl12",
+    "col53"
+   ]
+  },
+  {
+   "ar": "بيج",
+   "en": "Beige",
+   "cat": "Colors",
+   "level": 2,
+   "ids": [
+    "cl14",
+    "col30",
+    "col45"
+   ]
+  },
+  {
+   "ar": "كريمي",
+   "en": "Cream colored",
+   "cat": "Colors",
+   "level": 2,
+   "ids": [
+    "cl15"
+   ]
+  },
+  {
+   "ar": "قاتم",
+   "en": "Dark (shade)",
+   "cat": "Colors",
+   "level": 2,
+   "ids": [
+    "cl19"
+   ]
+  },
+  {
+   "ar": "لمّاع",
+   "en": "Shiny / glowing",
+   "cat": "Colors",
+   "level": 2,
+   "ids": [
+    "vis2"
+   ]
+  },
+  {
+   "ar": "داكن",
+   "en": "Dark (shade)",
+   "cat": "Colors",
+   "level": 2,
+   "ids": [
+    "col36"
+   ]
+  },
+  {
+   "ar": "مخطط",
+   "en": "Striped",
+   "cat": "Colors",
+   "level": 2,
+   "ids": [
+    "col50"
+   ]
+  },
+  {
+   "ar": "بهارات",
+   "en": "Spices",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck18",
+    "ck24"
+   ]
+  },
+  {
+   "ar": "خلطة",
+   "en": "Mixture / blend",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck19"
+   ]
+  },
+  {
+   "ar": "مقلاة",
+   "en": "Frying pan",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck23"
+   ]
+  },
+  {
+   "ar": "موقد",
+   "en": "Stove",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck26"
+   ]
+  },
+  {
+   "ar": "بقدونس",
+   "en": "Parsley",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ing3",
+    "ck27"
+   ]
+  },
+  {
+   "ar": "قرفة",
+   "en": "Cinnamon",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ing10"
+   ]
+  },
+  {
+   "ar": "طحينة",
+   "en": "Tahini (sesame paste)",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ing15",
+    "ck19"
+   ]
+  },
+  {
+   "ar": "مكوّنات",
+   "en": "Ingredients",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "fp81"
+   ]
+  },
+  {
+   "ar": "مجدرة",
+   "en": "Lentils and rice dish",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck9"
+   ]
+  },
+  {
+   "ar": "سمّاق",
+   "en": "Sumac",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck18"
+   ]
+  },
+  {
+   "ar": "جرجير",
+   "en": "Arugula / rocket",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck30"
+   ]
+  },
+  {
+   "ar": "عيران",
+   "en": "Yogurt drink",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck36"
+   ]
+  },
+  {
+   "ar": "طرشي",
+   "en": "Pickles (Lebanese-style)",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck42"
+   ]
+  },
+  {
+   "ar": "سجق",
+   "en": "Lebanese sausage (sujuk)",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck48"
+   ]
+  },
+  {
+   "ar": "بوزة",
+   "en": "Ice cream (Arab-style)",
+   "cat": "Cooking",
+   "level": 2,
+   "ids": [
+    "ck49"
+   ]
+  },
+  {
+   "ar": "خطوبة",
+   "en": "Engagement",
+   "cat": "Culture",
+   "level": 2,
+   "ids": [
+    "cult22"
+   ]
+  },
+  {
+   "ar": "احتفال",
+   "en": "Celebration",
+   "cat": "Culture",
+   "level": 2,
+   "ids": [
+    "x77"
+   ]
+  },
+  {
+   "ar": "مناسبة",
+   "en": "Occasion / event",
+   "cat": "Culture",
+   "level": 2,
+   "ids": [
+    "x78"
+   ]
+  },
+  {
+   "ar": "زاوية",
+   "en": "Corner / angle",
+   "cat": "Directions",
+   "level": 2,
+   "ids": [
+    "dir12",
+    "dir21"
+   ]
+  },
+  {
+   "ar": "باتجاه",
+   "en": "In the direction of / towards",
+   "cat": "Directions",
+   "level": 2,
+   "ids": [
+    "dir20"
+   ]
+  },
+  {
+   "ar": "روندبوين",
+   "en": "Roundabout (from French rond-point)",
+   "cat": "Directions",
+   "level": 2,
+   "ids": [
+    "fr5"
+   ]
+  },
+  {
+   "ar": "حصة",
+   "en": "Class period / Lesson",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "ac7"
+   ]
+  },
+  {
+   "ar": "علامة",
+   "en": "Grade / mark",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "edu17"
+   ]
+  },
+  {
+   "ar": "علوم",
+   "en": "Science",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "edu22"
+   ]
+  },
+  {
+   "ar": "تسجيل",
+   "en": "Registration / enrollment",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "edu35",
+    "art36"
+   ]
+  },
+  {
+   "ar": "معدّل",
+   "en": "GPA / grade average",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "edu36"
+   ]
+  },
+  {
+   "ar": "مقصف",
+   "en": "Cafeteria / canteen",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "edu47"
+   ]
+  },
+  {
+   "ar": "نقطة",
+   "en": "Point (in discussion)",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "b1x15"
+   ]
+  },
+  {
+   "ar": "كتابة",
+   "en": "Writing",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "x25"
+   ]
+  },
+  {
+   "ar": "قراءة",
+   "en": "Reading",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "x26"
+   ]
+  },
+  {
+   "ar": "سماع",
+   "en": "Listening",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "x27"
+   ]
+  },
+  {
+   "ar": "تصحيح",
+   "en": "Correction",
+   "cat": "Education",
+   "level": 2,
+   "ids": [
+    "x116"
+   ]
+  },
+  {
+   "ar": "أمبولانس",
+   "en": "Ambulance",
+   "cat": "Emergency",
+   "level": 2,
+   "ids": [
+    "em13"
+   ]
+  },
+  {
+   "ar": "إسعاف",
+   "en": "First aid / emergency services",
+   "cat": "Emergency",
+   "level": 2,
+   "ids": [
+    "em14"
+   ]
+  },
+  {
+   "ar": "إطفاء",
+   "en": "Fire brigade",
+   "cat": "Emergency",
+   "level": 2,
+   "ids": [
+    "em16",
+    "em52"
+   ]
+  },
+  {
+   "ar": "سرقولي",
+   "en": "They stole from me",
+   "cat": "Emergency",
+   "level": 2,
+   "ids": [
+    "em27"
+   ]
+  },
+  {
+   "ar": "سرقة",
+   "en": "Theft / robbery",
+   "cat": "Emergency",
+   "level": 2,
+   "ids": [
+    "em59"
+   ]
+  },
+  {
+   "ar": "نادم",
+   "en": "Regretful / Sorry",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "emo2",
+    "em44"
+   ]
+  },
+  {
+   "ar": "مقرف",
+   "en": "Disgusting / Gross",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "emo6"
+   ]
+  },
+  {
+   "ar": "راضي",
+   "en": "Satisfied / Content",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "emo13"
+   ]
+  },
+  {
+   "ar": "مشتاق",
+   "en": "Missing (someone) / Longing",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "emo15"
+   ]
+  },
+  {
+   "ar": "غيور",
+   "en": "Jealous",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "emo25"
+   ]
+  },
+  {
+   "ar": "شاكر",
+   "en": "Grateful",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "emo28"
+   ]
+  },
+  {
+   "ar": "متعجّب",
+   "en": "Amazed / surprised",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "emo29"
+   ]
+  },
+  {
+   "ar": "حارق",
+   "en": "Burning hot",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "sens6"
+   ]
+  },
+  {
+   "ar": "دوّخ",
+   "en": "Dizzy",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "sens7"
+   ]
+  },
+  {
+   "ar": "متحمّس",
+   "en": "Excited / enthusiastic",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "em36"
+   ]
+  },
+  {
+   "ar": "حيران",
+   "en": "Confused / bewildered",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "em43"
+   ]
+  },
+  {
+   "ar": "إحساس",
+   "en": "Feeling / sensation",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "em48"
+   ]
+  },
+  {
+   "ar": "منبسط",
+   "en": "Happy / delighted (stronger than مبسوط)",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "em66"
+   ]
+  },
+  {
+   "ar": "مغرور",
+   "en": "Arrogant / conceited",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "em69"
+   ]
+  },
+  {
+   "ar": "متذكّر",
+   "en": "Nostalgic / remembering",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "em71"
+   ]
+  },
+  {
+   "ar": "مفروح",
+   "en": "Made happy / joyful",
+   "cat": "Emotions",
+   "level": 2,
+   "ids": [
+    "em84"
+   ]
+  },
+  {
+   "ar": "حما",
+   "en": "Father-in-law",
+   "cat": "Family",
+   "level": 2,
+   "ids": [
+    "famx10"
+   ]
+  },
+  {
+   "ar": "كنّة",
+   "en": "Daughter-in-law",
+   "cat": "Family",
+   "level": 2,
+   "ids": [
+    "famx11"
+   ]
+  },
+  {
+   "ar": "رضيع",
+   "en": "Baby / infant (still nursing)",
+   "cat": "Family",
+   "level": 2,
+   "ids": [
+    "famx17"
+   ]
+  },
+  {
+   "ar": "كوسى",
+   "en": "Zucchini / Courgette",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fd15"
+   ]
+  },
+  {
+   "ar": "مربى",
+   "en": "Jam / Preserves",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fd30"
+   ]
+  },
+  {
+   "ar": "سفيحة",
+   "en": "Lebanese meat pie",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fd41"
+   ]
+  },
+  {
+   "ar": "نقنق",
+   "en": "Sausage",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fd45"
+   ]
+  },
+  {
+   "ar": "مجدّرة",
+   "en": "Mujaddara (lentils and bulgur with onion)",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fd57"
+   ]
+  },
+  {
+   "ar": "متبّل",
+   "en": "Mtabbal (smoky eggplant dip)",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fd60",
+    "ck33"
+   ]
+  },
+  {
+   "ar": "فتّوش",
+   "en": "Fattoush (crispy bread salad)",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fd61"
+   ]
+  },
+  {
+   "ar": "كبّة",
+   "en": "Kibbe (bulgur-meat dish)",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fd63",
+    "ck1"
+   ]
+  },
+  {
+   "ar": "عجّة",
+   "en": "Omelette / egg dish",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fd81"
+   ]
+  },
+  {
+   "ar": "رمّانة",
+   "en": "Pomegranate",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fd90"
+   ]
+  },
+  {
+   "ar": "نرجيلة",
+   "en": "Hookah / shisha",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fc14"
+   ]
+  },
+  {
+   "ar": "برغل",
+   "en": "Bulgur wheat",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fp41"
+   ]
+  },
+  {
+   "ar": "كوسا",
+   "en": "Zucchini",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fp46",
+    "ck31"
+   ]
+  },
+  {
+   "ar": "بامية",
+   "en": "Okra",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fp47"
+   ]
+  },
+  {
+   "ar": "لوبيا",
+   "en": "Green beans",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fp49"
+   ]
+  },
+  {
+   "ar": "فجل",
+   "en": "Radish",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fp53"
+   ]
+  },
+  {
+   "ar": "فليفلة",
+   "en": "Bell pepper",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fp55"
+   ]
+  },
+  {
+   "ar": "مربّى",
+   "en": "Jam / preserves",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fp65"
+   ]
+  },
+  {
+   "ar": "حصّة",
+   "en": "Portion / serving",
+   "cat": "Food",
+   "level": 2,
+   "ids": [
+    "fp82"
+   ]
+  },
+  {
+   "ar": "تشرّفنا",
+   "en": "Honored to meet you",
+   "cat": "Greetings",
+   "level": 2,
+   "ids": [
+    "gr22"
+   ]
+  },
+  {
+   "ar": "إزيّك",
+   "en": "How are you? (Egyptian but used)",
+   "cat": "Greetings",
+   "level": 2,
+   "ids": [
+    "gr24"
+   ]
+  },
+  {
+   "ar": "وداعاً",
+   "en": "Farewell",
+   "cat": "Greetings",
+   "level": 2,
+   "ids": [
+    "gr32"
+   ]
+  },
+  {
+   "ar": "مطالعة",
+   "en": "Reading (as a hobby)",
+   "cat": "Hobbies",
+   "level": 2,
+   "ids": [
+    "hob2"
+   ]
+  },
+  {
+   "ar": "تخييم",
+   "en": "Camping",
+   "cat": "Hobbies",
+   "level": 2,
+   "ids": [
+    "hob17"
+   ]
+  },
+  {
+   "ar": "بستنة",
+   "en": "Gardening",
+   "cat": "Hobbies",
+   "level": 2,
+   "ids": [
+    "hob19"
+   ]
+  },
+  {
+   "ar": "مصعد",
+   "en": "Elevator / Lift",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm15"
+   ]
+  },
+  {
+   "ar": "بلاط",
+   "en": "Tiles / Flooring",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm20"
+   ]
+  },
+  {
+   "ar": "مكيف",
+   "en": "Air conditioner",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm24"
+   ]
+  },
+  {
+   "ar": "مكنسة",
+   "en": "Broom / Vacuum",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm28",
+    "obj14"
+   ]
+  },
+  {
+   "ar": "إيجار",
+   "en": "Rent (noun)",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm29",
+    "fin16",
+    "home21"
+   ]
+  },
+  {
+   "ar": "دهليز",
+   "en": "Hallway / corridor",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm36"
+   ]
+  },
+  {
+   "ar": "قبو",
+   "en": "Basement",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm38"
+   ]
+  },
+  {
+   "ar": "صنبور",
+   "en": "Faucet / tap",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm39"
+   ]
+  },
+  {
+   "ar": "خزّان",
+   "en": "Water tank",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm41"
+   ]
+  },
+  {
+   "ar": "ستارة",
+   "en": "Curtain",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm46",
+    "home4"
+   ]
+  },
+  {
+   "ar": "سجّادة",
+   "en": "Carpet / rug",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "hm47"
+   ]
+  },
+  {
+   "ar": "أريكة",
+   "en": "Sofa",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "obj3",
+    "home1"
+   ]
+  },
+  {
+   "ar": "رفّ",
+   "en": "Shelf",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "obj6"
+   ]
+  },
+  {
+   "ar": "مكيّف",
+   "en": "Air conditioner",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "obj10",
+    "home6"
+   ]
+  },
+  {
+   "ar": "فرّارة",
+   "en": "Freezer",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "obj12"
+   ]
+  },
+  {
+   "ar": "كوّارة",
+   "en": "Kettle",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "obj15"
+   ]
+  },
+  {
+   "ar": "قهوجية",
+   "en": "Coffee maker",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "obj16"
+   ]
+  },
+  {
+   "ar": "خلاّط",
+   "en": "Blender",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "obj17"
+   ]
+  },
+  {
+   "ar": "سخّان",
+   "en": "Water heater",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "obj18"
+   ]
+  },
+  {
+   "ar": "تصليح",
+   "en": "Repair",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "fin17"
+   ]
+  },
+  {
+   "ar": "فيلّا",
+   "en": "Villa",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "fin21"
+   ]
+  },
+  {
+   "ar": "مخزن",
+   "en": "Storage room / warehouse",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "home17"
+   ]
+  },
+  {
+   "ar": "دوشة",
+   "en": "Shower / noise (from French douche)",
+   "cat": "Home",
+   "level": 2,
+   "ids": [
+    "fr7"
+   ]
+  },
+  {
+   "ar": "حساسية",
+   "en": "Allergy",
+   "cat": "Medical",
+   "level": 2,
+   "ids": [
+    "med31"
+   ]
+  },
+  {
+   "ar": "مسكّن",
+   "en": "Painkiller",
+   "cat": "Medical",
+   "level": 2,
+   "ids": [
+    "med40"
+   ]
+  },
+  {
+   "ar": "علاج",
+   "en": "Treatment / cure",
+   "cat": "Medical",
+   "level": 2,
+   "ids": [
+    "hlth3"
+   ]
+  },
+  {
+   "ar": "حقنة",
+   "en": "Injection",
+   "cat": "Medical",
+   "level": 2,
+   "ids": [
+    "hlth6"
+   ]
+  },
+  {
+   "ar": "ألم",
+   "en": "Pain",
+   "cat": "Medical",
+   "level": 2,
+   "ids": [
+    "med7"
+   ]
+  },
+  {
+   "ar": "فن",
+   "en": "Art",
+   "cat": "Music",
+   "level": 2,
+   "ids": [
+    "art1"
+   ]
+  },
+  {
+   "ar": "ألبوم",
+   "en": "Album",
+   "cat": "Music",
+   "level": 2,
+   "ids": [
+    "art12"
+   ]
+  },
+  {
+   "ar": "كلمات",
+   "en": "Lyrics / words",
+   "cat": "Music",
+   "level": 2,
+   "ids": [
+    "art34"
+   ]
+  },
+  {
+   "ar": "غناء",
+   "en": "Singing",
+   "cat": "Music",
+   "level": 2,
+   "ids": [
+    "art40"
+   ]
+  },
+  {
+   "ar": "نحلة",
+   "en": "Bee",
+   "cat": "Nature",
+   "level": 2,
+   "ids": [
+    "env12",
+    "an43",
+    "nat26"
+   ]
+  },
+  {
+   "ar": "نملة",
+   "en": "Ant",
+   "cat": "Nature",
+   "level": 2,
+   "ids": [
+    "env13"
+   ]
+  },
+  {
+   "ar": "طين",
+   "en": "Mud / clay",
+   "cat": "Nature",
+   "level": 2,
+   "ids": [
+    "nat27"
+   ]
+  },
+  {
+   "ar": "برّية",
+   "en": "Wilderness / countryside",
+   "cat": "Nature",
+   "level": 2,
+   "ids": [
+    "nat29"
+   ]
+  },
+  {
+   "ar": "حريق",
+   "en": "Fire / wildfire",
+   "cat": "Nature",
+   "level": 2,
+   "ids": [
+    "nat30",
+    "em58",
+    "nat8"
+   ]
+  },
+  {
+   "ar": "عشبة",
+   "en": "Herb / weed",
+   "cat": "Nature",
+   "level": 2,
+   "ids": [
+    "plt10"
+   ]
+  },
+  {
+   "ar": "غصن",
+   "en": "Branch / twig",
+   "cat": "Nature",
+   "level": 2,
+   "ids": [
+    "plt12"
+   ]
+  },
+  {
+   "ar": "ثمرة",
+   "en": "Fruit (general)",
+   "cat": "Nature",
+   "level": 2,
+   "ids": [
+    "plt15"
+   ]
+  },
+  {
+   "ar": "تلّة",
+   "en": "Hill",
+   "cat": "Nature",
+   "level": 2,
+   "ids": [
+    "plx8"
+   ]
+  },
+  {
+   "ar": "ساحل",
+   "en": "Coast / shore",
+   "cat": "Nature",
+   "level": 2,
+   "ids": [
+    "nat10"
+   ]
+  },
+  {
+   "ar": "بالمئة",
+   "en": "Percent",
+   "cat": "Numbers",
+   "level": 2,
+   "ids": [
+    "ord8"
+   ]
+  },
+  {
+   "ar": "أعزب",
+   "en": "Single / Bachelor (m)",
+   "cat": "People",
+   "level": 2,
+   "ids": [
+    "ppl5",
+    "ppl38"
+   ]
+  },
+  {
+   "ar": "عزباء",
+   "en": "Single (f)",
+   "cat": "People",
+   "level": 2,
+   "ids": [
+    "ppl6",
+    "ppl37"
+   ]
+  },
+  {
+   "ar": "متزوج",
+   "en": "Married",
+   "cat": "People",
+   "level": 2,
+   "ids": [
+    "ppl7"
+   ]
+  },
+  {
+   "ar": "مطلّق",
+   "en": "Divorced",
+   "cat": "People",
+   "level": 2,
+   "ids": [
+    "ppl8",
+    "ppl36"
+   ]
+  },
+  {
+   "ar": "عجوز",
+   "en": "Old person",
+   "cat": "People",
+   "level": 2,
+   "ids": [
+    "ppl32"
+   ]
+  },
+  {
+   "ar": "أقارب",
+   "en": "Relatives",
+   "cat": "People",
+   "level": 2,
+   "ids": [
+    "lsc8"
+   ]
+  },
+  {
+   "ar": "حمو",
+   "en": "Father-in-law",
+   "cat": "People",
+   "level": 2,
+   "ids": [
+    "ax18"
+   ]
+  },
+  {
+   "ar": "بيتمّ",
+   "en": "It'll work out / It gets done",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "ph20"
+   ]
+  },
+  {
+   "ar": "لحالو",
+   "en": "Alone / By himself",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "ph23"
+   ]
+  },
+  {
+   "ar": "بشرف",
+   "en": "On my honor / I swear",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "ph44"
+   ]
+  },
+  {
+   "ar": "بالأخير",
+   "en": "In the end / finally",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "ph46"
+   ]
+  },
+  {
+   "ar": "بالبداية",
+   "en": "In the beginning",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "ph47"
+   ]
+  },
+  {
+   "ar": "مثلاً",
+   "en": "For example",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "misc9"
+   ]
+  },
+  {
+   "ar": "إلخ",
+   "en": "Etc. / and so on",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "misc11"
+   ]
+  },
+  {
+   "ar": "بالعكس",
+   "en": "On the contrary",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "cmp10"
+   ]
+  },
+  {
+   "ar": "حضرتك",
+   "en": "You (formal/respectful)",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "pol1"
+   ]
+  },
+  {
+   "ar": "تفضّلوا",
+   "en": "Please come in (pl.)",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "pol9"
+   ]
+  },
+  {
+   "ar": "مفروض",
+   "en": "Supposed to / should",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "str8"
+   ]
+  },
+  {
+   "ar": "بيئجيني",
+   "en": "It comes to me / I feel like",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "vph8"
+   ]
+  },
+  {
+   "ar": "لغاية",
+   "en": "Until",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "pp7"
+   ]
+  },
+  {
+   "ar": "إلي",
+   "en": "That which / the one that",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "grm9"
+   ]
+  },
+  {
+   "ar": "بديشرح",
+   "en": "Let me explain",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "fp7"
+   ]
+  },
+  {
+   "ar": "مالو",
+   "en": "What's wrong with him / it",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "fp22"
+   ]
+  },
+  {
+   "ar": "تأخّرت",
+   "en": "I'm late / you're late",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "fp31"
+   ]
+  },
+  {
+   "ar": "دعوة",
+   "en": "Invitation",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "si2"
+   ]
+  },
+  {
+   "ar": "قبول",
+   "en": "Acceptance",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "si4"
+   ]
+  },
+  {
+   "ar": "نصيحة",
+   "en": "Advice",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "si11"
+   ]
+  },
+  {
+   "ar": "تحيّة",
+   "en": "Greeting",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "si12"
+   ]
+  },
+  {
+   "ar": "توديع",
+   "en": "Farewell",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "si13"
+   ]
+  },
+  {
+   "ar": "ظلام",
+   "en": "Darkness",
+   "cat": "Phrases",
+   "level": 2,
+   "ids": [
+    "x12"
+   ]
+  },
+  {
+   "ar": "ميكانيكي",
+   "en": "Mechanic / Auto repair",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "plc17"
+   ]
+  },
+  {
+   "ar": "مرآب",
+   "en": "Garage / Parking",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "plc29"
+   ]
+  },
+  {
+   "ar": "نفق",
+   "en": "Tunnel",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "plc30",
+    "plx7",
+    "tr40",
+    "dir25"
+   ]
+  },
+  {
+   "ar": "مزرعة",
+   "en": "Farm",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "plc35"
+   ]
+  },
+  {
+   "ar": "الجنوب",
+   "en": "The South (Lebanon)",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "geo13"
+   ]
+  },
+  {
+   "ar": "الشمال",
+   "en": "The North (Lebanon)",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "geo14"
+   ]
+  },
+  {
+   "ar": "الساحل",
+   "en": "The coast",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "geo15"
+   ]
+  },
+  {
+   "ar": "الأشرفية",
+   "en": "Achrafieh (East Beirut district)",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "geo16"
+   ]
+  },
+  {
+   "ar": "الروشة",
+   "en": "Raouche (Pigeon Rocks area)",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "geo17"
+   ]
+  },
+  {
+   "ar": "جونية",
+   "en": "Jounieh",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "geo26"
+   ]
+  },
+  {
+   "ar": "القلعة",
+   "en": "The citadel / fortress",
+   "cat": "Places",
+   "level": 2,
+   "ids": [
+    "geo31"
+   ]
+  },
+  {
+   "ar": "سبّاك",
+   "en": "Plumber",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "pr18",
+    "occ22"
+   ]
+  },
+  {
+   "ar": "ممثّل",
+   "en": "Actor",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "pr23"
+   ]
+  },
+  {
+   "ar": "مصوّر",
+   "en": "Photographer",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "pr24"
+   ]
+  },
+  {
+   "ar": "عسكري",
+   "en": "Soldier / military",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "pr28",
+    "occ16"
+   ]
+  },
+  {
+   "ar": "إطفائي",
+   "en": "Firefighter",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "pr30"
+   ]
+  },
+  {
+   "ar": "ممرّضة",
+   "en": "Nurse (f)",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "occ9"
+   ]
+  },
+  {
+   "ar": "عمّال",
+   "en": "Workers (pl.)",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "occ10"
+   ]
+  },
+  {
+   "ar": "حلاق",
+   "en": "Barber / hairdresser",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "occ19"
+   ]
+  },
+  {
+   "ar": "نجار",
+   "en": "Carpenter",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "occ23"
+   ]
+  },
+  {
+   "ar": "شيف",
+   "en": "Chef / cook (professional)",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "occ25"
+   ]
+  },
+  {
+   "ar": "فنان",
+   "en": "Artist",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "occ26"
+   ]
+  },
+  {
+   "ar": "ممثل",
+   "en": "Actor",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "occ27"
+   ]
+  },
+  {
+   "ar": "مصور",
+   "en": "Photographer",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "occ28"
+   ]
+  },
+  {
+   "ar": "متقاعد",
+   "en": "Retired",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "occ43"
+   ]
+  },
+  {
+   "ar": "مبرمج",
+   "en": "Programmer / software developer",
+   "cat": "Professions",
+   "level": 2,
+   "ids": [
+    "occ46"
+   ]
+  },
+  {
+   "ar": "بالجدّ",
+   "en": "Honestly? / For real?",
+   "cat": "Questions",
+   "level": 2,
+   "ids": [
+    "qw18"
+   ]
+  },
+  {
+   "ar": "لشو؟",
+   "en": "What for? / For what reason?",
+   "cat": "Questions",
+   "level": 2,
+   "ids": [
+    "q36"
+   ]
+  },
+  {
+   "ar": "بضاعة",
+   "en": "Goods / merchandise",
+   "cat": "Shopping",
+   "level": 2,
+   "ids": [
+    "sh11",
+    "shop5"
+   ]
+  },
+  {
+   "ar": "أصلي",
+   "en": "Original / authentic / genuine",
+   "cat": "Shopping",
+   "level": 2,
+   "ids": [
+    "sh13"
+   ]
+  },
+  {
+   "ar": "مقلّد",
+   "en": "Fake / counterfeit",
+   "cat": "Shopping",
+   "level": 2,
+   "ids": [
+    "sh14"
+   ]
+  },
+  {
+   "ar": "تخفيض",
+   "en": "Discount",
+   "cat": "Shopping",
+   "level": 2,
+   "ids": [
+    "sh15"
+   ]
+  },
+  {
+   "ar": "خصم",
+   "en": "Discount / reduction",
+   "cat": "Shopping",
+   "level": 2,
+   "ids": [
+    "shop2"
+   ]
+  },
+  {
+   "ar": "تسوق",
+   "en": "Shopping",
+   "cat": "Shopping",
+   "level": 2,
+   "ids": [
+    "shop6"
+   ]
+  },
+  {
+   "ar": "دخيل",
+   "en": "I beg you / Please (emphatic)",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl27"
+   ]
+  },
+  {
+   "ar": "شاك",
+   "en": "Cool / Trendy / Sharp",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl32"
+   ]
+  },
+  {
+   "ar": "مدبّر",
+   "en": "Well-organized / Has it together",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl34"
+   ]
+  },
+  {
+   "ar": "فرفش",
+   "en": "Chill out / have fun",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl42"
+   ]
+  },
+  {
+   "ar": "ضبضب",
+   "en": "Fixed / sorted / all set",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl48"
+   ]
+  },
+  {
+   "ar": "فلّ",
+   "en": "To run away / split",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl54"
+   ]
+  },
+  {
+   "ar": "أمريكاني",
+   "en": "Dollar (colloquial)",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "leb3"
+   ]
+  },
+  {
+   "ar": "مصيبة",
+   "en": "Disaster / what a mess (excl.)",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl61"
+   ]
+  },
+  {
+   "ar": "ببساطة",
+   "en": "Simply / it's simple",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl67"
+   ]
+  },
+  {
+   "ar": "لازمتلي",
+   "en": "I need you / you're essential",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl68"
+   ]
+  },
+  {
+   "ar": "منسمع",
+   "en": "We'll see / we'll hear",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl73"
+   ]
+  },
+  {
+   "ar": "معناتو",
+   "en": "That means / it means",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl86"
+   ]
+  },
+  {
+   "ar": "شكلو",
+   "en": "It seems / looks like",
+   "cat": "Slang",
+   "level": 2,
+   "ids": [
+    "sl88"
+   ]
+  },
+  {
+   "ar": "كاراتيه",
+   "en": "Karate",
+   "cat": "Sports",
+   "level": 2,
+   "ids": [
+    "spt30",
+    "sp43"
+   ]
+  },
+  {
+   "ar": "ميدالية",
+   "en": "Medal",
+   "cat": "Sports",
+   "level": 2,
+   "ids": [
+    "sp34"
+   ]
+  },
+  {
+   "ar": "سباق",
+   "en": "Race",
+   "cat": "Sports",
+   "level": 2,
+   "ids": [
+    "sp36"
+   ]
+  },
+  {
+   "ar": "ماراتون",
+   "en": "Marathon",
+   "cat": "Sports",
+   "level": 2,
+   "ids": [
+    "sp37"
+   ]
+  },
+  {
+   "ar": "لياقة",
+   "en": "Fitness / being in shape",
+   "cat": "Sports",
+   "level": 2,
+   "ids": [
+    "sp41"
+   ]
+  },
+  {
+   "ar": "بوكس",
+   "en": "Boxing",
+   "cat": "Sports",
+   "level": 2,
+   "ids": [
+    "sp42"
+   ]
+  },
+  {
+   "ar": "جودو",
+   "en": "Judo",
+   "cat": "Sports",
+   "level": 2,
+   "ids": [
+    "sp44"
+   ]
+  },
+  {
+   "ar": "أولمبياد",
+   "en": "Olympics",
+   "cat": "Sports",
+   "level": 2,
+   "ids": [
+    "sp47"
+   ]
+  },
+  {
+   "ar": "منشور",
+   "en": "Post (social media)",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "med15",
+    "tel12"
+   ]
+  },
+  {
+   "ar": "تعليق",
+   "en": "Comment",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "med16",
+    "tel13",
+    "x93"
+   ]
+  },
+  {
+   "ar": "مشاركة",
+   "en": "Share / Sharing",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "med17"
+   ]
+  },
+  {
+   "ar": "متابع",
+   "en": "Follower",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "med18"
+   ]
+  },
+  {
+   "ar": "ترند",
+   "en": "Trend / Going viral",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "med22"
+   ]
+  },
+  {
+   "ar": "بودكاست",
+   "en": "Podcast",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "med23",
+    "mod8"
+   ]
+  },
+  {
+   "ar": "ستريمينغ",
+   "en": "Streaming",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "med24"
+   ]
+  },
+  {
+   "ar": "فأرة",
+   "en": "Mouse (computer)",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "tch16"
+   ]
+  },
+  {
+   "ar": "سماعة",
+   "en": "Headphone / earphone",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "tch20"
+   ]
+  },
+  {
+   "ar": "بلوتوث",
+   "en": "Bluetooth",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "tch23",
+    "tech22",
+    "tech7"
+   ]
+  },
+  {
+   "ar": "مكالمة",
+   "en": "Phone call",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "tel4"
+   ]
+  },
+  {
+   "ar": "يوتيوبر",
+   "en": "YouTuber",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "mod2"
+   ]
+  },
+  {
+   "ar": "إنفلونسر",
+   "en": "Influencer",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "mod3"
+   ]
+  },
+  {
+   "ar": "هاشتاغ",
+   "en": "Hashtag",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "mod4"
+   ]
+  },
+  {
+   "ar": "ريلز",
+   "en": "Reels (Instagram)",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "mod7",
+    "tech29"
+   ]
+  },
+  {
+   "ar": "ستريمنغ",
+   "en": "Streaming",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "mod9"
+   ]
+  },
+  {
+   "ar": "كونتنت",
+   "en": "Content (media)",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "mod10"
+   ]
+  },
+  {
+   "ar": "أوفلاين",
+   "en": "Offline",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "mod15",
+    "tech37"
+   ]
+  },
+  {
+   "ar": "فيروس",
+   "en": "Virus (computer)",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "tech25"
+   ]
+  },
+  {
+   "ar": "كلاود",
+   "en": "Cloud storage",
+   "cat": "Tech",
+   "level": 2,
+   "ids": [
+    "tech26"
+   ]
+  },
+  {
+   "ar": "غروب",
+   "en": "Sunset",
+   "cat": "Time",
+   "level": 2,
+   "ids": [
+    "tm30"
+   ]
+  },
+  {
+   "ar": "شروق",
+   "en": "Sunrise",
+   "cat": "Time",
+   "level": 2,
+   "ids": [
+    "tm31"
+   ]
+  },
+  {
+   "ar": "موعد",
+   "en": "Appointment / date / time",
+   "cat": "Time",
+   "level": 2,
+   "ids": [
+    "ev1"
+   ]
+  },
+  {
+   "ar": "أوتوستراد",
+   "en": "Highway / motorway",
+   "cat": "Transport",
+   "level": 2,
+   "ids": [
+    "tr22"
+   ]
+  },
+  {
+   "ar": "دوّار",
+   "en": "Roundabout",
+   "cat": "Transport",
+   "level": 2,
+   "ids": [
+    "tr23"
+   ]
+  },
+  {
+   "ar": "سياقة",
+   "en": "Driving",
+   "cat": "Transport",
+   "level": 2,
+   "ids": [
+    "tr35"
+   ]
+  },
+  {
+   "ar": "دوار",
+   "en": "Roundabout",
+   "cat": "Transport",
+   "level": 2,
+   "ids": [
+    "tr39",
+    "dir23"
+   ]
+  },
+  {
+   "ar": "مسافة",
+   "en": "Distance",
+   "cat": "Transport",
+   "level": 2,
+   "ids": [
+    "tr43"
+   ]
+  },
+  {
+   "ar": "كلكس",
+   "en": "Car horn (from French klaxon)",
+   "cat": "Transport",
+   "level": 2,
+   "ids": [
+    "fr4"
+   ]
+  },
+  {
+   "ar": "سياحة",
+   "en": "Tourism",
+   "cat": "Travel",
+   "level": 2,
+   "ids": [
+    "trv2",
+    "trv28"
+   ]
+  },
+  {
+   "ar": "تأشيرة",
+   "en": "Visa",
+   "cat": "Travel",
+   "level": 2,
+   "ids": [
+    "trv4",
+    "trv21",
+    "trv48"
+   ]
+  },
+  {
+   "ar": "صراف",
+   "en": "Money changer / ATM",
+   "cat": "Travel",
+   "level": 2,
+   "ids": [
+    "trv10",
+    "trv46"
+   ]
+  },
+  {
+   "ar": "أمتعة",
+   "en": "Luggage / Baggage",
+   "cat": "Travel",
+   "level": 2,
+   "ids": [
+    "trv15",
+    "trv24"
+   ]
+  },
+  {
+   "ar": "سياح",
+   "en": "Tourists (plural)",
+   "cat": "Travel",
+   "level": 2,
+   "ids": [
+    "trv20"
+   ]
+  },
+  {
+   "ar": "مغادرة",
+   "en": "Departure",
+   "cat": "Travel",
+   "level": 2,
+   "ids": [
+    "trv34",
+    "trv37"
+   ]
+  },
+  {
+   "ar": "وصول",
+   "en": "Arrival",
+   "cat": "Travel",
+   "level": 2,
+   "ids": [
+    "trv35",
+    "trv36"
+   ]
+  },
+  {
+   "ar": "تأخير",
+   "en": "Delay",
+   "cat": "Travel",
+   "level": 2,
+   "ids": [
+    "trv39"
+   ]
+  },
+  {
+   "ar": "إلغاء",
+   "en": "Cancellation",
+   "cat": "Travel",
+   "level": 2,
+   "ids": [
+    "trv40"
+   ]
+  },
+  {
+   "ar": "اشتكى",
+   "en": "To complain",
+   "cat": "Verbs",
+   "level": 2,
+   "ids": [
+    "vb40"
+   ]
+  },
+  {
+   "ar": "أوقف",
+   "en": "To turn off / stop (something)",
+   "cat": "Verbs",
+   "level": 2,
+   "ids": [
+    "vb64"
+   ]
+  },
+  {
+   "ar": "أعاد",
+   "en": "To return / redo",
+   "cat": "Verbs",
+   "level": 2,
+   "ids": [
+    "vb82"
+   ]
+  },
+  {
+   "ar": "انتهى",
+   "en": "To end / expire",
+   "cat": "Verbs",
+   "level": 2,
+   "ids": [
+    "vb85"
+   ]
+  },
+  {
+   "ar": "استعدّ",
+   "en": "To prepare / get ready",
+   "cat": "Verbs",
+   "level": 2,
+   "ids": [
+    "vb92"
+   ]
+  },
+  {
+   "ar": "أخّر",
+   "en": "To delay / be late",
+   "cat": "Verbs",
+   "level": 2,
+   "ids": [
+    "vb103"
+   ]
+  },
+  {
+   "ar": "أكمل",
+   "en": "To complete / finish",
+   "cat": "Verbs",
+   "level": 2,
+   "ids": [
+    "vb104"
+   ]
+  },
+  {
+   "ar": "صمت",
+   "en": "To be silent",
+   "cat": "Verbs",
+   "level": 2,
+   "ids": [
+    "vb110"
+   ]
+  },
+  {
+   "ar": "طقّ",
+   "en": "To knock / tap / hit lightly",
+   "cat": "Verbs",
+   "level": 2,
+   "ids": [
+    "phy11"
+   ]
+  },
+  {
+   "ar": "فرك",
+   "en": "To rub",
+   "cat": "Verbs",
+   "level": 2,
+   "ids": [
+    "phy14"
+   ]
+  },
+  {
+   "ar": "رطب",
+   "en": "Humid",
+   "cat": "Weather",
+   "level": 2,
+   "ids": [
+    "wth21"
+   ]
+  },
+  {
+   "ar": "أدوات",
+   "en": "Tools",
+   "cat": "Work",
+   "level": 2,
+   "ids": [
+    "x106"
+   ]
+  },
+  {
+   "ar": "بيرو",
+   "en": "Desk / office (from French bureau)",
+   "cat": "Work",
+   "level": 2,
+   "ids": [
+    "fr8"
+   ]
+  },
+  {
+   "ar": "طموح",
+   "en": "Ambitious",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj48",
+    "adj131"
+   ]
+  },
+  {
+   "ar": "متواضع",
+   "en": "Humble",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj49",
+    "adj132"
+   ]
+  },
+  {
+   "ar": "ضحل",
+   "en": "Shallow",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj56"
+   ]
+  },
+  {
+   "ar": "حسّاس",
+   "en": "Sensitive",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj78"
+   ]
+  },
+  {
+   "ar": "عاطفي",
+   "en": "Emotional",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj79",
+    "adj144"
+   ]
+  },
+  {
+   "ar": "منفتح",
+   "en": "Open-minded",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj80"
+   ]
+  },
+  {
+   "ar": "محافظ",
+   "en": "Conservative",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj81"
+   ]
+  },
+  {
+   "ar": "راقي",
+   "en": "Classy / Refined",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj84"
+   ]
+  },
+  {
+   "ar": "مؤثر",
+   "en": "Moving / Touching",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj93"
+   ]
+  },
+  {
+   "ar": "غامض",
+   "en": "Vague / mysterious",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj97"
+   ]
+  },
+  {
+   "ar": "رسمي",
+   "en": "Official / formal",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj105"
+   ]
+  },
+  {
+   "ar": "محلّي",
+   "en": "Local",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj109"
+   ]
+  },
+  {
+   "ar": "مذهل",
+   "en": "Amazing / astonishing",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj118"
+   ]
+  },
+  {
+   "ar": "أساسي",
+   "en": "Basic / fundamental",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj123"
+   ]
+  },
+  {
+   "ar": "ثانوي",
+   "en": "Secondary / minor",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj124"
+   ]
+  },
+  {
+   "ar": "متقدّم",
+   "en": "Advanced / progressed",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj125"
+   ]
+  },
+  {
+   "ar": "متردّد",
+   "en": "Hesitant / uncertain",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj130"
+   ]
+  },
+  {
+   "ar": "عدواني",
+   "en": "Aggressive",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj140"
+   ]
+  },
+  {
+   "ar": "سلبي",
+   "en": "Negative / passive",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj141"
+   ]
+  },
+  {
+   "ar": "منطقي",
+   "en": "Logical",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj143"
+   ]
+  },
+  {
+   "ar": "عملي",
+   "en": "Practical",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj145"
+   ]
+  },
+  {
+   "ar": "إجباري",
+   "en": "Compulsory / mandatory",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj147"
+   ]
+  },
+  {
+   "ar": "اختياري",
+   "en": "Optional",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj148"
+   ]
+  },
+  {
+   "ar": "حادّ",
+   "en": "Acute / sharp",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj150"
+   ]
+  },
+  {
+   "ar": "مرن",
+   "en": "Flexible",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "qual12"
+   ]
+  },
+  {
+   "ar": "هشّ",
+   "en": "Fragile / brittle",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "qual13"
+   ]
+  },
+  {
+   "ar": "مساوي",
+   "en": "Equal",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj158"
+   ]
+  },
+  {
+   "ar": "متوازن",
+   "en": "Balanced",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj159"
+   ]
+  },
+  {
+   "ar": "معتدل",
+   "en": "Moderate",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj161",
+    "x15"
+   ]
+  },
+  {
+   "ar": "معتاد",
+   "en": "Used to / accustomed",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj163"
+   ]
+  },
+  {
+   "ar": "مألوف",
+   "en": "Familiar",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj165"
+   ]
+  },
+  {
+   "ar": "ناضج",
+   "en": "Mature / ripe",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj170"
+   ]
+  },
+  {
+   "ar": "عتيق",
+   "en": "Old / vintage",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "adj172"
+   ]
+  },
+  {
+   "ar": "مرفوض",
+   "en": "Rejected / unacceptable",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "sens20"
+   ]
+  },
+  {
+   "ar": "جدّية",
+   "en": "Seriousness",
+   "cat": "Adjectives",
+   "level": 3,
+   "ids": [
+    "x164"
+   ]
+  },
+  {
+   "ar": "بوضوح",
+   "en": "Clearly",
+   "cat": "Adverbs",
+   "level": 3,
+   "ids": [
+    "adw26"
+   ]
+  },
+  {
+   "ar": "بالتالي",
+   "en": "Consequently / therefore",
+   "cat": "Adverbs",
+   "level": 3,
+   "ids": [
+    "adw29"
+   ]
+  },
+  {
+   "ar": "كلّيا",
+   "en": "Completely / entirely",
+   "cat": "Adverbs",
+   "level": 3,
+   "ids": [
+    "misc14"
+   ]
+  },
+  {
+   "ar": "جزئياً",
+   "en": "Partially",
+   "cat": "Adverbs",
+   "level": 3,
+   "ids": [
+    "misc15"
+   ]
+  },
+  {
+   "ar": "مؤقتاً",
+   "en": "Temporarily",
+   "cat": "Adverbs",
+   "level": 3,
+   "ids": [
+    "misc16"
+   ]
+  },
+  {
+   "ar": "عمداً",
+   "en": "On purpose / intentionally",
+   "cat": "Adverbs",
+   "level": 3,
+   "ids": [
+    "adx3"
+   ]
+  },
+  {
+   "ar": "سهواً",
+   "en": "By mistake / accidentally",
+   "cat": "Adverbs",
+   "level": 3,
+   "ids": [
+    "adx4"
+   ]
+  },
+  {
+   "ar": "جراد",
+   "en": "Locust",
+   "cat": "Animals",
+   "level": 3,
+   "ids": [
+    "an40"
+   ]
+  },
+  {
+   "ar": "عضل",
+   "en": "Muscle",
+   "cat": "Body",
+   "level": 3,
+   "ids": [
+    "bd1"
+   ]
+  },
+  {
+   "ar": "خصر",
+   "en": "Waist / Hip",
+   "cat": "Body",
+   "level": 3,
+   "ids": [
+    "bd13",
+    "bd39"
+   ]
+  },
+  {
+   "ar": "إبط",
+   "en": "Armpit",
+   "cat": "Body",
+   "level": 3,
+   "ids": [
+    "bd14"
+   ]
+  },
+  {
+   "ar": "إبهام",
+   "en": "Thumb",
+   "cat": "Body",
+   "level": 3,
+   "ids": [
+    "bd15",
+    "bd35"
+   ]
+  },
+  {
+   "ar": "رسغ",
+   "en": "Wrist",
+   "cat": "Body",
+   "level": 3,
+   "ids": [
+    "bd18"
+   ]
+  },
+  {
+   "ar": "كاحل",
+   "en": "Ankle",
+   "cat": "Body",
+   "level": 3,
+   "ids": [
+    "bd19"
+   ]
+  },
+  {
+   "ar": "ميزانية",
+   "en": "Budget",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "biz4",
+    "biz21"
+   ]
+  },
+  {
+   "ar": "منافسة",
+   "en": "Competition",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "biz10"
+   ]
+  },
+  {
+   "ar": "ميعاد",
+   "en": "Appointment / Deadline",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "biz11"
+   ]
+  },
+  {
+   "ar": "تقديم",
+   "en": "Presentation / Application",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "biz13"
+   ]
+  },
+  {
+   "ar": "شراكة",
+   "en": "Partnership",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "biz16",
+    "x144"
+   ]
+  },
+  {
+   "ar": "مقابلة",
+   "en": "Interview / Meeting",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "biz17"
+   ]
+  },
+  {
+   "ar": "علاوة",
+   "en": "Bonus / Raise",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "biz20",
+    "wrk14"
+   ]
+  },
+  {
+   "ar": "عملاء",
+   "en": "Clients / customers",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "biz29"
+   ]
+  },
+  {
+   "ar": "تحويل",
+   "en": "Money transfer",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "leb10",
+    "bnk12"
+   ]
+  },
+  {
+   "ar": "توفير",
+   "en": "Savings",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "fin3",
+    "bnk23"
+   ]
+  },
+  {
+   "ar": "فائدة",
+   "en": "Interest (financial) / benefit",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "fin5"
+   ]
+  },
+  {
+   "ar": "جمارك",
+   "en": "Customs",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "fin15",
+    "trv47"
+   ]
+  },
+  {
+   "ar": "منافس",
+   "en": "Competitor",
+   "cat": "Business",
+   "level": 3,
+   "ids": [
+    "biz49"
+   ]
+  },
+  {
+   "ar": "قماش",
+   "en": "Fabric / Cloth",
+   "cat": "Clothing",
+   "level": 3,
+   "ids": [
+    "fas14"
+   ]
+  },
+  {
+   "ar": "مريلة",
+   "en": "Apron",
+   "cat": "Clothing",
+   "level": 3,
+   "ids": [
+    "cl35"
+   ]
+  },
+  {
+   "ar": "طراز",
+   "en": "Style / model",
+   "cat": "Clothing",
+   "level": 3,
+   "ids": [
+    "fash2"
+   ]
+  },
+  {
+   "ar": "خياطة",
+   "en": "Sewing / tailoring",
+   "cat": "Clothing",
+   "level": 3,
+   "ids": [
+    "fash3"
+   ]
+  },
+  {
+   "ar": "مجوهرات",
+   "en": "Jewelry",
+   "cat": "Clothing",
+   "level": 3,
+   "ids": [
+    "fash8"
+   ]
+  },
+  {
+   "ar": "نيلي",
+   "en": "Indigo",
+   "cat": "Colors",
+   "level": 3,
+   "ids": [
+    "cl13"
+   ]
+  },
+  {
+   "ar": "باهت",
+   "en": "Faded / pale",
+   "cat": "Colors",
+   "level": 3,
+   "ids": [
+    "vis3"
+   ]
+  },
+  {
+   "ar": "فاقع",
+   "en": "Vivid / bright (color)",
+   "cat": "Colors",
+   "level": 3,
+   "ids": [
+    "vis4"
+   ]
+  },
+  {
+   "ar": "شفاف",
+   "en": "Transparent",
+   "cat": "Colors",
+   "level": 3,
+   "ids": [
+    "vis5",
+    "col35",
+    "col48"
+   ]
+  },
+  {
+   "ar": "زيتي",
+   "en": "Olive (color)",
+   "cat": "Colors",
+   "level": 3,
+   "ids": [
+    "col31",
+    "col43"
+   ]
+  },
+  {
+   "ar": "تركوازي",
+   "en": "Turquoise",
+   "cat": "Colors",
+   "level": 3,
+   "ids": [
+    "col34"
+   ]
+  },
+  {
+   "ar": "لامع",
+   "en": "Shiny / glossy",
+   "cat": "Colors",
+   "level": 3,
+   "ids": [
+    "col38"
+   ]
+  },
+  {
+   "ar": "مط",
+   "en": "Matte",
+   "cat": "Colors",
+   "level": 3,
+   "ids": [
+    "col39"
+   ]
+  },
+  {
+   "ar": "إنديغو",
+   "en": "Indigo",
+   "cat": "Colors",
+   "level": 3,
+   "ids": [
+    "col54"
+   ]
+  },
+  {
+   "ar": "مقادير",
+   "en": "Ingredients",
+   "cat": "Cooking",
+   "level": 3,
+   "ids": [
+    "ck20"
+   ]
+  },
+  {
+   "ar": "كزبرة",
+   "en": "Coriander / cilantro",
+   "cat": "Cooking",
+   "level": 3,
+   "ids": [
+    "ing1",
+    "ck25"
+   ]
+  },
+  {
+   "ar": "كركم",
+   "en": "Turmeric",
+   "cat": "Cooking",
+   "level": 3,
+   "ids": [
+    "ing9"
+   ]
+  },
+  {
+   "ar": "هيل",
+   "en": "Cardamom",
+   "cat": "Cooking",
+   "level": 3,
+   "ids": [
+    "ing11"
+   ]
+  },
+  {
+   "ar": "سماق",
+   "en": "Sumac",
+   "cat": "Cooking",
+   "level": 3,
+   "ids": [
+    "ing12"
+   ]
+  },
+  {
+   "ar": "سمّاقية",
+   "en": "Sumac sauce / dish",
+   "cat": "Cooking",
+   "level": 3,
+   "ids": [
+    "ck17"
+   ]
+  },
+  {
+   "ar": "مكلوبة",
+   "en": "Makloubeh (upside-down rice dish)",
+   "cat": "Cooking",
+   "level": 3,
+   "ids": [
+    "ck34"
+   ]
+  },
+  {
+   "ar": "أثر",
+   "en": "Ruin / historical site",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "cult14"
+   ]
+  },
+  {
+   "ar": "عادة",
+   "en": "Custom / habit",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "cult16"
+   ]
+  },
+  {
+   "ar": "تقليد",
+   "en": "Tradition",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "cult17"
+   ]
+  },
+  {
+   "ar": "عزاء",
+   "en": "Condolence gathering",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "cult21"
+   ]
+  },
+  {
+   "ar": "تعميد",
+   "en": "Baptism",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "cult23"
+   ]
+  },
+  {
+   "ar": "صيرفي",
+   "en": "Money changer",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "leb4"
+   ]
+  },
+  {
+   "ar": "مازوت",
+   "en": "Heating oil / diesel",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "leb6"
+   ]
+  },
+  {
+   "ar": "اشتراك",
+   "en": "Subscription / generator share",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "leb8"
+   ]
+  },
+  {
+   "ar": "وساطة",
+   "en": "Wasta (connections / nepotism)",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "lsc1"
+   ]
+  },
+  {
+   "ar": "تشريف",
+   "en": "Gracing with presence / honor",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "lsc6"
+   ]
+  },
+  {
+   "ar": "ذكرى",
+   "en": "Memory / anniversary",
+   "cat": "Culture",
+   "level": 3,
+   "ids": [
+    "x79"
+   ]
+  },
+  {
+   "ar": "خلاصة",
+   "en": "Summary / Conclusion",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "ac5",
+    "x99"
+   ]
+  },
+  {
+   "ar": "تخرج",
+   "en": "Graduation",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "ac9"
+   ]
+  },
+  {
+   "ar": "مقرر",
+   "en": "Course / Required subject",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "ac12"
+   ]
+  },
+  {
+   "ar": "منحة",
+   "en": "Scholarship",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "edu20"
+   ]
+  },
+  {
+   "ar": "البريفيه",
+   "en": "Brevet exam (grade 9 state exam)",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "edu31"
+   ]
+  },
+  {
+   "ar": "البكالوريا",
+   "en": "Baccalaureate (grade 12 state exam)",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "edu32"
+   ]
+  },
+  {
+   "ar": "ماجستير",
+   "en": "Master's degree",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "edu39"
+   ]
+  },
+  {
+   "ar": "بكالوريوس",
+   "en": "Bachelor's degree",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "edu40"
+   ]
+  },
+  {
+   "ar": "مكافأة",
+   "en": "Reward / prize / scholarship stipend",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "edu50"
+   ]
+  },
+  {
+   "ar": "قيمة",
+   "en": "Value (principle)",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "c1a5"
+   ]
+  },
+  {
+   "ar": "مسار",
+   "en": "Path / trajectory / track",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "c1a8"
+   ]
+  },
+  {
+   "ar": "مراجعة",
+   "en": "Review / revision",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "sch5",
+    "x117"
+   ]
+  },
+  {
+   "ar": "مقارنة",
+   "en": "Comparison",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "b2a9"
+   ]
+  },
+  {
+   "ar": "نقاش",
+   "en": "Discussion / debate",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "b1x10"
+   ]
+  },
+  {
+   "ar": "حوار",
+   "en": "Dialogue",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "b1x13"
+   ]
+  },
+  {
+   "ar": "جدال",
+   "en": "Argument / debate",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "b1x14"
+   ]
+  },
+  {
+   "ar": "جاذبية",
+   "en": "Gravity",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "sci6"
+   ]
+  },
+  {
+   "ar": "مغناطيس",
+   "en": "Magnet",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "sci9"
+   ]
+  },
+  {
+   "ar": "جائزة",
+   "en": "Prize / award",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "x81"
+   ]
+  },
+  {
+   "ar": "مراجع",
+   "en": "References",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "x109"
+   ]
+  },
+  {
+   "ar": "توضيح",
+   "en": "Clarification",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "x113"
+   ]
+  },
+  {
+   "ar": "ملاحظة",
+   "en": "Observation / note",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "x114"
+   ]
+  },
+  {
+   "ar": "تنبيه",
+   "en": "Warning / alert / reminder",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "x115"
+   ]
+  },
+  {
+   "ar": "مرحلة",
+   "en": "Stage / phase",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "x131"
+   ]
+  },
+  {
+   "ar": "نمو",
+   "en": "Growth",
+   "cat": "Education",
+   "level": 3,
+   "ids": [
+    "x134"
+   ]
+  },
+  {
+   "ar": "جريح",
+   "en": "Wounded / injured",
+   "cat": "Emergency",
+   "level": 3,
+   "ids": [
+    "em12"
+   ]
+  },
+  {
+   "ar": "مفقود",
+   "en": "Missing / lost",
+   "cat": "Emergency",
+   "level": 3,
+   "ids": [
+    "em17",
+    "em61"
+   ]
+  },
+  {
+   "ar": "تهديد",
+   "en": "Threat",
+   "cat": "Emergency",
+   "level": 3,
+   "ids": [
+    "em18"
+   ]
+  },
+  {
+   "ar": "واثق",
+   "en": "Confident",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "emo4",
+    "adj129",
+    "em49"
+   ]
+  },
+  {
+   "ar": "مرتبك",
+   "en": "Confused / Flustered",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "emo5"
+   ]
+  },
+  {
+   "ar": "محبط",
+   "en": "Discouraging / Depressing",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "emo8"
+   ]
+  },
+  {
+   "ar": "صادم",
+   "en": "Shocking",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "emo10"
+   ]
+  },
+  {
+   "ar": "مبهوت",
+   "en": "Speechless / Stunned",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "emo11",
+    "em72"
+   ]
+  },
+  {
+   "ar": "مكتئب",
+   "en": "Depressed",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "emo21"
+   ]
+  },
+  {
+   "ar": "متفائل",
+   "en": "Optimistic",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "emo23"
+   ]
+  },
+  {
+   "ar": "متشائم",
+   "en": "Pessimistic",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "emo24"
+   ]
+  },
+  {
+   "ar": "حانق",
+   "en": "Furious",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "emo26"
+   ]
+  },
+  {
+   "ar": "مرعوب",
+   "en": "Terrified",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "emo30"
+   ]
+  },
+  {
+   "ar": "يأس",
+   "en": "Despair",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "abn7"
+   ]
+  },
+  {
+   "ar": "رحمة",
+   "en": "Mercy / compassion",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "abn13"
+   ]
+  },
+  {
+   "ar": "مندهش",
+   "en": "Astonished / stunned",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "em37"
+   ]
+  },
+  {
+   "ar": "متعلّق",
+   "en": "Attached / fond of",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "em47"
+   ]
+  },
+  {
+   "ar": "مضطرب",
+   "en": "Anxious / disturbed",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "em50"
+   ]
+  },
+  {
+   "ar": "متحسّر",
+   "en": "Regretful / yearning",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "em70"
+   ]
+  },
+  {
+   "ar": "منهوك",
+   "en": "Exhausted / drained",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "em73"
+   ]
+  },
+  {
+   "ar": "شوق",
+   "en": "Longing / yearning",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "em76"
+   ]
+  },
+  {
+   "ar": "طايش",
+   "en": "Reckless / lost his head",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "em78"
+   ]
+  },
+  {
+   "ar": "محمول",
+   "en": "Bearable / manageable",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "em79"
+   ]
+  },
+  {
+   "ar": "خانق",
+   "en": "Suffocating / stifling",
+   "cat": "Emotions",
+   "level": 3,
+   "ids": [
+    "em83"
+   ]
+  },
+  {
+   "ar": "قطايف",
+   "en": "Qatayef (Ramadan pancakes)",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd47",
+    "fd73",
+    "ck50"
+   ]
+  },
+  {
+   "ar": "مسخّن",
+   "en": "Musakhan (chicken with onions)",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd48"
+   ]
+  },
+  {
+   "ar": "عوامة",
+   "en": "Awameh (fried dough balls)",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd55"
+   ]
+  },
+  {
+   "ar": "رشتا",
+   "en": "Rishta (lentil noodle soup)",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd58",
+    "ck35"
+   ]
+  },
+  {
+   "ar": "ملوخية",
+   "en": "Mulukhiyah (jute mallow stew)",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd69",
+    "fp56"
+   ]
+  },
+  {
+   "ar": "صيادية",
+   "en": "Sayadieh (fish with spiced rice)",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd70"
+   ]
+  },
+  {
+   "ar": "بسطرمة",
+   "en": "Pastirma (spiced cured meat)",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd74"
+   ]
+  },
+  {
+   "ar": "سوجوك",
+   "en": "Sujuk (spiced sausage)",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd75"
+   ]
+  },
+  {
+   "ar": "جلاب",
+   "en": "Jallab (grape & rose water drink)",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd80"
+   ]
+  },
+  {
+   "ar": "صفيحة",
+   "en": "Sfeeha (meat pie)",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd88"
+   ]
+  },
+  {
+   "ar": "كبيبة",
+   "en": "Small kibbe balls",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fd89"
+   ]
+  },
+  {
+   "ar": "معسّل",
+   "en": "Molasses / shisha flavoring",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fc13"
+   ]
+  },
+  {
+   "ar": "كرّاث",
+   "en": "Leek",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fp54"
+   ]
+  },
+  {
+   "ar": "ملبّس",
+   "en": "Sugared almonds",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fp62"
+   ]
+  },
+  {
+   "ar": "مشمشية",
+   "en": "Apricot jam / preserves",
+   "cat": "Food",
+   "level": 3,
+   "ids": [
+    "fp64"
+   ]
+  },
+  {
+   "ar": "عدّاد",
+   "en": "Electricity/water meter",
+   "cat": "Home",
+   "level": 3,
+   "ids": [
+    "hm43"
+   ]
+  },
+  {
+   "ar": "مزلاج",
+   "en": "Door latch / bolt",
+   "cat": "Home",
+   "level": 3,
+   "ids": [
+    "home20"
+   ]
+  },
+  {
+   "ar": "موجودات",
+   "en": "Furniture / belongings",
+   "cat": "Home",
+   "level": 3,
+   "ids": [
+    "home27"
+   ]
+  },
+  {
+   "ar": "تمديدات",
+   "en": "Plumbing / wiring / installations",
+   "cat": "Home",
+   "level": 3,
+   "ids": [
+    "home28"
+   ]
+  },
+  {
+   "ar": "سكري",
+   "en": "Diabetes",
+   "cat": "Medical",
+   "level": 3,
+   "ids": [
+    "med32",
+    "med10"
+   ]
+  },
+  {
+   "ar": "كولسترول",
+   "en": "Cholesterol",
+   "cat": "Medical",
+   "level": 3,
+   "ids": [
+    "med34"
+   ]
+  },
+  {
+   "ar": "أشعة",
+   "en": "X-ray",
+   "cat": "Medical",
+   "level": 3,
+   "ids": [
+    "med35"
+   ]
+  },
+  {
+   "ar": "غثيان",
+   "en": "Nausea",
+   "cat": "Medical",
+   "level": 3,
+   "ids": [
+    "med42"
+   ]
+  },
+  {
+   "ar": "قيء",
+   "en": "Vomiting",
+   "cat": "Medical",
+   "level": 3,
+   "ids": [
+    "med43"
+   ]
+  },
+  {
+   "ar": "إمساك",
+   "en": "Constipation",
+   "cat": "Medical",
+   "level": 3,
+   "ids": [
+    "med45"
+   ]
+  },
+  {
+   "ar": "حروق",
+   "en": "Burns",
+   "cat": "Medical",
+   "level": 3,
+   "ids": [
+    "med48"
+   ]
+  },
+  {
+   "ar": "نبض",
+   "en": "Pulse",
+   "cat": "Medical",
+   "level": 3,
+   "ids": [
+    "hlth10"
+   ]
+  },
+  {
+   "ar": "خدّر",
+   "en": "Numb / anesthetized",
+   "cat": "Medical",
+   "level": 3,
+   "ids": [
+    "hlth12"
+   ]
+  },
+  {
+   "ar": "لقاح",
+   "en": "Vaccine",
+   "cat": "Medical",
+   "level": 3,
+   "ids": [
+    "hlth14"
+   ]
+  },
+  {
+   "ar": "سنوي",
+   "en": "Annual / yearly",
+   "cat": "Months",
+   "level": 3,
+   "ids": [
+    "month24"
+   ]
+  },
+  {
+   "ar": "رواية",
+   "en": "Novel",
+   "cat": "Music",
+   "level": 3,
+   "ids": [
+    "art7",
+    "ev15"
+   ]
+  },
+  {
+   "ar": "قصيدة",
+   "en": "Poem",
+   "cat": "Music",
+   "level": 3,
+   "ids": [
+    "art8",
+    "ev16"
+   ]
+  },
+  {
+   "ar": "فيروز",
+   "en": "Fairuz (iconic Lebanese singer)",
+   "cat": "Music",
+   "level": 3,
+   "ids": [
+    "art17"
+   ]
+  },
+  {
+   "ar": "حرفة",
+   "en": "Craft",
+   "cat": "Music",
+   "level": 3,
+   "ids": [
+    "art24"
+   ]
+  },
+  {
+   "ar": "معرض",
+   "en": "Exhibition",
+   "cat": "Music",
+   "level": 3,
+   "ids": [
+    "art28"
+   ]
+  },
+  {
+   "ar": "إبداع",
+   "en": "Creativity",
+   "cat": "Music",
+   "level": 3,
+   "ids": [
+    "art30"
+   ]
+  },
+  {
+   "ar": "مزيج",
+   "en": "Mix / blend (also music mix)",
+   "cat": "Music",
+   "level": 3,
+   "ids": [
+    "art31"
+   ]
+  },
+  {
+   "ar": "إيقاع",
+   "en": "Rhythm / beat",
+   "cat": "Music",
+   "level": 3,
+   "ids": [
+    "art32"
+   ]
+  },
+  {
+   "ar": "لحن",
+   "en": "Melody / tune",
+   "cat": "Music",
+   "level": 3,
+   "ids": [
+    "art33"
+   ]
+  },
+  {
+   "ar": "فيضان",
+   "en": "Flood",
+   "cat": "Nature",
+   "level": 3,
+   "ids": [
+    "env5",
+    "nat31"
+   ]
+  },
+  {
+   "ar": "جفاف",
+   "en": "Drought",
+   "cat": "Nature",
+   "level": 3,
+   "ids": [
+    "env6"
+   ]
+  },
+  {
+   "ar": "زلزلة",
+   "en": "Earthquake",
+   "cat": "Nature",
+   "level": 3,
+   "ids": [
+    "env7"
+   ]
+  },
+  {
+   "ar": "طاقة",
+   "en": "Energy",
+   "cat": "Nature",
+   "level": 3,
+   "ids": [
+    "env10",
+    "sci7"
+   ]
+  },
+  {
+   "ar": "بركان",
+   "en": "Volcano",
+   "cat": "Nature",
+   "level": 3,
+   "ids": [
+    "nat33"
+   ]
+  },
+  {
+   "ar": "بستان",
+   "en": "Orchard / garden",
+   "cat": "Nature",
+   "level": 3,
+   "ids": [
+    "nat40"
+   ]
+  },
+  {
+   "ar": "صنوبر",
+   "en": "Pine tree",
+   "cat": "Nature",
+   "level": 3,
+   "ids": [
+    "plt3",
+    "nat25",
+    "ck20"
+   ]
+  },
+  {
+   "ar": "كرمة",
+   "en": "Grapevine",
+   "cat": "Nature",
+   "level": 3,
+   "ids": [
+    "plt5"
+   ]
+  },
+  {
+   "ar": "جذر",
+   "en": "Root",
+   "cat": "Nature",
+   "level": 3,
+   "ids": [
+    "plt13"
+   ]
+  },
+  {
+   "ar": "نفايات",
+   "en": "Waste / garbage",
+   "cat": "Nature",
+   "level": 3,
+   "ids": [
+    "env27"
+   ]
+  },
+  {
+   "ar": "مليار",
+   "en": "Billion",
+   "cat": "Numbers",
+   "level": 3,
+   "ids": [
+    "nm24"
+   ]
+  },
+  {
+   "ar": "أرمل",
+   "en": "Widower",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "ppl9",
+    "ppl35"
+   ]
+  },
+  {
+   "ar": "زعيم",
+   "en": "Leader / Chief",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "ppl19",
+    "pol17"
+   ]
+  },
+  {
+   "ar": "متطوع",
+   "en": "Volunteer",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "ppl21"
+   ]
+  },
+  {
+   "ar": "لاجئ",
+   "en": "Refugee",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "ppl22",
+    "soc47"
+   ]
+  },
+  {
+   "ar": "مهاجر",
+   "en": "Immigrant / Migrant",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "ppl23"
+   ]
+  },
+  {
+   "ar": "مواطن",
+   "en": "Citizen",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "ppl24"
+   ]
+  },
+  {
+   "ar": "كهل",
+   "en": "Middle-aged man",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "ppl31"
+   ]
+  },
+  {
+   "ar": "يتيم",
+   "en": "Orphan",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "ppl33"
+   ]
+  },
+  {
+   "ar": "أرملة",
+   "en": "Widow",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "ppl34"
+   ]
+  },
+  {
+   "ar": "مغترب",
+   "en": "Emigrant / diaspora",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "ppl39"
+   ]
+  },
+  {
+   "ar": "طلاق",
+   "en": "Divorce",
+   "cat": "People",
+   "level": 3,
+   "ids": [
+    "x72"
+   ]
+  },
+  {
+   "ar": "لذلك",
+   "en": "Therefore / for that reason",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "dc1"
+   ]
+  },
+  {
+   "ar": "تقبرني",
+   "en": "May you bury me (expression of love)",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "idm2"
+   ]
+  },
+  {
+   "ar": "أذنك",
+   "en": "With your permission (before speaking)",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "conv9"
+   ]
+  },
+  {
+   "ar": "أرجو",
+   "en": "I request / please",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "pol3"
+   ]
+  },
+  {
+   "ar": "أتشرّف",
+   "en": "I am honored",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "pol8"
+   ]
+  },
+  {
+   "ar": "كيفما",
+   "en": "However / whichever way",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "str10"
+   ]
+  },
+  {
+   "ar": "مصادفة",
+   "en": "By coincidence",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "adx2"
+   ]
+  },
+  {
+   "ar": "تحذير",
+   "en": "Warning",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "si7"
+   ]
+  },
+  {
+   "ar": "شكوى",
+   "en": "Complaint",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "si8"
+   ]
+  },
+  {
+   "ar": "إطراء",
+   "en": "Compliment / praise",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "si9"
+   ]
+  },
+  {
+   "ar": "نقد",
+   "en": "Criticism",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "si10"
+   ]
+  },
+  {
+   "ar": "مواساة",
+   "en": "Consolation",
+   "cat": "Phrases",
+   "level": 3,
+   "ids": [
+    "si14"
+   ]
+  },
+  {
+   "ar": "الحمرا",
+   "en": "Hamra (Beirut district)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc20",
+    "leb14"
+   ]
+  },
+  {
+   "ar": "جعيتا",
+   "en": "Jeita Grotto (natural caves)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc21"
+   ]
+  },
+  {
+   "ar": "جبيل",
+   "en": "Byblos",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc24",
+    "geo9"
+   ]
+  },
+  {
+   "ar": "صيدا",
+   "en": "Sidon",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc25",
+    "geo7"
+   ]
+  },
+  {
+   "ar": "الضاحية",
+   "en": "The Suburbs (South Beirut)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc26"
+   ]
+  },
+  {
+   "ar": "المتن",
+   "en": "Metn (Mountain district)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc27"
+   ]
+  },
+  {
+   "ar": "الشوف",
+   "en": "Shouf (Druze heartland)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc28"
+   ]
+  },
+  {
+   "ar": "مطبعة",
+   "en": "Print shop / Press",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc33"
+   ]
+  },
+  {
+   "ar": "مصنع",
+   "en": "Factory",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc34"
+   ]
+  },
+  {
+   "ar": "حانة",
+   "en": "Pub / tavern",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc44"
+   ]
+  },
+  {
+   "ar": "ملهى",
+   "en": "Nightclub",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "plc52"
+   ]
+  },
+  {
+   "ar": "الجميزة",
+   "en": "Gemmayzeh (nightlife district)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "leb15"
+   ]
+  },
+  {
+   "ar": "البقاع",
+   "en": "The Bekaa Valley",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "geo12"
+   ]
+  },
+  {
+   "ar": "البترون",
+   "en": "Batroun (coastal city)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "geo23"
+   ]
+  },
+  {
+   "ar": "زحلة",
+   "en": "Zahle (Bekaa city)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "geo24"
+   ]
+  },
+  {
+   "ar": "الميناء",
+   "en": "Mina (Tripoli port area)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "geo25"
+   ]
+  },
+  {
+   "ar": "الحريصا",
+   "en": "Harissa (Our Lady of Lebanon statue)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "geo27"
+   ]
+  },
+  {
+   "ar": "فاريا",
+   "en": "Faraya (ski resort)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "geo28"
+   ]
+  },
+  {
+   "ar": "قاديشا",
+   "en": "Qadisha Valley",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "geo29"
+   ]
+  },
+  {
+   "ar": "البورج",
+   "en": "Martyr's Square (Bourj)",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "geo33"
+   ]
+  },
+  {
+   "ar": "صنّين",
+   "en": "Mount Sannine",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "geo37"
+   ]
+  },
+  {
+   "ar": "زواريب",
+   "en": "Back alleys",
+   "cat": "Places",
+   "level": 3,
+   "ids": [
+    "fin26"
+   ]
+  },
+  {
+   "ar": "قاضي",
+   "en": "Judge",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "pr12",
+    "occ13"
+   ]
+  },
+  {
+   "ar": "صيدلاني",
+   "en": "Pharmacist",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "pr13",
+    "occ24"
+   ]
+  },
+  {
+   "ar": "حدّاد",
+   "en": "Blacksmith",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "pr17"
+   ]
+  },
+  {
+   "ar": "محاسب",
+   "en": "Accountant",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "pr25",
+    "occ30"
+   ]
+  },
+  {
+   "ar": "سياسي",
+   "en": "Politician",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "occ2"
+   ]
+  },
+  {
+   "ar": "ناشط",
+   "en": "Activist",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "occ3"
+   ]
+  },
+  {
+   "ar": "متطوّع",
+   "en": "Volunteer",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "occ4"
+   ]
+  },
+  {
+   "ar": "محقّق",
+   "en": "Investigator / detective",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "x56"
+   ]
+  },
+  {
+   "ar": "مترجم",
+   "en": "Translator / interpreter",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "occ29"
+   ]
+  },
+  {
+   "ar": "نائب",
+   "en": "Member of Parliament / deputy",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "occ32"
+   ]
+  },
+  {
+   "ar": "بيطار",
+   "en": "Veterinarian",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "occ35"
+   ]
+  },
+  {
+   "ar": "عقاري",
+   "en": "Real estate agent",
+   "cat": "Professions",
+   "level": 3,
+   "ids": [
+    "occ38"
+   ]
+  },
+  {
+   "ar": "جنّة",
+   "en": "Paradise / heaven",
+   "cat": "Religion",
+   "level": 3,
+   "ids": [
+    "rel16"
+   ]
+  },
+  {
+   "ar": "جهنّم",
+   "en": "Hell",
+   "cat": "Religion",
+   "level": 3,
+   "ids": [
+    "rel17"
+   ]
+  },
+  {
+   "ar": "مؤمن",
+   "en": "Believer",
+   "cat": "Religion",
+   "level": 3,
+   "ids": [
+    "rel18"
+   ]
+  },
+  {
+   "ar": "مزار",
+   "en": "Shrine",
+   "cat": "Religion",
+   "level": 3,
+   "ids": [
+    "rel27"
+   ]
+  },
+  {
+   "ar": "راهب",
+   "en": "Monk",
+   "cat": "Religion",
+   "level": 3,
+   "ids": [
+    "rel29"
+   ]
+  },
+  {
+   "ar": "كاهن",
+   "en": "Priest",
+   "cat": "Religion",
+   "level": 3,
+   "ids": [
+    "rel30"
+   ]
+  },
+  {
+   "ar": "إمام",
+   "en": "Imam",
+   "cat": "Religion",
+   "level": 3,
+   "ids": [
+    "rel32"
+   ]
+  },
+  {
+   "ar": "استرجاع",
+   "en": "Return / refund",
+   "cat": "Shopping",
+   "level": 3,
+   "ids": [
+    "sh17"
+   ]
+  },
+  {
+   "ar": "واجهة",
+   "en": "Shop front / display window",
+   "cat": "Shopping",
+   "level": 3,
+   "ids": [
+    "sh19"
+   ]
+  },
+  {
+   "ar": "مكفول",
+   "en": "Guaranteed / under warranty",
+   "cat": "Shopping",
+   "level": 3,
+   "ids": [
+    "sh41"
+   ]
+  },
+  {
+   "ar": "شحار",
+   "en": "Mooch / Freeloader",
+   "cat": "Slang",
+   "level": 3,
+   "ids": [
+    "sl24"
+   ]
+  },
+  {
+   "ar": "مسكّر",
+   "en": "Drunk",
+   "cat": "Slang",
+   "level": 3,
+   "ids": [
+    "sl25"
+   ]
+  },
+  {
+   "ar": "شرشح",
+   "en": "Humiliated / Embarrassed publicly",
+   "cat": "Slang",
+   "level": 3,
+   "ids": [
+    "sl33"
+   ]
+  },
+  {
+   "ar": "لاقيها",
+   "en": "He found a way / He managed",
+   "cat": "Slang",
+   "level": 3,
+   "ids": [
+    "sl38"
+   ]
+  },
+  {
+   "ar": "نشمي",
+   "en": "Cool / tough / a real guy",
+   "cat": "Slang",
+   "level": 3,
+   "ids": [
+    "sl47"
+   ]
+  },
+  {
+   "ar": "مفروم",
+   "en": "Exhausted / shredded",
+   "cat": "Slang",
+   "level": 3,
+   "ids": [
+    "col6"
+   ]
+  },
+  {
+   "ar": "مفحّم",
+   "en": "Overwhelmed / burned out",
+   "cat": "Slang",
+   "level": 3,
+   "ids": [
+    "fp36"
+   ]
+  },
+  {
+   "ar": "سياسة",
+   "en": "Politics",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc1",
+    "soc32",
+    "aca3"
+   ]
+  },
+  {
+   "ar": "برلمان",
+   "en": "Parliament",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc4",
+    "soc36"
+   ]
+  },
+  {
+   "ar": "مجتمع",
+   "en": "Society",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc7",
+    "soc31"
+   ]
+  },
+  {
+   "ar": "فساد",
+   "en": "Corruption",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc12",
+    "soc42"
+   ]
+  },
+  {
+   "ar": "اقتصاد",
+   "en": "Economy",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc13",
+    "edu30"
+   ]
+  },
+  {
+   "ar": "بطالة",
+   "en": "Unemployment",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc14",
+    "x124"
+   ]
+  },
+  {
+   "ar": "حرب",
+   "en": "War",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc16"
+   ]
+  },
+  {
+   "ar": "ضريبة",
+   "en": "Tax",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc20",
+    "fin14"
+   ]
+  },
+  {
+   "ar": "عدالة",
+   "en": "Justice",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc28"
+   ]
+  },
+  {
+   "ar": "تظاهرة",
+   "en": "Protest / demonstration",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc45"
+   ]
+  },
+  {
+   "ar": "إضراب",
+   "en": "Strike (labor)",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc46"
+   ]
+  },
+  {
+   "ar": "انفجار",
+   "en": "Explosion",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "soc49"
+   ]
+  },
+  {
+   "ar": "غرامة",
+   "en": "Fine (monetary penalty)",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "x49"
+   ]
+  },
+  {
+   "ar": "مجرم",
+   "en": "Criminal",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "x52"
+   ]
+  },
+  {
+   "ar": "دليل",
+   "en": "Evidence / proof",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "x54"
+   ]
+  },
+  {
+   "ar": "دفاع",
+   "en": "Defense",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "x58"
+   ]
+  },
+  {
+   "ar": "عمالة",
+   "en": "Labor / workforce",
+   "cat": "Society",
+   "level": 3,
+   "ids": [
+    "x125"
+   ]
+  },
+  {
+   "ar": "بطولة",
+   "en": "Championship / tournament",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "spt11",
+    "sp18"
+   ]
+  },
+  {
+   "ar": "دوري",
+   "en": "League",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "spt12"
+   ]
+  },
+  {
+   "ar": "تسديدة",
+   "en": "Shot (in sports)",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "spt17"
+   ]
+  },
+  {
+   "ar": "إحماء",
+   "en": "Warm-up",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "spt20"
+   ]
+  },
+  {
+   "ar": "تسلّق",
+   "en": "Climbing",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "spt26"
+   ]
+  },
+  {
+   "ar": "غوص",
+   "en": "Diving / scuba diving",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "spt27"
+   ]
+  },
+  {
+   "ar": "تزلّج",
+   "en": "Skiing",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "spt28"
+   ]
+  },
+  {
+   "ar": "ملاكمة",
+   "en": "Boxing",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "spt29"
+   ]
+  },
+  {
+   "ar": "تسلق",
+   "en": "Rock climbing",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "sp27"
+   ]
+  },
+  {
+   "ar": "صافرة",
+   "en": "Whistle",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "sp39"
+   ]
+  },
+  {
+   "ar": "تسخين",
+   "en": "Warm-up",
+   "cat": "Sports",
+   "level": 3,
+   "ids": [
+    "sp51"
+   ]
+  },
+  {
+   "ar": "خادم",
+   "en": "Server",
+   "cat": "Tech",
+   "level": 3,
+   "ids": [
+    "tch25"
+   ]
+  },
+  {
+   "ar": "سحابة",
+   "en": "Cloud (computing)",
+   "cat": "Tech",
+   "level": 3,
+   "ids": [
+    "tch26"
+   ]
+  },
+  {
+   "ar": "برمجة",
+   "en": "Programming / coding",
+   "cat": "Tech",
+   "level": 3,
+   "ids": [
+    "tch27"
+   ]
+  },
+  {
+   "ar": "تغريدة",
+   "en": "Tweet",
+   "cat": "Tech",
+   "level": 3,
+   "ids": [
+    "tel11"
+   ]
+  },
+  {
+   "ar": "إشعار",
+   "en": "Notification",
+   "cat": "Tech",
+   "level": 3,
+   "ids": [
+    "tel15"
+   ]
+  },
+  {
+   "ar": "فلوغر",
+   "en": "Vlogger",
+   "cat": "Tech",
+   "level": 3,
+   "ids": [
+    "mod1"
+   ]
+  },
+  {
+   "ar": "قرن",
+   "en": "Century",
+   "cat": "Time",
+   "level": 3,
+   "ids": [
+    "tm39"
+   ]
+  },
+  {
+   "ar": "ضاحية",
+   "en": "Suburb / Dahieh area",
+   "cat": "Transport",
+   "level": 3,
+   "ids": [
+    "tr21"
+   ]
+  },
+  {
+   "ar": "لوحة",
+   "en": "Number plate / license plate",
+   "cat": "Transport",
+   "level": 3,
+   "ids": [
+    "tr34"
+   ]
+  },
+  {
+   "ar": "وجهة",
+   "en": "Destination",
+   "cat": "Travel",
+   "level": 3,
+   "ids": [
+    "trv12"
+   ]
+  },
+  {
+   "ar": "انتقال",
+   "en": "Transfer / Transportation",
+   "cat": "Travel",
+   "level": 3,
+   "ids": [
+    "trv19",
+    "x132"
+   ]
+  },
+  {
+   "ar": "قاد",
+   "en": "To lead",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb49"
+   ]
+  },
+  {
+   "ar": "عانى",
+   "en": "To suffer",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb51"
+   ]
+  },
+  {
+   "ar": "نجا",
+   "en": "To survive / escape",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb52"
+   ]
+  },
+  {
+   "ar": "انتقد",
+   "en": "To criticize",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb64"
+   ]
+  },
+  {
+   "ar": "أكّد",
+   "en": "To confirm / emphasize",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb65"
+   ]
+  },
+  {
+   "ar": "أشار",
+   "en": "To point out / indicate",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb66"
+   ]
+  },
+  {
+   "ar": "توقّع",
+   "en": "To expect / predict",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb67"
+   ]
+  },
+  {
+   "ar": "اعتمد",
+   "en": "To rely on / adopt",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb68"
+   ]
+  },
+  {
+   "ar": "واجه",
+   "en": "To face / confront",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb70"
+   ]
+  },
+  {
+   "ar": "تأثّر",
+   "en": "To be affected",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb71"
+   ]
+  },
+  {
+   "ar": "أثّر",
+   "en": "To affect / influence",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb72"
+   ]
+  },
+  {
+   "ar": "نظّم",
+   "en": "To organize",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb74"
+   ]
+  },
+  {
+   "ar": "ترجم",
+   "en": "To translate",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb76"
+   ]
+  },
+  {
+   "ar": "فسّر",
+   "en": "To explain / interpret",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb77"
+   ]
+  },
+  {
+   "ar": "ضمن",
+   "en": "To guarantee",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb87"
+   ]
+  },
+  {
+   "ar": "أبلغ",
+   "en": "To report / notify",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb93"
+   ]
+  },
+  {
+   "ar": "تصرّف",
+   "en": "To behave / act",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb95"
+   ]
+  },
+  {
+   "ar": "اعترف",
+   "en": "To admit / confess",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb96"
+   ]
+  },
+  {
+   "ar": "أنجز",
+   "en": "To accomplish",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb97"
+   ]
+  },
+  {
+   "ar": "تردّد",
+   "en": "To hesitate",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb98"
+   ]
+  },
+  {
+   "ar": "تخلّص",
+   "en": "To get rid of",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb100"
+   ]
+  },
+  {
+   "ar": "أبدع",
+   "en": "To excel / be creative",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb101"
+   ]
+  },
+  {
+   "ar": "همس",
+   "en": "To whisper",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb109"
+   ]
+  },
+  {
+   "ar": "تعامل",
+   "en": "To deal with / interact",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb111"
+   ]
+  },
+  {
+   "ar": "ألغى",
+   "en": "To cancel / abolish",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vb120"
+   ]
+  },
+  {
+   "ar": "أدرك",
+   "en": "To realize / perceive",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vf2"
+   ]
+  },
+  {
+   "ar": "شكّ",
+   "en": "To doubt / suspect",
+   "cat": "Verbs",
+   "level": 3,
+   "ids": [
+    "vf24"
+   ]
+  },
+  {
+   "ar": "صقيع",
+   "en": "Frost",
+   "cat": "Weather",
+   "level": 3,
+   "ids": [
+    "wth12"
+   ]
+  },
+  {
+   "ar": "أجر",
+   "en": "Wage / pay",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "wrk13"
+   ]
+  },
+  {
+   "ar": "تقاعد",
+   "en": "Retirement",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "wrk15"
+   ]
+  },
+  {
+   "ar": "ترقية",
+   "en": "Promotion",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "wrk17"
+   ]
+  },
+  {
+   "ar": "استقالة",
+   "en": "Resignation",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "wrk19"
+   ]
+  },
+  {
+   "ar": "مهلة",
+   "en": "Deadline",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "wrk22",
+    "biz42"
+   ]
+  },
+  {
+   "ar": "خطة",
+   "en": "Plan",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "aca4",
+    "biz43"
+   ]
+  },
+  {
+   "ar": "تقييم",
+   "en": "Evaluation",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "aca5"
+   ]
+  },
+  {
+   "ar": "أداء",
+   "en": "Performance",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "aca6",
+    "sp52"
+   ]
+  },
+  {
+   "ar": "رؤية",
+   "en": "Vision",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "aca10"
+   ]
+  },
+  {
+   "ar": "إنجاز",
+   "en": "Achievement",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "aca11"
+   ]
+  },
+  {
+   "ar": "تحدّي",
+   "en": "Challenge",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "aca12"
+   ]
+  },
+  {
+   "ar": "موارد",
+   "en": "Resources",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "aca14"
+   ]
+  },
+  {
+   "ar": "اقتراح",
+   "en": "Suggestion / proposal",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "b1x8",
+    "si1"
+   ]
+  },
+  {
+   "ar": "اتفاق",
+   "en": "Agreement",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "b1x11"
+   ]
+  },
+  {
+   "ar": "خلاف",
+   "en": "Disagreement / dispute",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "b1x12",
+    "x150"
+   ]
+  },
+  {
+   "ar": "ملفّ",
+   "en": "File / dossier / case",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "x43"
+   ]
+  },
+  {
+   "ar": "وثيقة",
+   "en": "Document",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "x84"
+   ]
+  },
+  {
+   "ar": "نموذج",
+   "en": "Form / model",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "x85"
+   ]
+  },
+  {
+   "ar": "متطلّبات",
+   "en": "Requirements",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "x103"
+   ]
+  },
+  {
+   "ar": "تدريب",
+   "en": "Training",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "x118"
+   ]
+  },
+  {
+   "ar": "مسيرة",
+   "en": "Career / path",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "x122"
+   ]
+  },
+  {
+   "ar": "توظيف",
+   "en": "Employment / hiring",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "x123"
+   ]
+  },
+  {
+   "ar": "تنسيق",
+   "en": "Coordination",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "x146"
+   ]
+  },
+  {
+   "ar": "التزام",
+   "en": "Commitment",
+   "cat": "Work",
+   "level": 3,
+   "ids": [
+    "x165"
+   ]
+  },
+  {
+   "ar": "اصطناعي",
+   "en": "Artificial / synthetic",
+   "cat": "Adjectives",
+   "level": 4,
+   "ids": [
+    "adj122"
+   ]
+  },
+  {
+   "ar": "لامبالي",
+   "en": "Indifferent / careless",
+   "cat": "Adjectives",
+   "level": 4,
+   "ids": [
+    "adj128"
+   ]
+  },
+  {
+   "ar": "منافق",
+   "en": "Hypocritical",
+   "cat": "Adjectives",
+   "level": 4,
+   "ids": [
+    "adj137"
+   ]
+  },
+  {
+   "ar": "موضوعي",
+   "en": "Objective",
+   "cat": "Adjectives",
+   "level": 4,
+   "ids": [
+    "adj138"
+   ]
+  },
+  {
+   "ar": "ذاتي",
+   "en": "Subjective / personal",
+   "cat": "Adjectives",
+   "level": 4,
+   "ids": [
+    "adj139"
+   ]
+  },
+  {
+   "ar": "نظري",
+   "en": "Theoretical",
+   "cat": "Adjectives",
+   "level": 4,
+   "ids": [
+    "adj146"
+   ]
+  },
+  {
+   "ar": "مزمن",
+   "en": "Chronic",
+   "cat": "Adjectives",
+   "level": 4,
+   "ids": [
+    "adj149"
+   ]
+  },
+  {
+   "ar": "متناسق",
+   "en": "Harmonious / proportional",
+   "cat": "Adjectives",
+   "level": 4,
+   "ids": [
+    "adj160"
+   ]
+  },
+  {
+   "ar": "متطرّف",
+   "en": "Extreme / radical",
+   "cat": "Adjectives",
+   "level": 4,
+   "ids": [
+    "adj162"
+   ]
+  },
+  {
+   "ar": "بالمقابل",
+   "en": "On the other hand",
+   "cat": "Adverbs",
+   "level": 4,
+   "ids": [
+    "adv15"
+   ]
+  },
+  {
+   "ar": "وريد",
+   "en": "Vein",
+   "cat": "Body",
+   "level": 4,
+   "ids": [
+    "bd27"
+   ]
+  },
+  {
+   "ar": "شريان",
+   "en": "Artery",
+   "cat": "Body",
+   "level": 4,
+   "ids": [
+    "bd28"
+   ]
+  },
+  {
+   "ar": "اتفاقية",
+   "en": "Agreement / Deal",
+   "cat": "Business",
+   "level": 4,
+   "ids": [
+    "biz3"
+   ]
+  },
+  {
+   "ar": "استثمار",
+   "en": "Investment",
+   "cat": "Business",
+   "level": 4,
+   "ids": [
+    "biz7"
+   ]
+  },
+  {
+   "ar": "سهم",
+   "en": "Share / Stock",
+   "cat": "Business",
+   "level": 4,
+   "ids": [
+    "biz8"
+   ]
+  },
+  {
+   "ar": "عطاء",
+   "en": "Bid / Tender",
+   "cat": "Business",
+   "level": 4,
+   "ids": [
+    "biz14"
+   ]
+  },
+  {
+   "ar": "توريد",
+   "en": "Supply / Procurement",
+   "cat": "Business",
+   "level": 4,
+   "ids": [
+    "biz15"
+   ]
+  },
+  {
+   "ar": "مستثمر",
+   "en": "Investor",
+   "cat": "Business",
+   "level": 4,
+   "ids": [
+    "biz22"
+   ]
+  },
+  {
+   "ar": "إفلاس",
+   "en": "Bankruptcy",
+   "cat": "Business",
+   "level": 4,
+   "ids": [
+    "biz26"
+   ]
+  },
+  {
+   "ar": "تدقيق",
+   "en": "Audit",
+   "cat": "Business",
+   "level": 4,
+   "ids": [
+    "biz27"
+   ]
+  },
+  {
+   "ar": "موردون",
+   "en": "Suppliers",
+   "cat": "Business",
+   "level": 4,
+   "ids": [
+    "biz30"
+   ]
+  },
+  {
+   "ar": "تضخّم",
+   "en": "Inflation",
+   "cat": "Business",
+   "level": 4,
+   "ids": [
+    "fin9"
+   ]
+  },
+  {
+   "ar": "ختان",
+   "en": "Circumcision",
+   "cat": "Culture",
+   "level": 4,
+   "ids": [
+    "cult24"
+   ]
+  },
+  {
+   "ar": "شيعي",
+   "en": "Shia (religious community)",
+   "cat": "Culture",
+   "level": 4,
+   "ids": [
+    "cult25"
+   ]
+  },
+  {
+   "ar": "سني",
+   "en": "Sunni (religious community)",
+   "cat": "Culture",
+   "level": 4,
+   "ids": [
+    "cult26"
+   ]
+  },
+  {
+   "ar": "ماروني",
+   "en": "Maronite (Christian sect)",
+   "cat": "Culture",
+   "level": 4,
+   "ids": [
+    "cult28"
+   ]
+  },
+  {
+   "ar": "سوليدير",
+   "en": "Solidere (Beirut downtown)",
+   "cat": "Culture",
+   "level": 4,
+   "ids": [
+    "leb11"
+   ]
+  },
+  {
+   "ar": "عشيرة",
+   "en": "Tribe / clan",
+   "cat": "Culture",
+   "level": 4,
+   "ids": [
+    "lsc9"
+   ]
+  },
+  {
+   "ar": "نافوخ",
+   "en": "Influence (colloquial)",
+   "cat": "Culture",
+   "level": 4,
+   "ids": [
+    "pol18"
+   ]
+  },
+  {
+   "ar": "تكريم",
+   "en": "Honoring / tribute",
+   "cat": "Culture",
+   "level": 4,
+   "ids": [
+    "x80"
+   ]
+  },
+  {
+   "ar": "تحليل",
+   "en": "Analysis",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "ac3",
+    "abs5"
+   ]
+  },
+  {
+   "ar": "دكتوراه",
+   "en": "PhD / Doctorate",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "edu38"
+   ]
+  },
+  {
+   "ar": "منهج",
+   "en": "Methodology / curriculum",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "abs4"
+   ]
+  },
+  {
+   "ar": "استنتاج",
+   "en": "Conclusion / deduction",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "abs7"
+   ]
+  },
+  {
+   "ar": "مبدأ",
+   "en": "Principle",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "c1a4"
+   ]
+  },
+  {
+   "ar": "معيار",
+   "en": "Standard / criterion",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "c1a6"
+   ]
+  },
+  {
+   "ar": "سياق",
+   "en": "Context",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "c1a7"
+   ]
+  },
+  {
+   "ar": "منظور",
+   "en": "Perspective",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "b2a8"
+   ]
+  },
+  {
+   "ar": "جزيئة",
+   "en": "Molecule",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "sci2"
+   ]
+  },
+  {
+   "ar": "خلية",
+   "en": "Cell (biology)",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "sci3"
+   ]
+  },
+  {
+   "ar": "جين",
+   "en": "Gene",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "sci4"
+   ]
+  },
+  {
+   "ar": "مراسلة",
+   "en": "Correspondence",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "x29"
+   ]
+  },
+  {
+   "ar": "إحصاء",
+   "en": "Statistics / census",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "x34"
+   ]
+  },
+  {
+   "ar": "تطابق",
+   "en": "Alignment / matching",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "x96"
+   ]
+  },
+  {
+   "ar": "حصيلة",
+   "en": "Outcome / sum total",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "x100"
+   ]
+  },
+  {
+   "ar": "تفسير",
+   "en": "Interpretation / exegesis",
+   "cat": "Education",
+   "level": 4,
+   "ids": [
+    "x111"
+   ]
+  },
+  {
+   "ar": "حقد",
+   "en": "Grudge / spite",
+   "cat": "Emotions",
+   "level": 4,
+   "ids": [
+    "abn12"
+   ]
+  },
+  {
+   "ar": "سنيورة",
+   "en": "Snobar (pine nut rice dish)",
+   "cat": "Food",
+   "level": 4,
+   "ids": [
+    "fd52"
+   ]
+  },
+  {
+   "ar": "هريسة",
+   "en": "Harissa (wheat and meat porridge)",
+   "cat": "Food",
+   "level": 4,
+   "ids": [
+    "fd56"
+   ]
+  },
+  {
+   "ar": "شنكليش",
+   "en": "Shanklish (aged fermented cheese)",
+   "cat": "Food",
+   "level": 4,
+   "ids": [
+    "fd76"
+   ]
+  },
+  {
+   "ar": "بقل",
+   "en": "Purslane",
+   "cat": "Food",
+   "level": 4,
+   "ids": [
+    "fp57"
+   ]
+  },
+  {
+   "ar": "هندباء",
+   "en": "Dandelion greens (wild)",
+   "cat": "Food",
+   "level": 4,
+   "ids": [
+    "fp58"
+   ]
+  },
+  {
+   "ar": "مخدّر",
+   "en": "Anesthetic",
+   "cat": "Medical",
+   "level": 4,
+   "ids": [
+    "med38"
+   ]
+  },
+  {
+   "ar": "تعقيم",
+   "en": "Sterilization",
+   "cat": "Medical",
+   "level": 4,
+   "ids": [
+    "hlth13"
+   ]
+  },
+  {
+   "ar": "وبا",
+   "en": "Epidemic / plague",
+   "cat": "Medical",
+   "level": 4,
+   "ids": [
+    "hlth15"
+   ]
+  },
+  {
+   "ar": "حياكة",
+   "en": "Weaving",
+   "cat": "Music",
+   "level": 4,
+   "ids": [
+    "art25",
+    "hob14"
+   ]
+  },
+  {
+   "ar": "تطريز",
+   "en": "Embroidery",
+   "cat": "Music",
+   "level": 4,
+   "ids": [
+    "art26"
+   ]
+  },
+  {
+   "ar": "جداريّة",
+   "en": "Mural",
+   "cat": "Music",
+   "level": 4,
+   "ids": [
+    "art27"
+   ]
+  },
+  {
+   "ar": "مقطوعة",
+   "en": "Musical piece / composition",
+   "cat": "Music",
+   "level": 4,
+   "ids": [
+    "art37"
+   ]
+  },
+  {
+   "ar": "مايسترو",
+   "en": "Conductor / maestro",
+   "cat": "Music",
+   "level": 4,
+   "ids": [
+    "art38"
+   ]
+  },
+  {
+   "ar": "تشجير",
+   "en": "Reforestation / planting trees",
+   "cat": "Nature",
+   "level": 4,
+   "ids": [
+    "env30"
+   ]
+  },
+  {
+   "ar": "نفقة",
+   "en": "Alimony / financial support",
+   "cat": "People",
+   "level": 4,
+   "ids": [
+    "x73"
+   ]
+  },
+  {
+   "ar": "شيخوخة",
+   "en": "Old age",
+   "cat": "People",
+   "level": 4,
+   "ids": [
+    "x130"
+   ]
+  },
+  {
+   "ar": "سيادتك",
+   "en": "Your excellency",
+   "cat": "Phrases",
+   "level": 4,
+   "ids": [
+    "pol2"
+   ]
+  },
+  {
+   "ar": "يتشرّف",
+   "en": "To be honored",
+   "cat": "Phrases",
+   "level": 4,
+   "ids": [
+    "pol4"
+   ]
+  },
+  {
+   "ar": "يؤسفني",
+   "en": "I regret / I'm sorry to say",
+   "cat": "Phrases",
+   "level": 4,
+   "ids": [
+    "pol7"
+   ]
+  },
+  {
+   "ar": "بربير",
+   "en": "Barbir (West Beirut area)",
+   "cat": "Places",
+   "level": 4,
+   "ids": [
+    "geo21"
+   ]
+  },
+  {
+   "ar": "الدكوانة",
+   "en": "Dekwaneh (East Beirut suburb)",
+   "cat": "Places",
+   "level": 4,
+   "ids": [
+    "geo22"
+   ]
+  },
+  {
+   "ar": "الشياح",
+   "en": "Shiyyah (Beirut southern suburb)",
+   "cat": "Places",
+   "level": 4,
+   "ids": [
+    "geo38"
+   ]
+  },
+  {
+   "ar": "مثقّف",
+   "en": "Intellectual",
+   "cat": "Professions",
+   "level": 4,
+   "ids": [
+    "occ5"
+   ]
+  },
+  {
+   "ar": "أكاديمي",
+   "en": "Academic",
+   "cat": "Professions",
+   "level": 4,
+   "ids": [
+    "occ6"
+   ]
+  },
+  {
+   "ar": "مستشار",
+   "en": "Advisor / consultant",
+   "cat": "Professions",
+   "level": 4,
+   "ids": [
+    "occ8"
+   ]
+  },
+  {
+   "ar": "نقيب",
+   "en": "Union head / guild president",
+   "cat": "Professions",
+   "level": 4,
+   "ids": [
+    "occ49"
+   ]
+  },
+  {
+   "ar": "زكاة",
+   "en": "Zakat (Islamic charity tax)",
+   "cat": "Religion",
+   "level": 4,
+   "ids": [
+    "rel14"
+   ]
+  },
+  {
+   "ar": "كافر",
+   "en": "Non-believer / infidel",
+   "cat": "Religion",
+   "level": 4,
+   "ids": [
+    "rel19"
+   ]
+  },
+  {
+   "ar": "إصلاح",
+   "en": "Reform",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "soc11"
+   ]
+  },
+  {
+   "ar": "طائفية",
+   "en": "Sectarianism",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "soc23",
+    "cult30"
+   ]
+  },
+  {
+   "ar": "مارونية",
+   "en": "Maronite (Christian)",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "soc25"
+   ]
+  },
+  {
+   "ar": "مساواة",
+   "en": "Equality",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "soc29",
+    "x170"
+   ]
+  },
+  {
+   "ar": "ديمقراطية",
+   "en": "Democracy",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "adv22"
+   ]
+  },
+  {
+   "ar": "شامل",
+   "en": "Comprehensive / inclusive",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "c1a15"
+   ]
+  },
+  {
+   "ar": "مقاومة",
+   "en": "Resistance",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "c1b6",
+    "lc22"
+   ]
+  },
+  {
+   "ar": "انتفاضة",
+   "en": "Uprising / intifada",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "c1b7"
+   ]
+  },
+  {
+   "ar": "نزوح",
+   "en": "Displacement",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "c1b9"
+   ]
+  },
+  {
+   "ar": "لجوء",
+   "en": "Asylum / seeking refuge",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "c1b10"
+   ]
+  },
+  {
+   "ar": "مصالحة",
+   "en": "Reconciliation",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "c1b11"
+   ]
+  },
+  {
+   "ar": "احتلال",
+   "en": "Occupation",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "hist2"
+   ]
+  },
+  {
+   "ar": "سفارة",
+   "en": "Embassy",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "hist7",
+    "trv49"
+   ]
+  },
+  {
+   "ar": "سفير",
+   "en": "Ambassador",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "hist8"
+   ]
+  },
+  {
+   "ar": "تعيين",
+   "en": "Appointment / assignment",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "pol11"
+   ]
+  },
+  {
+   "ar": "نيابة",
+   "en": "Parliamentary seat",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "pol13"
+   ]
+  },
+  {
+   "ar": "مطالبة",
+   "en": "Demand / claim",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "b2a4"
+   ]
+  },
+  {
+   "ar": "مفاوضات",
+   "en": "Negotiations",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "b2a5"
+   ]
+  },
+  {
+   "ar": "إتفاقية",
+   "en": "Agreement / convention",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "b2a6"
+   ]
+  },
+  {
+   "ar": "تمييز",
+   "en": "Distinction / discrimination",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "b2a10"
+   ]
+  },
+  {
+   "ar": "تصريح",
+   "en": "Statement / comment",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x36"
+   ]
+  },
+  {
+   "ar": "مبادرة",
+   "en": "Initiative",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x39"
+   ]
+  },
+  {
+   "ar": "خطاب",
+   "en": "Speech / discourse",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x41"
+   ]
+  },
+  {
+   "ar": "اعتقال",
+   "en": "Arrest",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x45"
+   ]
+  },
+  {
+   "ar": "محاكمة",
+   "en": "Trial",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x46"
+   ]
+  },
+  {
+   "ar": "عقوبة",
+   "en": "Punishment / penalty",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x48"
+   ]
+  },
+  {
+   "ar": "اعتراف",
+   "en": "Confession",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x55"
+   ]
+  },
+  {
+   "ar": "إفادة",
+   "en": "Testimony / statement",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x61"
+   ]
+  },
+  {
+   "ar": "معتقل",
+   "en": "Detainee",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x62"
+   ]
+  },
+  {
+   "ar": "متّهم",
+   "en": "Accused",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x65"
+   ]
+  },
+  {
+   "ar": "وصية",
+   "en": "Will / testament",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x68"
+   ]
+  },
+  {
+   "ar": "إرث",
+   "en": "Inheritance",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x69"
+   ]
+  },
+  {
+   "ar": "حضانة",
+   "en": "Custody (children)",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x71"
+   ]
+  },
+  {
+   "ar": "لائحة",
+   "en": "List / bylaw / regulation",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x91"
+   ]
+  },
+  {
+   "ar": "فجوة",
+   "en": "Gap / disparity",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x94"
+   ]
+  },
+  {
+   "ar": "تعارض",
+   "en": "Conflict / contradiction",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x97"
+   ]
+  },
+  {
+   "ar": "توافق",
+   "en": "Consensus / compatibility",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x98"
+   ]
+  },
+  {
+   "ar": "نقابة",
+   "en": "Union / syndicate",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x126"
+   ]
+  },
+  {
+   "ar": "تحضّر",
+   "en": "Urbanization / civilization",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x137"
+   ]
+  },
+  {
+   "ar": "تضامن",
+   "en": "Solidarity",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x148"
+   ]
+  },
+  {
+   "ar": "وفاق",
+   "en": "Harmony / accord",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x149"
+   ]
+  },
+  {
+   "ar": "انقسام",
+   "en": "Division / split",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x151"
+   ]
+  },
+  {
+   "ar": "توحيد",
+   "en": "Unification",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x154"
+   ]
+  },
+  {
+   "ar": "شفافية",
+   "en": "Transparency",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x159"
+   ]
+  },
+  {
+   "ar": "نزاهة",
+   "en": "Integrity",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x161"
+   ]
+  },
+  {
+   "ar": "مصداقية",
+   "en": "Credibility",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x162"
+   ]
+  },
+  {
+   "ar": "موثوقية",
+   "en": "Reliability",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x163"
+   ]
+  },
+  {
+   "ar": "إنصاف",
+   "en": "Fairness / equity",
+   "cat": "Society",
+   "level": 4,
+   "ids": [
+    "x171"
+   ]
+  },
+  {
+   "ar": "تصفية",
+   "en": "Playoff / elimination round",
+   "cat": "Sports",
+   "level": 4,
+   "ids": [
+    "spt18"
+   ]
+  },
+  {
+   "ar": "استثمر",
+   "en": "To invest",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb61"
+   ]
+  },
+  {
+   "ar": "تفاوض",
+   "en": "To negotiate",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb62"
+   ]
+  },
+  {
+   "ar": "استقطب",
+   "en": "To attract / draw in",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb63"
+   ]
+  },
+  {
+   "ar": "حقّق",
+   "en": "To achieve / investigate",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb69"
+   ]
+  },
+  {
+   "ar": "خطف",
+   "en": "To kidnap / snatch",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb75"
+   ]
+  },
+  {
+   "ar": "أطلق",
+   "en": "To launch / release",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb83"
+   ]
+  },
+  {
+   "ar": "تولّى",
+   "en": "To take charge of",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb84"
+   ]
+  },
+  {
+   "ar": "أخفق",
+   "en": "To fail / miss the mark",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb88"
+   ]
+  },
+  {
+   "ar": "خاض",
+   "en": "To wade into / engage in",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb89"
+   ]
+  },
+  {
+   "ar": "تبنّى",
+   "en": "To adopt (an idea)",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb90"
+   ]
+  },
+  {
+   "ar": "لجأ",
+   "en": "To resort to / take refuge",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb99"
+   ]
+  },
+  {
+   "ar": "استوعب",
+   "en": "To absorb / grasp",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb112"
+   ]
+  },
+  {
+   "ar": "انعكس",
+   "en": "To reflect / have repercussions",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb113"
+   ]
+  },
+  {
+   "ar": "استشار",
+   "en": "To consult",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb114"
+   ]
+  },
+  {
+   "ar": "أفصح",
+   "en": "To reveal / disclose",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb115"
+   ]
+  },
+  {
+   "ar": "خضع",
+   "en": "To submit / undergo",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb117"
+   ]
+  },
+  {
+   "ar": "انتزع",
+   "en": "To snatch / wrest",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb118"
+   ]
+  },
+  {
+   "ar": "استرد",
+   "en": "To recover / reclaim",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vb119"
+   ]
+  },
+  {
+   "ar": "تمكّن",
+   "en": "To manage to / be able to",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vf3"
+   ]
+  },
+  {
+   "ar": "انتهز",
+   "en": "To seize (opportunity)",
+   "cat": "Verbs",
+   "level": 4,
+   "ids": [
+    "vf7"
+   ]
+  },
+  {
+   "ar": "استراتيجية",
+   "en": "Strategy",
+   "cat": "Work",
+   "level": 4,
+   "ids": [
+    "aca2"
+   ]
+  },
+  {
+   "ar": "كفاءة",
+   "en": "Efficiency / competence",
+   "cat": "Work",
+   "level": 4,
+   "ids": [
+    "aca15",
+    "x120"
+   ]
+  },
+  {
+   "ar": "تفويض",
+   "en": "Authorization",
+   "cat": "Work",
+   "level": 4,
+   "ids": [
+    "x88"
+   ]
+  },
+  {
+   "ar": "مخرجات",
+   "en": "Outputs / outcomes",
+   "cat": "Work",
+   "level": 4,
+   "ids": [
+    "x101"
+   ]
+  },
+  {
+   "ar": "مدخلات",
+   "en": "Inputs",
+   "cat": "Work",
+   "level": 4,
+   "ids": [
+    "x102"
+   ]
+  },
+  {
+   "ar": "معوّقات",
+   "en": "Obstacles / impediments",
+   "cat": "Work",
+   "level": 4,
+   "ids": [
+    "x104"
+   ]
+  },
+  {
+   "ar": "محفّزات",
+   "en": "Incentives / motivators",
+   "cat": "Work",
+   "level": 4,
+   "ids": [
+    "x105"
+   ]
+  },
+  {
+   "ar": "تكامل",
+   "en": "Complementarity / integration",
+   "cat": "Work",
+   "level": 4,
+   "ids": [
+    "x145"
+   ]
+  },
+  {
+   "ar": "اندماج",
+   "en": "Merger",
+   "cat": "Business",
+   "level": 5,
+   "ids": [
+    "biz24"
+   ]
+  },
+  {
+   "ar": "استحواذ",
+   "en": "Acquisition",
+   "cat": "Business",
+   "level": 5,
+   "ids": [
+    "biz25"
+   ]
+  },
+  {
+   "ar": "محسوبية",
+   "en": "Cronyism / favoritism",
+   "cat": "Culture",
+   "level": 5,
+   "ids": [
+    "pol19"
+   ]
+  },
+  {
+   "ar": "فرضية",
+   "en": "Hypothesis",
+   "cat": "Education",
+   "level": 5,
+   "ids": [
+    "abs3"
+   ]
+  },
+  {
+   "ar": "استقراء",
+   "en": "Induction / inference",
+   "cat": "Education",
+   "level": 5,
+   "ids": [
+    "abs8"
+   ]
+  },
+  {
+   "ar": "موضوعية",
+   "en": "Objectivity",
+   "cat": "Education",
+   "level": 5,
+   "ids": [
+    "abs9"
+   ]
+  },
+  {
+   "ar": "ذاتية",
+   "en": "Subjectivity",
+   "cat": "Education",
+   "level": 5,
+   "ids": [
+    "abs10"
+   ]
+  },
+  {
+   "ar": "مؤشّر",
+   "en": "Indicator",
+   "cat": "Education",
+   "level": 5,
+   "ids": [
+    "c1a11"
+   ]
+  },
+  {
+   "ar": "تناقض",
+   "en": "Contradiction",
+   "cat": "Education",
+   "level": 5,
+   "ids": [
+    "c1b1"
+   ]
+  },
+  {
+   "ar": "مفارقة",
+   "en": "Paradox / irony",
+   "cat": "Education",
+   "level": 5,
+   "ids": [
+    "c1b2"
+   ]
+  },
+  {
+   "ar": "دلالة",
+   "en": "Connotation / significance",
+   "cat": "Education",
+   "level": 5,
+   "ids": [
+    "c1b3"
+   ]
+  },
+  {
+   "ar": "أطروحة",
+   "en": "Thesis / dissertation",
+   "cat": "Education",
+   "level": 5,
+   "ids": [
+    "sch10"
+   ]
+  },
+  {
+   "ar": "إسناد",
+   "en": "Attribution / chain of narration",
+   "cat": "Education",
+   "level": 5,
+   "ids": [
+    "x110"
+   ]
+  },
+  {
+   "ar": "نفّايش",
+   "en": "Nfayesh (bulgur breakfast dish)",
+   "cat": "Food",
+   "level": 5,
+   "ids": [
+    "fd83"
+   ]
+  },
+  {
+   "ar": "زجل",
+   "en": "Zajal (Lebanese oral poetry)",
+   "cat": "Music",
+   "level": 5,
+   "ids": [
+    "art10"
+   ]
+  },
+  {
+   "ar": "استدامة",
+   "en": "Sustainability",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "adv21"
+   ]
+  },
+  {
+   "ar": "استبداد",
+   "en": "Tyranny / despotism",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "adv23"
+   ]
+  },
+  {
+   "ar": "عولمة",
+   "en": "Globalization",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "adv24"
+   ]
+  },
+  {
+   "ar": "نيوليبرالية",
+   "en": "Neoliberalism",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "adv25"
+   ]
+  },
+  {
+   "ar": "تشريع",
+   "en": "Legislation",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "c1a1"
+   ]
+  },
+  {
+   "ar": "استقلالية",
+   "en": "Autonomy / independence",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "c1a3"
+   ]
+  },
+  {
+   "ar": "تداعيات",
+   "en": "Repercussions / fallout",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "c1a12"
+   ]
+  },
+  {
+   "ar": "انعكاسات",
+   "en": "Repercussions / reflections",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "c1a13"
+   ]
+  },
+  {
+   "ar": "مستدام",
+   "en": "Sustainable",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "c1a14"
+   ]
+  },
+  {
+   "ar": "أيديولوجيا",
+   "en": "Ideology",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "c1b4"
+   ]
+  },
+  {
+   "ar": "هيمنة",
+   "en": "Hegemony",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "c1b5"
+   ]
+  },
+  {
+   "ar": "تهجير",
+   "en": "Forced displacement",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "c1b12"
+   ]
+  },
+  {
+   "ar": "مدنية",
+   "en": "Civility",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "c1b14"
+   ]
+  },
+  {
+   "ar": "تسوية",
+   "en": "Settlement / compromise",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "c1b15"
+   ]
+  },
+  {
+   "ar": "دبلوماسية",
+   "en": "Diplomacy",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "hist6"
+   ]
+  },
+  {
+   "ar": "معاهدة",
+   "en": "Treaty / agreement",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "hist9"
+   ]
+  },
+  {
+   "ar": "هدنة",
+   "en": "Ceasefire / truce",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "hist10"
+   ]
+  },
+  {
+   "ar": "مزايدة",
+   "en": "Outbidding / one-upmanship",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "pol20"
+   ]
+  },
+  {
+   "ar": "استنكار",
+   "en": "Condemnation / denunciation",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "b2a1"
+   ]
+  },
+  {
+   "ar": "إدانة",
+   "en": "Condemnation",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "b2a2"
+   ]
+  },
+  {
+   "ar": "مناشدة",
+   "en": "Appeal / call (to action)",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "b2a3"
+   ]
+  },
+  {
+   "ar": "جنوح",
+   "en": "Delinquency",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x57"
+   ]
+  },
+  {
+   "ar": "حصانة",
+   "en": "Immunity",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x60"
+   ]
+  },
+  {
+   "ar": "استئناف",
+   "en": "Appeal (legal)",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x66"
+   ]
+  },
+  {
+   "ar": "تقادم",
+   "en": "Statute of limitations",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x67"
+   ]
+  },
+  {
+   "ar": "مرسوم",
+   "en": "Decree",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x89"
+   ]
+  },
+  {
+   "ar": "هوّة",
+   "en": "Abyss / huge gap",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x95"
+   ]
+  },
+  {
+   "ar": "نهضة",
+   "en": "Renaissance / revival",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x136"
+   ]
+  },
+  {
+   "ar": "تفتّت",
+   "en": "Fragmentation",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x153"
+   ]
+  },
+  {
+   "ar": "تمركز",
+   "en": "Centralization",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x156"
+   ]
+  },
+  {
+   "ar": "لامركزية",
+   "en": "Decentralization",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x157"
+   ]
+  },
+  {
+   "ar": "حوكمة",
+   "en": "Governance",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x158"
+   ]
+  },
+  {
+   "ar": "تهميش",
+   "en": "Marginalization",
+   "cat": "Society",
+   "level": 5,
+   "ids": [
+    "x174"
+   ]
+  },
+  {
+   "ar": "ممتاز",
+   "en": "Excellent / Outstanding",
+   "cat": "Adjectives",
+   "level": null,
+   "ids": [
+    "adj16",
+    "adj180"
+   ]
+  },
+  {
+   "ar": "نضيف",
+   "en": "Clean",
+   "cat": "Adjectives",
+   "level": null,
+   "ids": [
+    "adj18"
+   ]
+  },
+  {
+   "ar": "مهضوم",
+   "en": "Funny / Amusing (person)",
+   "cat": "Adjectives",
+   "level": null,
+   "ids": [
+    "adj21"
+   ]
+  },
+  {
+   "ar": "مليح",
+   "en": "Pretty / OK / Fine",
+   "cat": "Adjectives",
+   "level": null,
+   "ids": [
+    "adj24"
+   ]
+  },
+  {
+   "ar": "خايب",
+   "en": "Bad / Disappointing / Lame",
+   "cat": "Adjectives",
+   "level": null,
+   "ids": [
+    "adj25"
+   ]
+  },
+  {
+   "ar": "بسينة",
+   "en": "Cat",
+   "cat": "Animals",
+   "level": null,
+   "ids": [
+    "an2"
+   ]
+  },
+  {
+   "ar": "دجاجة",
+   "en": "Chicken (live)",
+   "cat": "Animals",
+   "level": null,
+   "ids": [
+    "an5",
+    "an18"
+   ]
+  },
+  {
+   "ar": "دب",
+   "en": "Bear",
+   "cat": "Animals",
+   "level": null,
+   "ids": [
+    "an9",
+    "an13"
+   ]
+  },
+  {
+   "ar": "هدوم",
+   "en": "Clothes",
+   "cat": "Clothing",
+   "level": null,
+   "ids": [
+    "cl1"
+   ]
+  },
+  {
+   "ar": "حذاء",
+   "en": "Shoe",
+   "cat": "Clothing",
+   "level": null,
+   "ids": [
+    "cl6"
+   ]
+  },
+  {
+   "ar": "كاب",
+   "en": "Hat / Cap",
+   "cat": "Clothing",
+   "level": null,
+   "ids": [
+    "cl8"
+   ]
+  },
+  {
+   "ar": "تيشرت",
+   "en": "T-shirt",
+   "cat": "Clothing",
+   "level": null,
+   "ids": [
+    "cl9"
+   ]
+  },
+  {
+   "ar": "شورت",
+   "en": "Shorts",
+   "cat": "Clothing",
+   "level": null,
+   "ids": [
+    "cl10"
+   ]
+  },
+  {
+   "ar": "جورب",
+   "en": "Socks",
+   "cat": "Clothing",
+   "level": null,
+   "ids": [
+    "cl11"
+   ]
+  },
+  {
+   "ar": "وردي",
+   "en": "Pink",
+   "cat": "Colors",
+   "level": null,
+   "ids": [
+    "col10"
+   ]
+  },
+  {
+   "ar": "سمنة",
+   "en": "Butter / Ghee",
+   "cat": "Cooking",
+   "level": null,
+   "ids": [
+    "ck10",
+    "fd68"
+   ]
+  },
+  {
+   "ar": "ضيافة",
+   "en": "Hospitality / Generosity to guests",
+   "cat": "Culture",
+   "level": null,
+   "ids": [
+    "cult1"
+   ]
+  },
+  {
+   "ar": "سهرة",
+   "en": "Evening gathering / Night out",
+   "cat": "Culture",
+   "level": null,
+   "ids": [
+    "cult2"
+   ]
+  },
+  {
+   "ar": "تكرم",
+   "en": "You are welcome / Be my guest",
+   "cat": "Culture",
+   "level": null,
+   "ids": [
+    "cult7"
+   ]
+  },
+  {
+   "ar": "بالعافية",
+   "en": "Enjoy! / Bon appétit (response)",
+   "cat": "Culture",
+   "level": null,
+   "ids": [
+    "cult9"
+   ]
+  },
+  {
+   "ar": "فرنسي",
+   "en": "French",
+   "cat": "Education",
+   "level": null,
+   "ids": [
+    "edu11"
+   ]
+  },
+  {
+   "ar": "إنجليزي",
+   "en": "English",
+   "cat": "Education",
+   "level": null,
+   "ids": [
+    "edu12"
+   ]
+  },
+  {
+   "ar": "نجدة",
+   "en": "Help! (emergency)",
+   "cat": "Emergency",
+   "level": null,
+   "ids": [
+    "urg1"
+   ]
+  },
+  {
+   "ar": "بعيوني",
+   "en": "In my eyes / I swear to God",
+   "cat": "Emergency",
+   "level": null,
+   "ids": [
+    "urg8"
+   ]
+  },
+  {
+   "ar": "متوتر",
+   "en": "Nervous / Stressed",
+   "cat": "Emotions",
+   "level": null,
+   "ids": [
+    "em4",
+    "emo20"
+   ]
+  },
+  {
+   "ar": "متضايق",
+   "en": "Annoyed / Bothered",
+   "cat": "Emotions",
+   "level": null,
+   "ids": [
+    "em9",
+    "em67"
+   ]
+  },
+  {
+   "ar": "متحمس",
+   "en": "Excited / Enthusiastic",
+   "cat": "Emotions",
+   "level": null,
+   "ids": [
+    "em10"
+   ]
+  },
+  {
+   "ar": "كبة",
+   "en": "Kibbe (meat dish)",
+   "cat": "Food",
+   "level": null,
+   "ids": [
+    "f8"
+   ]
+  },
+  {
+   "ar": "تبولة",
+   "en": "Tabbouleh",
+   "cat": "Food",
+   "level": null,
+   "ids": [
+    "f9",
+    "ck4"
+   ]
+  },
+  {
+   "ar": "كنافة",
+   "en": "Kunafa (sweet cheese pastry)",
+   "cat": "Food",
+   "level": null,
+   "ids": [
+    "f23",
+    "fd54",
+    "ck10"
+   ]
+  },
+  {
+   "ar": "شاورما",
+   "en": "Shawarma",
+   "cat": "Food",
+   "level": null,
+   "ids": [
+    "f28",
+    "fd32",
+    "fd64",
+    "ck15"
+   ]
+  },
+  {
+   "ar": "مسبّحة",
+   "en": "Msabbaha (warm hummus dish)",
+   "cat": "Food",
+   "level": null,
+   "ids": [
+    "f29"
+   ]
+  },
+  {
+   "ar": "فتوش",
+   "en": "Fattoush salad",
+   "cat": "Food",
+   "level": null,
+   "ids": [
+    "f30",
+    "fd38",
+    "ck5"
+   ]
+  },
+  {
+   "ar": "كيفك؟",
+   "en": "How are you?",
+   "cat": "Greetings",
+   "level": null,
+   "ids": [
+    "g3"
+   ]
+  },
+  {
+   "ar": "يسلمو",
+   "en": "Thank you / Bless you",
+   "cat": "Greetings",
+   "level": null,
+   "ids": [
+    "g9",
+    "ph32"
+   ]
+  },
+  {
+   "ar": "إيه",
+   "en": "Yes",
+   "cat": "Greetings",
+   "level": null,
+   "ids": [
+    "g14"
+   ]
+  },
+  {
+   "ar": "ممرضة",
+   "en": "Nurse",
+   "cat": "Medical",
+   "level": null,
+   "ids": [
+    "med3"
+   ]
+  },
+  {
+   "ar": "كحّة",
+   "en": "Cough",
+   "cat": "Medical",
+   "level": null,
+   "ids": [
+    "med6"
+   ]
+  },
+  {
+   "ar": "زكام",
+   "en": "Cold (illness)",
+   "cat": "Medical",
+   "level": null,
+   "ids": [
+    "med7"
+   ]
+  },
+  {
+   "ar": "تأمين",
+   "en": "Insurance",
+   "cat": "Medical",
+   "level": null,
+   "ids": [
+    "med11",
+    "em34",
+    "em64"
+   ]
+  },
+  {
+   "ar": "صحة",
+   "en": "Health",
+   "cat": "Medical",
+   "level": null,
+   "ids": [
+    "med12"
+   ]
+  },
+  {
+   "ar": "ضمادة",
+   "en": "Bandage",
+   "cat": "Medical",
+   "level": null,
+   "ids": [
+    "med14",
+    "hlth7"
+   ]
+  },
+  {
+   "ar": "حبوب",
+   "en": "Pills / Tablets",
+   "cat": "Medical",
+   "level": null,
+   "ids": [
+    "med15"
+   ]
+  },
+  {
+   "ar": "موسيقى",
+   "en": "Music",
+   "cat": "Music",
+   "level": null,
+   "ids": [
+    "mu1",
+    "hob20"
+   ]
+  },
+  {
+   "ar": "مطرب",
+   "en": "Singer",
+   "cat": "Music",
+   "level": null,
+   "ids": [
+    "mu3",
+    "art18"
+   ]
+  },
+  {
+   "ar": "دبكة",
+   "en": "Dabke (Lebanese folk dance)",
+   "cat": "Music",
+   "level": null,
+   "ids": [
+    "mu6",
+    "art15"
+   ]
+  },
+  {
+   "ar": "أفلام",
+   "en": "Movies / Films",
+   "cat": "Music",
+   "level": null,
+   "ids": [
+    "mu7"
+   ]
+  },
+  {
+   "ar": "حفلة",
+   "en": "Party / Concert",
+   "cat": "Music",
+   "level": null,
+   "ids": [
+    "mu9",
+    "art13"
+   ]
+  },
+  {
+   "ar": "ناي",
+   "en": "Nay flute",
+   "cat": "Music",
+   "level": null,
+   "ids": [
+    "mu10",
+    "art20"
+   ]
+  },
+  {
+   "ar": "تلة",
+   "en": "Hill",
+   "cat": "Nature",
+   "level": null,
+   "ids": [
+    "nat14",
+    "env16"
+   ]
+  },
+  {
+   "ar": "شلال",
+   "en": "Waterfall",
+   "cat": "Nature",
+   "level": null,
+   "ids": [
+    "nat15",
+    "nat22",
+    "nat6"
+   ]
+  },
+  {
+   "ar": "زيتونة",
+   "en": "Olive tree",
+   "cat": "Nature",
+   "level": null,
+   "ids": [
+    "nat17",
+    "plt4"
+   ]
+  },
+  {
+   "ar": "ميتين",
+   "en": "Two hundred",
+   "cat": "Numbers",
+   "level": null,
+   "ids": [
+    "n24"
+   ]
+  },
+  {
+   "ar": "حبيبي",
+   "en": "My love / My dear",
+   "cat": "People",
+   "level": null,
+   "ids": [
+    "fam11"
+   ]
+  },
+  {
+   "ar": "جيران",
+   "en": "Neighbors",
+   "cat": "People",
+   "level": null,
+   "ids": [
+    "fam18",
+    "lsc7"
+   ]
+  },
+  {
+   "ar": "فهمت",
+   "en": "I understood",
+   "cat": "Phrases",
+   "level": null,
+   "ids": [
+    "p3"
+   ]
+  },
+  {
+   "ar": "اسمي...",
+   "en": "My name is...",
+   "cat": "Phrases",
+   "level": null,
+   "ids": [
+    "p8"
+   ]
+  },
+  {
+   "ar": "بحبك",
+   "en": "I love you",
+   "cat": "Phrases",
+   "level": null,
+   "ids": [
+    "p12"
+   ]
+  },
+  {
+   "ar": "بالمحبة",
+   "en": "With love (farewell)",
+   "cat": "Phrases",
+   "level": null,
+   "ids": [
+    "p18"
+   ]
+  },
+  {
+   "ar": "ضيعة",
+   "en": "Village / Hometown",
+   "cat": "Places",
+   "level": null,
+   "ids": [
+    "pl13",
+    "plc5"
+   ]
+  },
+  {
+   "ar": "مصرف",
+   "en": "Bank",
+   "cat": "Places",
+   "level": null,
+   "ids": [
+    "pl19",
+    "fin1",
+    "bnk2"
+   ]
+  },
+  {
+   "ar": "بنزينة",
+   "en": "Gas station",
+   "cat": "Places",
+   "level": null,
+   "ids": [
+    "pl20"
+   ]
+  },
+  {
+   "ar": "محامي",
+   "en": "Lawyer",
+   "cat": "Professions",
+   "level": null,
+   "ids": [
+    "pr4",
+    "pr11",
+    "occ12"
+   ]
+  },
+  {
+   "ar": "إيمتى",
+   "en": "When",
+   "cat": "Questions",
+   "level": null,
+   "ids": [
+    "q7",
+    "dp13"
+   ]
+  },
+  {
+   "ar": "لشو",
+   "en": "What for / Why",
+   "cat": "Questions",
+   "level": null,
+   "ids": [
+    "q9",
+    "sl71"
+   ]
+  },
+  {
+   "ar": "فاتورة",
+   "en": "Bill / Invoice",
+   "cat": "Shopping",
+   "level": null,
+   "ids": [
+    "sh7",
+    "fin13",
+    "sh44",
+    "biz32",
+    "shop3",
+    "bnk19"
+   ]
+  },
+  {
+   "ar": "هيدن",
+   "en": "These",
+   "cat": "Slang",
+   "level": null,
+   "ids": [
+    "sl2"
+   ]
+  },
+  {
+   "ar": "هونيك",
+   "en": "There / Over there",
+   "cat": "Slang",
+   "level": null,
+   "ids": [
+    "sl3"
+   ]
+  },
+  {
+   "ar": "ستات",
+   "en": "Women / Ladies",
+   "cat": "Slang",
+   "level": null,
+   "ids": [
+    "sl7"
+   ]
+  },
+  {
+   "ar": "أوف",
+   "en": "Ugh / Come on (exasperation)",
+   "cat": "Slang",
+   "level": null,
+   "ids": [
+    "sl9"
+   ]
+  },
+  {
+   "ar": "يي",
+   "en": "Oh! / Wow! (surprise)",
+   "cat": "Slang",
+   "level": null,
+   "ids": [
+    "sl10"
+   ]
+  },
+  {
+   "ar": "يسطا",
+   "en": "Man! / Come on! (address)",
+   "cat": "Slang",
+   "level": null,
+   "ids": [
+    "sl11"
+   ]
+  },
+  {
+   "ar": "شحّار",
+   "en": "Vagrant / Moocher / Freeloader",
+   "cat": "Slang",
+   "level": null,
+   "ids": [
+    "sl17"
+   ]
+  },
+  {
+   "ar": "واو",
+   "en": "Wow! / Amazing!",
+   "cat": "Slang",
+   "level": null,
+   "ids": [
+    "sl18"
+   ]
+  },
+  {
+   "ar": "منتوش",
+   "en": "Laid back / Easygoing / Not caring",
+   "cat": "Slang",
+   "level": null,
+   "ids": [
+    "sl22"
+   ]
+  },
+  {
+   "ar": "سباحة",
+   "en": "Swimming",
+   "cat": "Sports",
+   "level": null,
+   "ids": [
+    "sp3",
+    "spt24",
+    "sp20",
+    "hob11"
+   ]
+  },
+  {
+   "ar": "تزلج",
+   "en": "Skiing",
+   "cat": "Sports",
+   "level": null,
+   "ids": [
+    "sp5",
+    "sp26"
+   ]
+  },
+  {
+   "ar": "جيم",
+   "en": "Gym / Fitness center",
+   "cat": "Sports",
+   "level": null,
+   "ids": [
+    "sp6"
+   ]
+  },
+  {
+   "ar": "يوغا",
+   "en": "Yoga",
+   "cat": "Sports",
+   "level": null,
+   "ids": [
+    "sp12"
+   ]
+  },
+  {
+   "ar": "تطبيق",
+   "en": "App (application)",
+   "cat": "Tech",
+   "level": null,
+   "ids": [
+    "tech8",
+    "med27",
+    "tch13",
+    "tech1"
+   ]
+  },
+  {
+   "ar": "شبكة",
+   "en": "Network / Web",
+   "cat": "Tech",
+   "level": null,
+   "ids": [
+    "tech9",
+    "tch24"
+   ]
+  },
+  {
+   "ar": "هلق",
+   "en": "Now",
+   "cat": "Time",
+   "level": null,
+   "ids": [
+    "t1"
+   ]
+  },
+  {
+   "ar": "هاليوم",
+   "en": "This day / Today",
+   "cat": "Time",
+   "level": null,
+   "ids": [
+    "t5"
+   ]
+  },
+  {
+   "ar": "سيرفيس",
+   "en": "Shared taxi",
+   "cat": "Transport",
+   "level": null,
+   "ids": [
+    "tr6",
+    "fr3"
+   ]
+  },
+  {
+   "ar": "موتوسيكل",
+   "en": "Motorcycle",
+   "cat": "Transport",
+   "level": null,
+   "ids": [
+    "tr8"
+   ]
+  },
+  {
+   "ar": "كول",
+   "en": "Eat (imperative)",
+   "cat": "Verbs",
+   "level": null,
+   "ids": [
+    "v3"
+   ]
+  },
+  {
+   "ar": "اشرب",
+   "en": "Drink (imperative)",
+   "cat": "Verbs",
+   "level": null,
+   "ids": [
+    "v4"
+   ]
+  },
+  {
+   "ar": "شوف",
+   "en": "Look / See (imperative)",
+   "cat": "Verbs",
+   "level": null,
+   "ids": [
+    "v5"
+   ]
+  },
+  {
+   "ar": "شتغل",
+   "en": "To work",
+   "cat": "Verbs",
+   "level": null,
+   "ids": [
+    "v15"
+   ]
+  },
+  {
+   "ar": "اشترى",
+   "en": "To buy",
+   "cat": "Verbs",
+   "level": null,
+   "ids": [
+    "v18"
+   ]
+  },
+  {
+   "ar": "صرّح",
+   "en": "To declare / speak frankly",
+   "cat": "Verbs",
+   "level": null,
+   "ids": [
+    "v39"
+   ]
+  },
+  {
+   "ar": "رطوبة",
+   "en": "Humidity",
+   "cat": "Weather",
+   "level": null,
+   "ids": [
+    "wth7",
+    "wth41"
+   ]
+  },
+  {
+   "ar": "عميل",
+   "en": "Client / Customer",
+   "cat": "Work",
+   "level": null,
+   "ids": [
+    "wk5"
+   ]
+  },
+  {
+   "ar": "فرصة",
+   "en": "Opportunity / Chance",
+   "cat": "Work",
+   "level": null,
+   "ids": [
+    "wk10",
+    "aca13"
+   ]
+  }
+ ]
+}

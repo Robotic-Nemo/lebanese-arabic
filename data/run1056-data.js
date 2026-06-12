@@ -1,0 +1,61 @@
+// R1056 — NEW FEATURE: Lebanese Farming & Agriculture Culture (frm)
+const FRM_WORDS = [
+  { ar: 'مزرعة', tr: 'mazra3a', eng: 'farm', cat: 'farm' },
+  { ar: 'أرض', tr: 'ard', eng: 'land/earth', cat: 'farm' },
+  { ar: 'فلاح', tr: 'falla7', eng: 'farmer', cat: 'farm' },
+  { ar: 'جرار', tr: 'jraar', eng: 'tractor', cat: 'tools' },
+  { ar: 'محراث', tr: 'mi7raath', eng: 'plow', cat: 'tools' },
+  { ar: 'مجرفة', tr: 'majrafe', eng: 'shovel/spade', cat: 'tools' },
+  { ar: 'خرطوم', tr: 'kharTuum', eng: 'hose (irrigation)', cat: 'tools' },
+  { ar: 'بذور', tr: 'bzuur', eng: 'seeds', cat: 'crops' },
+  { ar: 'قمح', tr: '2am7', eng: 'wheat', cat: 'crops' },
+  { ar: 'تبغ', tr: 'tibigh', eng: 'tobacco', cat: 'crops' },
+  { ar: 'زيتون', tr: 'zaytoun', eng: 'olives', cat: 'crops' },
+  { ar: 'بندورة', tr: 'banduura', eng: 'tomatoes', cat: 'crops' },
+  { ar: 'خضرة', tr: 'khadra', eng: 'vegetables/greens', cat: 'crops' },
+  { ar: 'ري', tr: 'riyye', eng: 'irrigation', cat: 'farming' },
+  { ar: 'سقاية', tr: 'si2aaye', eng: 'watering', cat: 'farming' },
+  { ar: 'حصاد', tr: '7saad', eng: 'harvest', cat: 'farming' },
+  { ar: 'حراثة', tr: '7raase', eng: 'plowing', cat: 'farming' },
+  { ar: 'سماد', tr: 'smaad', eng: 'fertilizer', cat: 'farming' },
+  { ar: 'مواسم', tr: 'mawaasem', eng: 'seasons/harvests', cat: 'farming' },
+  { ar: 'ينبع', tr: 'yanba3', eng: 'spring/source (water)', cat: 'land' },
+  { ar: 'وادي', tr: 'waadi', eng: 'valley', cat: 'land' },
+  { ar: 'تلة', tr: 'talle', eng: 'hill', cat: 'land' },
+  { ar: 'حقل', tr: '7a2l', eng: 'field', cat: 'land' },
+  { ar: 'بستان', tr: 'bstaan', eng: 'orchard', cat: 'land' },
+  { ar: 'خيمة', tr: 'khayma', eng: 'tent (field shelter)', cat: 'farm' },
+  { ar: 'دجاج', tr: 'jjaaj', eng: 'chickens', cat: 'livestock' },
+  { ar: 'ماعز', tr: 'maa3iz', eng: 'goats', cat: 'livestock' },
+  { ar: 'بقر', tr: 'ba2ar', eng: 'cows', cat: 'livestock' },
+  { ar: 'عسل', tr: '3asal', eng: 'honey', cat: 'livestock' },
+  { ar: 'موسم الصيف', tr: 'mawsem iS-Sayf', eng: 'summer season', cat: 'farming' },
+];
+
+const FRM_CATS = ['all', 'farm', 'tools', 'crops', 'farming', 'land', 'livestock'];
+
+const FRM_DRILLS = [
+  { q: 'What does مزرعة mean?', opts: ['orchard', 'farm', 'valley', 'field'], ans: 1 },
+  { q: 'فلاح means:', opts: ['tractor', 'plow', 'farmer', 'fertilizer'], ans: 2 },
+  { q: 'قمح is:', opts: ['tobacco', 'olives', 'tomatoes', 'wheat'], ans: 3 },
+  { q: 'تبغ means:', opts: ['wheat', 'tobacco', 'seeds', 'vegetables'], ans: 1 },
+  { q: 'جرار is a:', opts: ['plow', 'tractor', 'shovel', 'hose'], ans: 1 },
+  { q: 'حصاد means:', opts: ['plowing', 'irrigation', 'harvest', 'watering'], ans: 2 },
+  { q: 'بذور are:', opts: ['tools', 'seeds', 'fields', 'seasons'], ans: 1 },
+  { q: 'ري means:', opts: ['fertilizer', 'watering', 'irrigation', 'harvest'], ans: 2 },
+  { q: 'What is a وادي?', opts: ['hill', 'orchard', 'valley', 'spring'], ans: 2 },
+  { q: 'بقر means:', opts: ['goats', 'chickens', 'cows', 'bees'], ans: 2 },
+  { q: 'حقل is a:', opts: ['farm', 'field', 'valley', 'hill'], ans: 1 },
+  { q: 'سماد means:', opts: ['seeds', 'harvest', 'fertilizer', 'crops'], ans: 2 },
+  { q: 'ماعز are:', opts: ['cows', 'chickens', 'goats', 'bees'], ans: 2 },
+  { q: 'بستان is an:', opts: ['orchard', 'field', 'valley', 'farm'], ans: 0 },
+  { q: 'خضرة means:', opts: ['honey', 'vegetables/greens', 'tobacco', 'wheat'], ans: 1 },
+];
+
+const FRM_TIPS = [
+  { title: 'Land & Identity', body: 'In Lebanon, land (ard) is deeply tied to identity and family honor. Families hold onto ancestral land for generations — "ard il-3ayle" (family land) is not just property, it\'s heritage. Selling family land is sometimes seen as a betrayal: "baa3 ardo" (he sold his land) carries a heavy social stigma.' },
+  { title: 'Tobacco Farming in the South', body: 'The Bekaa Valley and South Lebanon are known for tobacco (tibigh) cultivation. Many Lebanese families in Hermel and Bint Jbeil depend on tobacco farming. The Regie — Lebanon\'s tobacco monopoly — buys crops from farmers at set prices. You\'ll hear "zara3 tibigh" (planted tobacco) as a normal part of village conversation.' },
+  { title: 'The Seasonal Calendar', body: 'Lebanese farmers track time by harvest seasons: mawsem iZ-zaytoun (olive season, Oct-Nov), mawsem il-3anab (grape season, Sept), mawsem il-2am7 (wheat season, June). Village conversations often reference these: "ween kint? 3al-7saad" (where were you? at the harvest).' },
+  { title: 'Water & Irrigation', body: 'Water scarcity makes irrigation (riyye) precious. Villages share water from springs (yanba3) and rivers. The word "na7r" (river) and "3ayn" (spring/eye of water) are culturally significant. Disputes over water rights (7u2uu2 il-miyye) are common rural issues, sometimes escalating to feuds.' },
+  { title: 'Goats & Village Life', body: 'Goat herding (rab7 il-maa3iz) is traditional in Lebanese mountain villages. Goat cheese (jibne maa3iz), labneh, and yogurt (laban) come from these herds. The goatherd (raa3i) is a romantic figure in Lebanese folk poetry. You\'ll hear "bi-rba maa3iz" (he raises goats) as a comment on rural, simple living.' },
+];

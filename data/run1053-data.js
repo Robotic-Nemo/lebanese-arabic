@@ -1,0 +1,61 @@
+// R1053 — NEW FEATURE: Lebanese Grape Harvest & Winemaking Culture (grp)
+const GRP_WORDS = [
+  { ar: 'عنب', tr: '3anab', eng: 'grapes', cat: 'harvest' },
+  { ar: 'كرمة', tr: 'karma', eng: 'grapevine', cat: 'harvest' },
+  { ar: 'بستان', tr: 'bstaan', eng: 'orchard/vineyard', cat: 'harvest' },
+  { ar: 'قطاف', tr: 'aTaaf', eng: 'harvest/picking', cat: 'harvest' },
+  { ar: 'موسم', tr: 'mawsem', eng: 'season', cat: 'harvest' },
+  { ar: 'معصرة', tr: 'ma3sara', eng: 'wine press/winery', cat: 'winery' },
+  { ar: 'نبيذ', tr: 'nabiiz', eng: 'wine', cat: 'wine' },
+  { ar: 'عرق', tr: '3araq', eng: 'arak (anise spirit)', cat: 'arak' },
+  { ar: 'يانسون', tr: 'yaansoon', eng: 'anise', cat: 'arak' },
+  { ar: 'تقطير', tr: 'ta2tiir', eng: 'distillation', cat: 'arak' },
+  { ar: 'خمر', tr: 'khamr', eng: 'wine/alcohol', cat: 'wine' },
+  { ar: 'أحمر', tr: 'a7mar', eng: 'red (wine)', cat: 'wine' },
+  { ar: 'أبيض', tr: 'abyad', eng: 'white (wine)', cat: 'wine' },
+  { ar: 'روزيه', tr: 'roze', eng: 'rosé', cat: 'wine' },
+  { ar: 'قلعة', tr: 'ala3', eng: 'chateau/castle', cat: 'winery' },
+  { ar: 'بقاع', tr: 'be2aa3', eng: 'Bekaa Valley', cat: 'region' },
+  { ar: 'ضهر', tr: 'dahr', eng: 'mountain ridge', cat: 'region' },
+  { ar: 'تربة', tr: 'trbe', eng: 'soil/earth', cat: 'harvest' },
+  { ar: 'حصاد', tr: '7saad', eng: 'harvest', cat: 'harvest' },
+  { ar: 'دِبس العنب', tr: 'dibs il-3anab', eng: 'grape molasses', cat: 'products' },
+  { ar: 'مربى عنب', tr: 'mrabbaa 3anab', eng: 'grape jam', cat: 'products' },
+  { ar: 'زبيب', tr: 'zbiib', eng: 'raisins', cat: 'products' },
+  { ar: 'ورق عريش', tr: 'wara2 3ariish', eng: 'grape leaves', cat: 'products' },
+  { ar: 'طحينة', tr: 'Ta7iine', eng: 'tahini (served with arak)', cat: 'arak' },
+  { ar: 'مازة', tr: 'maaze', eng: 'mezze (arak accompaniments)', cat: 'arak' },
+  { ar: 'كاس', tr: 'kaas', eng: 'glass', cat: 'wine' },
+  { ar: 'صحة', tr: 'Sa77a', eng: 'cheers/health', cat: 'arak' },
+  { ar: 'جرة', tr: 'jarre', eng: 'clay jar/amphora', cat: 'winery' },
+  { ar: 'خزان', tr: 'khazzaan', eng: 'tank/barrel', cat: 'winery' },
+  { ar: 'توب', tr: 'toob', eng: 'ripe (fruit)', cat: 'harvest' },
+];
+
+const GRP_CATS = ['all', 'harvest', 'wine', 'arak', 'winery', 'region', 'products'];
+
+const GRP_DRILLS = [
+  { q: 'What does عنب mean?', opts: ['grapes', 'olives', 'figs', 'almonds'], ans: 0 },
+  { q: 'كرمة means:', opts: ['winery', 'grapevine', 'harvest', 'soil'], ans: 1 },
+  { q: 'عرق is:', opts: ['red wine', 'white wine', 'arak anise spirit', 'grape molasses'], ans: 2 },
+  { q: 'How do you say "cheers" in Lebanese?', opts: ['مازة', 'كاس', 'صحة', 'نبيذ'], ans: 2 },
+  { q: 'بقاع refers to:', opts: ['a type of wine', 'the Bekaa Valley', 'a clay jar', 'harvest season'], ans: 1 },
+  { q: 'ورق عريش means:', opts: ['grape molasses', 'raisins', 'grape leaves', 'grape jam'], ans: 2 },
+  { q: 'What is معصرة?', opts: ['a glass', 'a vineyard', 'a wine press/winery', 'an anise plant'], ans: 2 },
+  { q: 'زبيب means:', opts: ['fresh grapes', 'raisins', 'grape leaves', 'anise'], ans: 1 },
+  { q: 'يانسون is:', opts: ['clay jar', 'anise', 'rosé wine', 'barrel'], ans: 1 },
+  { q: 'قطاف means:', opts: ['soil', 'season', 'harvest/picking', 'distillation'], ans: 2 },
+  { q: 'دبس العنب is:', opts: ['grape jam', 'raisins', 'grape molasses', 'grape leaves'], ans: 2 },
+  { q: 'تقطير means:', opts: ['pressing', 'distillation', 'fermenting', 'harvesting'], ans: 1 },
+  { q: 'What does توب describe?', opts: ['a full glass', 'ripe fruit', 'aged wine', 'clay vessel'], ans: 1 },
+  { q: 'مازة is:', opts: ['a wine glass', 'mezze served with arak', 'grape harvest', 'winery'], ans: 1 },
+  { q: 'خزان means:', opts: ['barrel/tank', 'soil', 'ridge', 'grapevine'], ans: 0 },
+];
+
+const GRP_TIPS = [
+  { title: 'Bekaa Valley Wine Country', body: 'Lebanon\'s Bekaa Valley is one of the oldest wine-producing regions in the world. Châteaux like Musar, Ksara, and Kefraya produce internationally acclaimed wines. When visiting, say "biddak tzuur il-karm?" (do you want to tour the vineyard?).' },
+  { title: 'Arak: Lebanon\'s National Spirit', body: 'Arak (عرق) is distilled from grapes and flavored with anise. It turns milky white when water is added — this is called "3arak bi-maay." Always served with mezze and ice, never alone. The saying goes: "bi-doon maaze, 3araq maa byin3am" (without mezze, arak has no taste).' },
+  { title: 'The Grape Harvest Ritual', body: 'The moosem il-2aTaaf (harvest season) in September is a community event. Families gather to pick grapes by hand, singing traditional songs. Children crush grapes with their feet — "biddo yidoos il-3anab" — a tradition alive in some villages.' },
+  { title: 'Grape Byproducts', body: 'Lebanese families use every part of the grape: ورق عريش (grape leaves) for stuffed vine leaves, دبس العنب (grape molasses) as a sweetener, and زبيب (raisins) year-round. Nothing goes to waste — "ma fii shi byin7aram min il-karma."' },
+  { title: 'Wine Toast Culture', body: 'Lebanese toasts go beyond صحة. You\'ll hear "3a 7ayaatak" (to your life), "3a sahhtak" (to your health), and the classic "bil-hanee wil-shifa" (with joy and good health). Eye contact is essential — looking away during a toast is considered bad luck.' },
+];

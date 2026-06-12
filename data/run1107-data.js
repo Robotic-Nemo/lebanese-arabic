@@ -1,0 +1,56 @@
+// R1107 — NEW FEATURE: Lebanese Zodiac & Astrology Culture (brj)
+
+const BRJ_WORDS = [
+  {ar:'برج',        tr:'burj',           en:'zodiac sign'},
+  {ar:'شو برجك؟',  tr:'shu burjak?',    en:"what's your sign? (to m)"},
+  {ar:'شو برجك؟',  tr:'shu burjik?',    en:"what's your sign? (to f)"},
+  {ar:'الحمل',     tr:'al-7amal',       en:'Aries (the Ram)'},
+  {ar:'الثور',     tr:'al-thawr',       en:'Taurus (the Bull)'},
+  {ar:'الجوزاء',   tr:'al-jawza2',      en:'Gemini (the Twins)'},
+  {ar:'السرطان',   tr:'al-saraTan',     en:'Cancer'},
+  {ar:'الأسد',     tr:'al-asad',        en:'Leo (the Lion)'},
+  {ar:'السنبلة',   tr:'al-sunbula',     en:'Virgo'},
+  {ar:'الميزان',   tr:'al-meezan',      en:'Libra (the Scales)'},
+  {ar:'العقرب',    tr:'al-3aqrab',      en:'Scorpio'},
+  {ar:'القوس',     tr:'al-qaws',        en:'Sagittarius (the Bow)'},
+  {ar:'الجدي',     tr:'al-jady',        en:'Capricorn'},
+  {ar:'الدلو',     tr:'al-dalw',        en:'Aquarius (the Bucket)'},
+  {ar:'الحوت',     tr:'al-7oot',        en:'Pisces (the Fish)'},
+  {ar:'حظ',        tr:'7azz',           en:'luck / fortune'},
+  {ar:'نصيبي',     tr:'naseebi',        en:'my fate / my destiny'},
+  {ar:'نجوم',      tr:'nujoom',         en:'stars'},
+  {ar:'عرّاف',     tr:'3arraf',         en:'fortune teller'},
+  {ar:'فنجلة',     tr:'finjele',        en:'coffee cup reading'},
+  {ar:'كف اليد',   tr:'kaf el-yad',     en:'palm reading'},
+  {ar:'موافق',     tr:'mwafeq',         en:'compatible (astrologically)'},
+  {ar:'مش موافق',  tr:'msh mwafeq',     en:'incompatible (astrologically)'},
+  {ar:'طالعي',     tr:'Tala3i',         en:'my horoscope / my reading'},
+  {ar:'تقاطع',     tr:'tqaTo3',         en:'crossing of fates'},
+];
+
+const BRJ_DRILLS = [
+  {q:"How do you ask 'what's your zodiac sign?' to a man?",
+   opts:['shu burjak?','shu burjik?','meen burjak?','shu 7azzak?'], ans:0},
+  {q:"Which zodiac sign is al-asad?",
+   opts:['Leo','Scorpio','Aries','Taurus'], ans:0},
+  {q:"What does 'finjele' mean?",
+   opts:['coffee cup reading','palm reading','star chart','fortune teller'], ans:0},
+  {q:"What does '7azz' mean?",
+   opts:['luck/fortune','fate/destiny','stars','compatibility'], ans:0},
+  {q:"Which zodiac is al-3aqrab?",
+   opts:['Scorpio','Cancer','Sagittarius','Capricorn'], ans:0},
+  {q:"How do you say 'my destiny / my fate' in Lebanese?",
+   opts:['naseebi','Tala3i','7azzi','burji'], ans:0},
+  {q:"What is 'kaf el-yad'?",
+   opts:['palm reading','coffee cup reading','tarot cards','horoscope'], ans:0},
+  {q:"Which sign is al-7oot?",
+   opts:['Pisces','Aries','Aquarius','Cancer'], ans:0},
+];
+
+const BRJ_TIPS = [
+  {title:'Finjele — The Coffee Cup', body:"Reading coffee cups (finjele) is a beloved Lebanese pastime. After drinking Arabic coffee, the cup is flipped and a reader interprets the dried grounds. It's half belief, half social ritual."},
+  {title:"Shu burjak? — The Icebreaker", body:"Asking someone's zodiac sign is a genuine Lebanese icebreaker. People take compatibility seriously — Scorpio-Leo tensions or Libra-Gemini matches come up in actual relationship decisions."},
+  {title:'Bourj Hammoud vs. Burj', body:"'Burj' means both zodiac sign and tower/fortress. Bourj Hammoud (the lively Armenian district) literally means 'Hammoud's tower.' Burj Abu Haydar and Burj el-Barajneh are named the same way."},
+  {title:'Daily Horoscopes on TV', body:"Lebanese TV channels (LBC, MTV Lebanon, Al-Jadeed) all run daily horoscope segments. Many Lebanese check their Tala3 (reading) as a morning ritual — even those who claim not to believe in it."},
+  {title:'3arraf — The Fortune Teller', body:"Professional fortune tellers (3arraf, pl: 3arrafeen) operate openly in Lebanon. Some are famous personalities. Services include finjele, kaf el-yad (palmistry), and shell/bead casting. Beirut has entire streets known for 3arrafeen."},
+];

@@ -1,0 +1,61 @@
+// R1020 — NEW FEATURE: Lebanese Morning Routine & Breakfast Culture (mrn)
+const MRN_WORDS = [
+  { ar: 'صباح الخير', tr: 'SabaaH il-kheir', en: 'Good morning', cat: 'greetings' },
+  { ar: 'صباح النور', tr: 'SabaaH in-nuur', en: 'Good morning (reply)', cat: 'greetings' },
+  { ar: 'كيف نمت؟', tr: 'kiif nimit?', en: 'How did you sleep?', cat: 'greetings' },
+  { ar: 'منيح نمت', tr: 'mnii7 nimit', en: 'I slept well', cat: 'greetings' },
+  { ar: 'قهوة', tr: '2ahwe', en: 'coffee', cat: 'drinks' },
+  { ar: 'شاي', tr: 'shaay', en: 'tea', cat: 'drinks' },
+  { ar: 'حليب', tr: '7aliib', en: 'milk', cat: 'drinks' },
+  { ar: 'عصير', tr: '3asiir', en: 'juice', cat: 'drinks' },
+  { ar: 'زعتر', tr: 'za3tar', en: 'thyme mix / za\'atar', cat: 'food' },
+  { ar: 'جبنة', tr: 'jibneh', en: 'cheese', cat: 'food' },
+  { ar: 'زيت زيتون', tr: 'zet zaytun', en: 'olive oil', cat: 'food' },
+  { ar: 'خبز', tr: 'khubiz', en: 'bread / pita', cat: 'food' },
+  { ar: 'بيض', tr: 'beid', en: 'eggs', cat: 'food' },
+  { ar: 'لبنة', tr: 'labneh', en: 'strained yogurt', cat: 'food' },
+  { ar: 'مربى', tr: 'mrabba', en: 'jam', cat: 'food' },
+  { ar: 'منقوشة', tr: 'mano2she', en: 'za\'atar flatbread', cat: 'food' },
+  { ar: 'فطور', tr: 'ftuur', en: 'breakfast', cat: 'routine' },
+  { ar: 'صحّى', tr: 'Sa77a', en: 'he/she woke up', cat: 'routine' },
+  { ar: 'صحّيني', tr: 'Sa77iini', en: 'wake me up', cat: 'routine' },
+  { ar: 'دوش', tr: 'doush', en: 'shower', cat: 'routine' },
+  { ar: 'منبّه', tr: 'mnabbi', en: 'alarm clock', cat: 'routine' },
+  { ar: 'متأخر', tr: 'mta2akhkhir', en: 'late / running late', cat: 'routine' },
+  { ar: 'مستعجل', tr: 'msta3jil', en: 'in a hurry', cat: 'routine' },
+  { ar: 'على مهلك', tr: '3ala mahlak', en: 'take your time', cat: 'expressions' },
+  { ar: 'بدّي قهوة', tr: 'baddii 2ahwe', en: 'I want coffee', cat: 'expressions' },
+  { ar: 'ما صحيت', tr: 'maa S7iit', en: 'I didn\'t wake up (slept through)', cat: 'expressions' },
+  { ar: 'إجا الصبح', tr: 'ija iS-Sub7', en: 'morning came / it\'s morning', cat: 'expressions' },
+  { ar: 'ما نمت', tr: 'maa nimit', en: 'I didn\'t sleep', cat: 'expressions' },
+  { ar: 'مخبّل بكير', tr: 'mkhabbil bakkiir', en: 'crazy early (it\'s too early)', cat: 'expressions' },
+  { ar: 'طول بالك', tr: 'Tuul baalak', en: 'be patient / hold on', cat: 'expressions' },
+];
+
+const MRN_CATS = ['greetings', 'drinks', 'food', 'routine', 'expressions'];
+
+const MRN_DRILLS = [
+  { q: 'How do you say "Good morning" in Lebanese?', opts: ['SabaaH il-kheir', 'masa il-kheir', 'kiif 7aalak', 'mar7aba'], ans: 0 },
+  { q: 'What is "ftuur"?', opts: ['lunch', 'dinner', 'breakfast', 'snack'], ans: 2 },
+  { q: 'What does "labneh" mean?', opts: ['yogurt drink', 'strained yogurt', 'sour cream', 'cream cheese'], ans: 1 },
+  { q: 'How do you say "I want coffee" in Lebanese?', opts: ['baddii shaay', 'baddii 2ahwe', 'baddii 7aliib', 'baddii 3asiir'], ans: 1 },
+  { q: 'What is "za3tar"?', opts: ['mint tea', 'thyme mix / za\'atar', 'olive oil', 'jam'], ans: 1 },
+  { q: 'What does "mno2she" / "mano2she" mean?', opts: ['cheese bread', 'egg sandwich', 'za\'atar flatbread', 'pita with labneh'], ans: 2 },
+  { q: 'If someone says "Sa77iini", what do they want?', opts: ['feed me', 'wake me up', 'bring me coffee', 'call me'], ans: 1 },
+  { q: 'What does "mta2akhkhir" mean?', opts: ['early', 'tired', 'late / running late', 'in a hurry'], ans: 2 },
+  { q: 'How do you say "take your time" in Lebanese?', opts: ['yalla msa3', 'Tuul baalak', '3ala mahlak', 'msta3jil'], ans: 2 },
+  { q: 'What does "maa nimit" mean?', opts: ['I slept well', 'I\'m tired', 'I didn\'t sleep', 'Wake me up'], ans: 2 },
+  { q: 'What is "mnabbi"?', opts: ['coffee machine', 'alarm clock', 'shower', 'morning call'], ans: 1 },
+  { q: 'What does "mkhabbil bakkiir" express?', opts: ['It\'s late', 'It\'s a nice morning', 'It\'s crazy early / too early', 'Good morning'], ans: 2 },
+  { q: 'What does "ija iS-Sub7" mean?', opts: ['Go to sleep', 'It\'s morning / morning came', 'Goodnight', 'Time for lunch'], ans: 1 },
+  { q: 'What is "zet zaytun"?', opts: ['sesame oil', 'olive oil', 'vegetable oil', 'butter'], ans: 1 },
+  { q: 'What does "SabaaH in-nuur" mean?', opts: ['Good morning (greeting)', 'Good morning (reply)', 'Good afternoon', 'Good evening'], ans: 1 },
+];
+
+const MRN_TIPS = [
+  'Lebanese breakfast (ftuur) is considered the most important meal. A proper spread includes labneh, za3tar, jibneh, olives, eggs, and fresh khubiz. Families often gather around this table together.',
+  'Morning greetings matter in Lebanon. "SabaaH il-kheir" → "SabaaH in-nuur" is a set exchange. Skipping the reply feels rude. You\'ll also hear "SabaaH il-ward" (morning of roses) as a warm variation.',
+  'The Lebanese morning coffee (2ahwe) ritual is serious. Many Lebanese won\'t function before their first cup. Asking "baddak 2ahwe?" (do you want coffee?) is a gesture of hospitality even at 7am.',
+  'Mano2she (za\'atar flatbread) is the ultimate Lebanese breakfast on-the-go. Bakeries open at dawn and lines form early. "Ro7 jtaab mano2shit za3tar" (go get a za\'atar mano2she) is a classic morning request.',
+  'Punctuality is flexible in Lebanese mornings. "Mta2akhkhir" and "msta3jil" are constant morning companions. "3ala mahlak" (take your time) is often said but rarely meant literally when school or work is involved.',
+];

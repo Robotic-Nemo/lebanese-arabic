@@ -1,0 +1,61 @@
+// R1059 — NEW FEATURE: Lebanese Morning Routine & Café Culture (mng)
+const MNG_WORDS = [
+  { ar: 'صباح الخير', tr: 'Sabaa7 il-kheir', eng: 'good morning', cat: 'greet' },
+  { ar: 'صباح النور', tr: 'Sabaa7 in-nuur', eng: 'morning of light (reply)', cat: 'greet' },
+  { ar: 'كيفك صحيت؟', tr: 'kiifak S7eet?', eng: 'how did you wake up?', cat: 'greet' },
+  { ar: 'قهوة', tr: 'ahwe', eng: 'coffee', cat: 'drinks' },
+  { ar: 'شاي', tr: 'shaay', eng: 'tea', cat: 'drinks' },
+  { ar: 'نعناع', tr: 'na3naa3', eng: 'mint (tea)', cat: 'drinks' },
+  { ar: 'زهورات', tr: 'zhuuraat', eng: 'herbal tea blend', cat: 'drinks' },
+  { ar: 'عصير', tr: '3aSiir', eng: 'juice', cat: 'drinks' },
+  { ar: 'خبز', tr: 'khubz', eng: 'bread', cat: 'food' },
+  { ar: 'زيتون', tr: 'zaytoun', eng: 'olives', cat: 'food' },
+  { ar: 'جبنة', tr: 'jibne', eng: 'cheese', cat: 'food' },
+  { ar: 'لبنة', tr: 'labneh', eng: 'labneh (strained yogurt)', cat: 'food' },
+  { ar: 'بيض', tr: 'bayd', eng: 'eggs', cat: 'food' },
+  { ar: 'معجنات', tr: 'm3ajjanaat', eng: 'pastries', cat: 'food' },
+  { ar: 'منقوشة', tr: 'man2uushe', eng: 'manoushe (flatbread)', cat: 'food' },
+  { ar: 'صحيت', tr: 'S7eet', eng: 'I woke up', cat: 'routine' },
+  { ar: 'كلشي تمام', tr: 'kil shi tamaam', eng: 'everything is fine', cat: 'routine' },
+  { ar: 'فنجان', tr: 'finjaan', eng: 'cup (small coffee cup)', cat: 'cafe' },
+  { ar: 'إسبريسو', tr: 'espresso', eng: 'espresso', cat: 'cafe' },
+  { ar: 'كافيه', tr: 'kaafe', eng: 'café', cat: 'cafe' },
+  { ar: 'جرنان', tr: 'jornaan', eng: 'newspaper (morning read)', cat: 'routine' },
+  { ar: 'راديو', tr: 'raadyo', eng: 'radio', cat: 'routine' },
+  { ar: 'بلكون', tr: 'balkon', eng: 'balcony', cat: 'routine' },
+  { ar: 'أذان الفجر', tr: 'azaan il-fajr', eng: 'dawn call to prayer', cat: 'time' },
+  { ar: 'شروق', tr: 'shuruuq', eng: 'sunrise', cat: 'time' },
+  { ar: 'دوام', tr: 'dawaam', eng: 'work/school day', cat: 'time' },
+  { ar: 'باص', tr: 'baS', eng: 'bus', cat: 'commute' },
+  { ar: 'سرفيس', tr: 'serviis', eng: 'shared taxi', cat: 'commute' },
+  { ar: 'زحمة', tr: 'za7me', eng: 'traffic jam', cat: 'commute' },
+  { ar: 'طريق', tr: 'Taree2', eng: 'road/route', cat: 'commute' },
+];
+
+const MNG_CATS = ['all', 'greet', 'drinks', 'food', 'routine', 'cafe', 'time', 'commute'];
+
+const MNG_DRILLS = [
+  { q: 'What does صباح الخير mean?', opts: ['good night', 'good morning', 'good evening', 'welcome'], ans: 1 },
+  { q: 'قهوة means:', opts: ['tea', 'juice', 'coffee', 'water'], ans: 2 },
+  { q: 'لبنة is:', opts: ['cheese', 'yogurt', 'labneh', 'butter'], ans: 2 },
+  { q: 'منقوشة is a:', opts: ['coffee', 'pastry', 'manoushe flatbread', 'juice'], ans: 2 },
+  { q: 'شروق means:', opts: ['sunset', 'noon', 'sunrise', 'midnight'], ans: 2 },
+  { q: 'زحمة means:', opts: ['bus stop', 'traffic jam', 'road', 'commute'], ans: 1 },
+  { q: 'فنجان is a:', opts: ['large mug', 'small coffee cup', 'teapot', 'glass'], ans: 1 },
+  { q: 'نعناع is:', opts: ['herbal blend', 'mint', 'sage', 'chamomile'], ans: 1 },
+  { q: 'سرفيس is:', opts: ['bus', 'shared taxi', 'metro', 'bicycle'], ans: 1 },
+  { q: 'دوام means:', opts: ['holiday', 'weekend', 'work/school day', 'vacation'], ans: 2 },
+  { q: 'بلكون is:', opts: ['kitchen', 'bedroom', 'balcony', 'garden'], ans: 2 },
+  { q: 'زهورات are:', opts: ['olives', 'herbs', 'herbal tea blend', 'spices'], ans: 2 },
+  { q: 'جبنة means:', opts: ['butter', 'labneh', 'yogurt', 'cheese'], ans: 3 },
+  { q: 'بيض means:', opts: ['bread', 'eggs', 'milk', 'butter'], ans: 1 },
+  { q: 'صباح النور is:', opts: ['a greeting', 'morning reply to greeting', 'goodbye', 'thank you'], ans: 1 },
+];
+
+const MNG_TIPS = [
+  { title: 'The Lebanese Morning Ritual', body: 'Lebanese mornings are communal and slow. "Sabaa7 il-kheir" starts every encounter. Coffee (ahwe) is essential — often strong Turkish coffee (ahwe 3arabiyye) served black in a small finjaan, or espresso at a kaafe. The morning cannot begin without it. "Baddo ahwe" (he needs his coffee) is said of grumpy people who haven\'t had their morning cup yet.' },
+  { title: 'Manoushe: The Lebanese Morning Bread', body: 'The morning staple is man2uushe — flatbread from the saj oven, topped with za3tar (thyme-olive oil), cheese, or kishk. Bakeries open at dawn and neighbors line up. "Roo7 ijib man2uushe" (go get manoushe) is a morning errand for the whole family. Often eaten while standing or walking to school.' },
+  { title: 'Balcony Culture', body: 'Lebanese balconies (balkon) are sacred morning spaces. Adults drink coffee and observe the neighborhood waking up. "3am 2i3ud 3al-balkon" (I\'m sitting on the balcony) signals leisure and contentment. Neighbors call out greetings from balcony to balcony — "kiifak S7eet?" (how did you wake up?) is a genuine morning inquiry.' },
+  { title: 'The Morning Commute', body: 'Lebanon has no metro — commuters depend on serviis (shared taxis running fixed routes), el-baS (buses), or private cars. Morning za7me (traffic) in Beirut is legendary — commuters from Jounieh, Dbayye, and the south all converge on Beirut between 7-9am. Radio traffic reports ("khabar is-seer") are essential morning listening.' },
+  { title: 'Dawn Prayer & Morning Rhythm', body: 'In many Lebanese towns, the azaan il-fajr (dawn call to prayer) from the mosque marks the true start of the day — often between 4:30-5:30am depending on season. Shuruuq (sunrise) over the mountains or Mediterranean is considered beautiful. The phrase "min is-sub7 li-il-mase" (from morning to evening) captures a full day\'s work.' },
+];

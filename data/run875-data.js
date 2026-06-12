@@ -1,0 +1,1 @@
+// R875 — BUG FIX: Restore flag markers on wrapped pickOpts — probe false-negatives for vbc/lfc/ndd/prp/dir/emo/clr/fod/bdy/fdr/nmc/cds/dpl/wrk/ntr/scl/prt/hom/hlt/tdr/bod/mny/trp/fsh/dvb/sln/cty/prs coaches

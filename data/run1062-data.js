@@ -1,0 +1,61 @@
+// R1062 — NEW FEATURE: Lebanese Diaspora Nostalgia & Return Visits (dsr)
+const DSR_WORDS = [
+  { ar: 'غربة', tr: 'ghurbe', eng: 'being away from homeland', cat: 'feelings' },
+  { ar: 'اشتياق', tr: 'ishtiyaa2', eng: 'longing/yearning', cat: 'feelings' },
+  { ar: 'وحشة', tr: 'wa7she', eng: 'loneliness/missing home', cat: 'feelings' },
+  { ar: 'ذكريات', tr: 'zikrayaat', eng: 'memories', cat: 'feelings' },
+  { ar: 'بلاد', tr: 'bilaad', eng: 'homeland/country', cat: 'diaspora' },
+  { ar: 'مغترب', tr: 'mghtireb', eng: 'expatriate/emigrant', cat: 'diaspora' },
+  { ar: 'جالية', tr: 'jaaliye', eng: 'diaspora community', cat: 'diaspora' },
+  { ar: 'تحويل', tr: 'ta7weel', eng: 'remittance/transfer', cat: 'diaspora' },
+  { ar: 'جواز سفر', tr: 'jawaaz safar', eng: 'passport', cat: 'travel' },
+  { ar: 'تذكرة', tr: 'tazkara', eng: 'ticket', cat: 'travel' },
+  { ar: 'وداع', tr: 'wadaa3', eng: 'farewell/goodbye', cat: 'travel' },
+  { ar: 'رحلة', tr: 'ri7le', eng: 'trip/journey', cat: 'travel' },
+  { ar: 'طيارة', tr: 'Tayyaara', eng: 'airplane', cat: 'travel' },
+  { ar: 'عيلة', tr: '3eele', eng: 'family', cat: 'return' },
+  { ar: 'أهل', tr: 'ahl', eng: 'family/relatives', cat: 'return' },
+  { ar: 'بيت الأهل', tr: 'beit il-ahl', eng: 'parents\' home', cat: 'return' },
+  { ar: 'ضيعة', tr: 'Day3a', eng: 'village (homeland)', cat: 'return' },
+  { ar: 'صيفية', tr: 'Sayfiyye', eng: 'summer visit (Lebanon)', cat: 'return' },
+  { ar: 'تغير', tr: 'itghayyer', eng: 'has changed', cat: 'return' },
+  { ar: 'حنين', tr: '7aneen', eng: 'nostalgia', cat: 'feelings' },
+  { ar: 'عيشة', tr: '3eesha', eng: 'life/living', cat: 'diaspora' },
+  { ar: 'فرصة', tr: 'furSa', eng: 'opportunity', cat: 'diaspora' },
+  { ar: 'مستقبل', tr: 'musta2bal', eng: 'future', cat: 'diaspora' },
+  { ar: 'دولار', tr: 'doolar', eng: 'dollar', cat: 'diaspora' },
+  { ar: 'تفاهة', tr: 'tfaaha', eng: 'nothing special/trivial', cat: 'feelings' },
+  { ar: 'استقبال', tr: 'iste2baal', eng: 'welcome reception', cat: 'return' },
+  { ar: 'هدايا', tr: 'hdaaya', eng: 'gifts', cat: 'return' },
+  { ar: 'حياة', tr: '7ayaat', eng: 'life', cat: 'diaspora' },
+  { ar: 'اغتراب', tr: 'ightiraab', eng: 'exile/living abroad', cat: 'diaspora' },
+  { ar: 'وطن', tr: 'waTan', eng: 'homeland/nation', cat: 'feelings' },
+];
+
+const DSR_CATS = ['all', 'feelings', 'diaspora', 'travel', 'return'];
+
+const DSR_DRILLS = [
+  { q: 'What does غربة mean?', opts: ['nostalgia', 'being away from homeland', 'longing', 'farewell'], ans: 1 },
+  { q: 'حنين means:', opts: ['memories', 'life', 'nostalgia', 'opportunity'], ans: 2 },
+  { q: 'مغترب is:', opts: ['tourist', 'expatriate/emigrant', 'refugee', 'visitor'], ans: 1 },
+  { q: 'صيفية means:', opts: ['summer job', 'summer visit to Lebanon', 'summer clothes', 'summer house'], ans: 1 },
+  { q: 'تحويل means:', opts: ['transfer/remittance', 'transformation', 'transportation', 'translation'], ans: 0 },
+  { q: 'ذكريات are:', opts: ['dreams', 'hopes', 'memories', 'stories'], ans: 2 },
+  { q: 'وداع means:', opts: ['welcome', 'farewell', 'hello', 'reunion'], ans: 1 },
+  { q: 'جالية is:', opts: ['diaspora community', 'local community', 'political party', 'village'], ans: 0 },
+  { q: 'اشتياق means:', opts: ['happiness', 'anger', 'longing/yearning', 'surprise'], ans: 2 },
+  { q: 'بيت الأهل is:', opts: ['dream house', 'parents\' home', 'village house', 'old house'], ans: 1 },
+  { q: 'ضيعة means:', opts: ['city', 'town', 'village (homeland)', 'neighborhood'], ans: 2 },
+  { q: 'هدايا are:', opts: ['money', 'gifts', 'photos', 'letters'], ans: 1 },
+  { q: 'وطن means:', opts: ['family', 'journey', 'homeland/nation', 'dream'], ans: 2 },
+  { q: 'اغتراب means:', opts: ['vacation', 'return home', 'exile/living abroad', 'tourism'], ans: 2 },
+  { q: 'استقبال means:', opts: ['departure', 'welcome reception', 'farewell party', 'airport'], ans: 1 },
+];
+
+const DSR_TIPS = [
+  { title: 'The Lebanese Diaspora', body: 'Lebanon has one of the world\'s largest diasporas — over 14 million Lebanese abroad vs ~4 million in-country. Brazil, Australia, West Africa, USA, and Gulf countries host massive communities. "Mghtireb" (expatriate) carries dignity: going abroad to provide for family is a noble tradition. You\'ll hear "ibn il-mghtirib" (son of the expat) said with pride.' },
+  { title: 'Summer Return (Sayfiyye)', body: '"Raaji3 3-Sayf" (coming back for summer) is a cultural institution. Diaspora Lebanese flood back June-August, turning villages upside down with noise, cars, and dollars. Locals joke: "Jay yitfashal" (coming to show off). The returnee buys gifts (hdaaya), visits every relative, and says "w-Allah 7ashsha" (I really missed it) before flying back.' },
+  { title: 'Ghurbe — The Weight of Exile', body: 'Ghurbe is more than absence — it\'s a Lebanese philosophical condition. Folk songs (aghani il-ghurbe) mourn the separation. "Bkhaf3ak ya ghurbe" (I fear you, exile) is a famous lyric. Even successful emigrants feel it: prosperity abroad can\'t erase the pull of village, family smell, and the sound of a specific dialect spoken by childhood neighbors.' },
+  { title: 'Remittances & Dollars', body: 'Lebanese diaspora sends home billions annually — often the difference between survival and collapse for families. "Bi3ath maSaari" (he sends money) is common. Since 2019\'s financial collapse, dollars from abroad (not Lebanese lira) are the currency of stability. "3ndo dollar" (he has dollars) means real wealth. Family pressure to send remittances is intense.' },
+  { title: 'The Return Culture Shock', body: 'Returning diaspora Lebanese often face reverse culture shock: Lebanon has changed, or they have. "Itghayyer" (it changed) is heard constantly. Younger second-generation Lebanese who grew up abroad feel caught between identities — not fully Lebanese to locals, not fully foreign at home. This tension is deeply felt in families: "Ba3raf 3arabi? Laa2, mish kteer." (You know Arabic? No, not much.)' },
+];

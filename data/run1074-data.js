@@ -1,0 +1,61 @@
+// R1074 — NEW FEATURE: Lebanese Cheese & Dairy Culture (jbn)
+const JBN_WORDS = [
+  { ar: 'الجبنة', tr: 'il-jibneh', eng: 'the cheese', cat: 'basics' },
+  { ar: 'حلوم', tr: '7alloum', eng: 'halloumi (grilling cheese)', cat: 'fresh' },
+  { ar: 'عكاوي', tr: '3akkawi', eng: 'akkawi cheese (mild white)', cat: 'fresh' },
+  { ar: 'لبنة', tr: 'labneh', eng: 'strained yogurt cheese', cat: 'fresh' },
+  { ar: 'اللبن', tr: 'il-laban', eng: 'yogurt / sour milk', cat: 'dairy' },
+  { ar: 'شنكليش', tr: 'shanklish', eng: 'aged spiced cheese ball', cat: 'aged' },
+  { ar: 'القشطة', tr: 'il-2ishti', eng: 'clotted cream', cat: 'dairy' },
+  { ar: 'السمن', tr: 'is-samni', eng: 'clarified butter / ghee', cat: 'dairy' },
+  { ar: 'كشك', tr: 'kishk', eng: 'dried fermented yogurt-bulgur', cat: 'aged' },
+  { ar: 'أريشة', tr: 'areeshi', eng: 'fresh cottage-style cheese', cat: 'fresh' },
+  { ar: 'مشلل', tr: 'mashalal', eng: 'string cheese (pulled)', cat: 'fresh' },
+  { ar: 'جبنة مقلية', tr: 'jibneh ma2liye', eng: 'fried cheese', cat: 'cooked' },
+  { ar: 'رقاقة بالجبنة', tr: 'ru2a2a bil-jibneh', eng: 'cheese flatbread pastry', cat: 'cooked' },
+  { ar: 'حليب البقر', tr: '7alib il-ba2ar', eng: 'cow milk', cat: 'dairy' },
+  { ar: 'حليب الماعز', tr: '7alib il-ma3iz', eng: 'goat milk', cat: 'dairy' },
+  { ar: 'القرم', tr: 'il-2aram', eng: 'the rind / crust (of cheese)', cat: 'basics' },
+  { ar: 'المصل', tr: 'il-masal', eng: 'whey', cat: 'basics' },
+  { ar: 'المخيض', tr: 'il-makhiD', eng: 'buttermilk', cat: 'dairy' },
+  { ar: 'جبنة ناشفة', tr: 'jibneh nashe', eng: 'dry / hard cheese', cat: 'aged' },
+  { ar: 'جبنة طازجة', tr: 'jibneh tazji', eng: 'fresh cheese', cat: 'fresh' },
+  { ar: 'عملية التخمير', tr: '3amaliyit it-takhmir', eng: 'the fermentation process', cat: 'process' },
+  { ar: 'المخللات', tr: 'il-mukhallalit', eng: 'pickles (served with cheese)', cat: 'serving' },
+  { ar: 'زيت الزيتون', tr: 'zeit iz-zitoun', eng: 'olive oil (with labneh)', cat: 'serving' },
+  { ar: 'زعتر', tr: 'za3tar', eng: 'thyme-spice mix (with labneh)', cat: 'serving' },
+  { ar: 'النعنع', tr: 'in-na3na3', eng: 'mint (garnish)', cat: 'serving' },
+  { ar: 'لبنة كرات', tr: 'labneh krat', eng: 'labneh balls (in oil)', cat: 'fresh' },
+  { ar: 'مصنع الجبنة', tr: 'mas7arit il-jibneh', eng: 'cheese dairy / factory', cat: 'process' },
+  { ar: 'جبنة البلد', tr: 'jibnit il-balad', eng: 'local village cheese', cat: 'aged' },
+  { ar: 'الطبق', tr: 'iT-Taba2', eng: 'the platter / plate', cat: 'serving' },
+  { ar: 'فطور', tr: 'fTour', eng: 'breakfast (where cheese shines)', cat: 'serving' },
+];
+
+const JBN_CATS = ['all', 'fresh', 'aged', 'dairy', 'cooked', 'process', 'serving', 'basics'];
+
+const JBN_DRILLS = [
+  { q: 'حلوم means:', opts: ['labneh', 'halloumi (grilling cheese)', 'akkawi', 'string cheese'], ans: 1 },
+  { q: 'لبنة is:', opts: ['yogurt drink', 'strained yogurt cheese', 'clotted cream', 'buttermilk'], ans: 1 },
+  { q: 'شنكليش is:', opts: ['fresh white cheese', 'fried cheese', 'aged spiced cheese ball', 'string cheese'], ans: 2 },
+  { q: 'القشطة means:', opts: ['clarified butter', 'clotted cream', 'whey', 'buttermilk'], ans: 1 },
+  { q: 'كشك is:', opts: ['fresh cottage cheese', 'dried fermented yogurt-bulgur', 'string cheese', 'goat cheese'], ans: 1 },
+  { q: 'مشلل means:', opts: ['fresh white cheese', 'fried cheese', 'labneh', 'string/pulled cheese'], ans: 3 },
+  { q: 'السمن means:', opts: ['whey', 'milk', 'clarified butter/ghee', 'buttermilk'], ans: 2 },
+  { q: 'عكاوي is:', opts: ['halloumi', 'mild white akkawi cheese', 'aged cheese', 'string cheese'], ans: 1 },
+  { q: 'أريشة is:', opts: ['dried fermented mix', 'clotted cream', 'fresh cottage-style cheese', 'cheese rind'], ans: 2 },
+  { q: 'المخيض means:', opts: ['whey', 'clotted cream', 'buttermilk', 'yogurt'], ans: 2 },
+  { q: 'لبنة كرات are:', opts: ['cheese flatbreads', 'labneh balls in oil', 'fried cheese balls', 'cheese rinds'], ans: 1 },
+  { q: 'جبنة البلد means:', opts: ['foreign cheese', 'fried cheese', 'local village cheese', 'hard cheese'], ans: 2 },
+  { q: 'المصل means:', opts: ['rind', 'whey', 'butter', 'cream'], ans: 1 },
+  { q: 'زعتر in a breakfast context is:', opts: ['olive oil', 'mint tea', 'thyme-spice mix with labneh', 'cheese type'], ans: 2 },
+  { q: 'حليب الماعز means:', opts: ['cow milk', 'goat milk', 'sheep milk', 'camel milk'], ans: 1 },
+];
+
+const JBN_TIPS = [
+  { title: 'Labneh: Lebanon\'s Iconic Spread', body: 'Labneh (لبنة) is the undisputed king of Lebanese breakfast. Made by straining yogurt overnight through cloth, it\'s served drizzled with olive oil and za3tar (thyme-spice mix), accompanied by olives, tomatoes, and fresh mint. Every Lebanese household makes it differently — some add garlic, some drain longer for a firmer consistency. Labneh krat (labneh balls rolled in herbs and stored in olive oil) can keep for months and are a treasured pantry staple in Lebanese homes worldwide.' },
+  { title: 'Halloumi: The Grilling Cheese', body: '7alloum (halloumi) is Lebanon\'s beloved grilling cheese — high melting point means it caramelizes beautifully on a grill or tawa without falling apart. It\'s a breakfast staple eaten warm with bread and jam. Lebanese halloumi is traditionally made from goat or sheep milk, giving it a richer flavor than the industrially-produced Cypriot version that became internationally famous. Village-made Lebanese halloumi is firmer, saltier, and more pungent — often stored in brine.' },
+  { title: 'Shanklish: The Aged Cheese Ball', body: 'Shanklish (شنكليش) is Lebanon\'s most distinctive cheese — small balls of aged cow or sheep milk cheese, encrusted in dried herbs and chili (usually thyme, Aleppo pepper, or dried mint). It has a sharp, pungent flavor that intensifies with age. Eaten crumbled over chopped tomatoes, onions, and olive oil as a mezze, or spread on bread. Village families traditionally made their own shanklish and stored it in earthenware pots. It\'s the closest Lebanon gets to a blue-style aged cheese.' },
+  { title: 'Kishk: The Winter Survival Food', body: 'Kishk (كشك) is one of Lebanon\'s oldest preserved foods — a mixture of yogurt and cracked wheat (bulgur) that is fermented together, salted, then dried and ground into a powder. It originated as a way to preserve dairy through winter when fresh milk was scarce. Kishk powder can be reconstituted into soup, used as a seasoning, or eaten with olive oil and tomatoes. The kishk-making process (called "3amal il-kishk") was traditionally a communal autumn activity in Lebanese mountain villages.' },
+  { title: 'Cheese at a Lebanese Breakfast Table', body: 'A full Lebanese breakfast spread (fTour or Tawlit as-sub7) typically includes several cheeses alongside each other: labneh drizzled with olive oil and za3tar, sliced 7alloum (sometimes grilled), and maybe some 3akkawi or mashalal alongside shanklish crumbled over tomato and onion. This dairy abundance reflects Lebanon\'s pastoral mountain heritage — goats and sheep historically roamed the highlands of Mount Lebanon, Akkar, and the Bekaa, producing the milk that became these distinctive cheeses. Cheese is not a side item in Lebanon; it\'s a centerpiece.' },
+];
